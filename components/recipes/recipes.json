@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "jordnutsnudlar",
+    "title": "Jordnötsnudlar",
+    "category": "Lättlagat",
+    "effort": 1,
+    "portions": 2,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "2 block nudlar"
+        ]
+      },
+      {
+        "group": "Sås:",
+        "items": [
+          "2 msk jordnötssmör",
+          "1 msk kinesisk soja",
+          "1 tsk sesamolja",
+          "1 msk majonnäs",
+          "1 msk chilli crisp"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>2 block nudlar</b>.",
+      "<i>Valfritt</i>: Stek något protein, vi brukar ta <b>ägg</b>.",
+      "Blanda ihop övriga ingredienserna till <b>såsen</b>.",
+      "Blanda i såsen i nudlarna."
+    ],
+    "tips": "Jag brukar mäta med en vanlig matsked, det är inte supernoga med alla proportioner. - Tuva"
+  },
+  {
+    "id": "halloumipasta",
+    "title": "Halloumipasta",
+    "category": "Lättlagat",
+    "effort": 2,
+    "portions": 4,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "500g (1 paket) pasta",
+          "1 paket halloumi",
+          "1 paket kikärtor",
+          "1 buljongtärning (valfri typ)",
+          "3 dl grädde",
+          "ca 10 st soltorkade tomater",
+          "2 vitlöksklyftor",
+          "Sambal Oelek",
+          "Spenatblad (fryst eller färsk)",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>500g pasta</b> enligt anvisningen.",
+      "Hacka och stek <b>1 paket halloumi</b>.",
+      "När halloumin fått lite färg, ha i <b>1 paket kikärtor</b>.",
+      "Hacka <b>ca 10 st soltorkade tomater</b>.",
+      "Häll i <b>3 dl grädde</b> och <b>1 buljongtärning</b>. Om spenaten är fryst häll i den nu.",
+      "Pressa i <b>2 vitlöksklyftor</b> och ha i de soltorkade tomaterna.",
+      "Smaka av med salt, peppar och <b>sambal oelek</b>.",
+      "Precis innan servering tillsätt <b>spenaten</b> om den är färsk."
+    ],
+    "tips": "Byt ut halloumi och kikärtor mot valfritt protein ex bacon, kyckling eller tofu. Såsen kan smaksättas med en skvätt soja om den inte riktigt känns rätt."
+  },
+  {
+    "id": "enchiladas",
+    "title": "Enchiladas",
+    "category": "Lättlagat",
+    "effort": 2,
+    "oven": {
+      "temp": "225",
+      "time": "5"
+    },
+    "portions": 4,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "Stek:",
+        "items": [
+          "500 g kyckling",
+          "1 st grönsak (ex. broccoli, paprika)"
+        ]
+      },
+      {
+        "group": "Sås:",
+        "items": [
+          "1 st finhackad lök",
+          "2 ½ dl matyoghurt",
+          "2 st vitlöksklyftor",
+          "Rikligt med currypulver",
+          "Knivsudd cayennepeppar",
+          "Knivsudd sambal oelek",
+          "Salt och peppar"
+        ]
+      },
+      {
+        "group": "Rulle:",
+        "items": [
+          "6-8 tortillabröd",
+          "Salsa",
+          "Riven ost"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>225 grader</b>.",
+      "Hacka och stek <b>500g kyckling</b> och <b>grönsakerna</b>.",
+      "Hacka <b>1 lök</b>.",
+      "Blanda allt till såsen i en kastrull och värm upp.",
+      "Blanda <b>kycklingen och grönsakerna</b> med såsen.",
+      "Fyll och rulla ihop <b>6-8 st bröd</b>. Lägg dem med sömmen nedåt i en ugnsform.",
+      "Häll över <b>salsan</b> och strö över <b>osten</b>.",
+      "Gratinera i 225 grader i ca <b>5 minuter</b>."
+    ],
+    "tips": "Ta en grönsak du gillar som blir god i ugn. Vi brukar göra två satser och ha i matlåda."
+  },
+  {
+    "id": "strogge",
+    "title": "Strogge",
+    "subtitle": "Korvstroganoff",
+    "category": "Lättlagat",
+    "effort": 2,
+    "portions": 4,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "4 port ris eller annat gryn",
+          "550 g falukorv eller kycklingstekkorv",
+          "1 gul lök",
+          "1 msk olja",
+          "3 msk tomatpuré",
+          "2 ½ dl matlagningsgrädde",
+          "1 dl mjölk",
+          "1 msk kinesisk soja",
+          "1 tsk dijonsenap",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>4 portioner ris</b> eller gryn enligt anvisningen på förpackningen.",
+      "Skär <b>550g korv</b> i stavar.",
+      "Skala och hacka <b>1 gul lök</b>.",
+      "Stek korv och lök i ca <b>1 msk olja</b> i en stekpanna ca 5 minuter. Tillsätt <b>3 msk tomatpuré</b> och fräs någon minut.",
+      "Rör ner <b>2 ½ dl grädde</b>, <b>1 dl mjölk</b>, <b>1 msk soja</b> och <b>1 tsk dijonsenap</b>. Låt sjuda ca 5 minuter.",
+      "Smaka av med <b>peppar</b> och ev <b>salt</b>."
+    ],
+    "tips": "Vill du ha såsen lite tjockare red den med majsstärkelse eller potatismjöl blandat med lite vatten. Perfekt att kombinera med Beluga B så att man använder upp andra halvan grädde."
+  },
+  {
+    "id": "carbonara",
+    "title": "'nara",
+    "subtitle": "Carbonara",
+    "category": "Lättlagat",
+    "effort": 2,
+    "portions": 4,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "500g pasta",
+          "1 paket bacon",
+          "2 vitlöksklyftor finhackade",
+          "4 ägg",
+          "85g pecorino",
+          "Olivolja",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>500g pasta</b> enligt instruktionerna.",
+      "Ta undan <b>1 ½ dl pastavatten</b> efter halva koktiden.",
+      "Klipp <b>1 paket bacon</b> i bitar och knaperstek. Pressa i <b>2 vitlöksklyftor</b> mot slutet, passa så att det inte bränns.",
+      "Vispa ihop <b>4 ägg</b> och <b>85g pecorino</b> i en skål, blanda med 2–3 msk avsvalnat/ljummet pastavatten.",
+      "När du hällt av pastan blanda ihop allt. Om pastan är för het stelnar ägget och såsen blir grynig.",
+      "Späd med mer <b>pastavatten</b> för att få en krämig konsistens.",
+      "Smaka av med salt och (mycket) <b>peppar</b>."
+    ],
+    "tips": "El classico."
+  },
+  {
+    "id": "kebabgryta",
+    "title": "Kebabgryta",
+    "category": "Lättlagat",
+    "effort": 1,
+    "portions": 4,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "600g färdig kycklingkebab",
+          "1 gul lök, finhackad",
+          "1 vitlöksklyfta, finhackad",
+          "1 tsk citronpeppar",
+          "1 tsk vegeta allkrydda",
+          "1 msk finhackad persilja",
+          "Saft från en citron (50 ml)",
+          "2 dl turkisk yoghurt",
+          "2 dl matlagningsgrädde"
+        ]
+      }
+    ],
+    "instructions": [
+      "Finhacka <b>1 gul lök</b>.",
+      "Fräs löken i en gryta med olja. Häll i <b>600g kycklingkebab</b> och stek på den.",
+      "Pressa i <b>1 vitlöksklyfta</b>. Ha i <b>1 tsk citronpeppar</b>, <b>1 tsk allkrydda</b>, <b>1 msk persilja</b>, <b>citronsaften (50ml)</b>, <b>2 dl turkisk yoghurt</b> och <b>2 dl matlagningsgrädde</b>.",
+      "Låt puttra en kort stund."
+    ],
+    "tips": "Servera med ris och någon grönsak. Byt ut ghurten mot liknande du har hemma. Vispgrädde går också bra."
+  },
+  {
+    "id": "kyckling-citron-oregano",
+    "title": "Kyckling med Citron & Oregano",
+    "category": "Lättlagat",
+    "effort": 2,
+    "portions": 4,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "1 kg kyckling (filé eller lårfilé)",
+          "3 msk olivolja",
+          "1 st citron (saft och rivet skal)",
+          "3-4 st vitlöksklyftor (pressade)",
+          "2 msk torkad oregano",
+          "1,5 tsk salt",
+          "1 tsk svartpeppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Dela <b>1 kg kyckling</b> i bitar eller strimlor.",
+      "Blanda <b>3 msk olivolja</b>, <b>citronsaft</b>, <b>citronskal</b>, <b>pressad vitlök</b>, <b>2 msk oregano</b>, <b>1,5 tsk salt</b> och <b>1 tsk peppar</b> i en bunke.",
+      "Lägg i kycklingen och låt marinera i rumstemperatur i ca <b>15-20 minuter</b>.",
+      "Stek på medelhög/hög värme i omgångar så att kycklingen får en fin, gyllenbrun stekyta."
+    ],
+    "tips": "Citronen bryter ner proteinerna och gör köttet väldigt mört. Perfekt till havreris, rotfrukter och aioli!"
+  },
+  {
+    "id": "fajita-bowl",
+    "title": "Fajitabowl",
+    "category": "Lättlagat",
+    "effort": 3,
+    "portions": 6,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "Bas & Grönt:",
+        "items": [
+          "900g kycklinglårfilé (eller filé)",
+          "300g matvete (okokt)",
+          "1 tetra (230g) svarta bönor eller kikärtor",
+          "1 burk (150g) majs",
+          "350g vitkål (strimlad)",
+          "250g morötter (rivna)",
+          "200g gul lök (skivad)",
+          "1 tsk sirap"
+        ]
+      },
+      {
+        "group": "Egen Fajitakrydda:",
+        "items": [
+          "2 msk paprikapulver",
+          "1,5 msk spiskummin",
+          "1 tsk vitlökspulver",
+          "1 tsk torkad oregano",
+          "1 tsk chilipulver/chiliflakes",
+          "1,5 tsk salt",
+          "1 tsk svartpeppar"
+        ]
+      },
+      {
+        "group": "Servering:",
+        "items": [
+          "Chunkey Salsa",
+          "Kvarg (som sås)"
+        ]
+      }
+    ],
+    "instructions": [
+      "Blanda alla ingredienser till <b>fajitakryddan</b> i en skål.",
+      "Koka <b>300g matvete</b> enligt förpackningen.",
+      "Skär <b>900g kyckling</b> i strimlor och stek i en stor panna. Häll över hälften av kryddan. Ta upp kycklingen.",
+      "I samma panna, fräs <b>lök</b>, <b>vitkål</b> och <b>morötter</b> tills de mjuknar. Tillsätt resten av kryddan och ringla över <b>1 tsk sirap</b>.",
+      "Häll tillbaka kycklingen och vänd ner sköljda <b>svarta bönor</b> och <b>majs</b>. Låt allt bli varmt."
+    ],
+    "tips": "Slår de färdiga påsarna med hästlängder! Ger ca 120 kcal, 10g protein per 100g färdig mix."
+  },
+  {
+    "id": "beluga-b",
+    "title": "Beluga B",
+    "category": "Vegetariskt",
+    "effort": 2,
+    "portions": 4,
+    "time": "40 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "500g pasta (1 paket)",
+          "1 st gul lök",
+          "2 st vitlöksklyftor",
+          "1 msk paprikapulver",
+          "2 dl belugalinser, torkade",
+          "1 msk tomatpuré",
+          "4 dl krossade tomater",
+          "1 st grönsaksbuljongtärning",
+          "2 dl vatten",
+          "1 st palsternacka eller 2-3 morötter",
+          "2 msk frysta örter (ex. basilika, persilja)",
+          "1 krm sambal oelek eller chiliflakes",
+          "2 ½ dl grädde",
+          "Salt & svartpeppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>500g pasta</b> enligt anvisning.",
+      "Finhacka <b>1 gul lök</b> och <b>2 vitlöksklyftor</b>.",
+      "Fräs löken blank i olja med <b>1 msk paprikapulver</b>.",
+      "Skölj <b>2 dl belugalinser</b> och lägg i fräset. Blanda i <b>1 msk tomatpuré</b>, <b>4 dl krossade tomater</b>, <b>1 buljongtärning</b> och <b>2 dl vatten</b>. Låt puttra.",
+      "Skala och riv <b>palsternacka/morötter</b> och lägg i såsen efter ca 10 min tillsammans med kryddorna.",
+      "Låt koka i ca 25 min tills linserna är al dente. Slå på <b>2 ½ dl grädde</b> på slutet och rör om."
+    ],
+    "tips": "Använd resten av grädden till korvstroganoff eller halloumipasta."
+  },
+  {
+    "id": "lasagne-veg",
+    "title": "Vegetarisk Lasagne",
+    "category": "Vegetariskt",
+    "effort": 4,
+    "oven": {
+      "temp": "225",
+      "time": "20"
+    },
+    "portions": 8,
+    "time": "60 minuter",
+    "ingredients": [
+      {
+        "group": "Tomatsås:",
+        "items": [
+          "Lasagneplattor (ca 1 paket)",
+          "3 dl linser (röda eller gröna)",
+          "1 st gul lök",
+          "2 st morötter",
+          "4 dl krossade tomater",
+          "2 dl vatten",
+          "1 buljongtärning",
+          "10 st oliver (delade)",
+          "10 st soltorkade tomater (strimlade)",
+          "Frysta eller torkade örter"
+        ]
+      },
+      {
+        "group": "Vit sås:",
+        "items": [
+          "250 g fryst spenat eller grönkål",
+          "3 dl matlagningsyoghurt (typ grekisk)",
+          "150 g fetaost",
+          "2 vitlöksklyftor",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>3 dl linser</b> mjuka i en separat kastrull (ca 30 min).",
+      "Fräs <b>1 finhackad gul lök</b> och <b>2 grovrivna morötter</b> i olja. Tillsätt <b>4 dl krossade tomater</b>, <b>2 dl vatten</b>, <b>1 buljongtärning</b>, oliver och soltorkade tomater. Låt puttra 10 min och rör ner linserna.",
+      "Sätt ugnen på <b>225 grader</b>.",
+      "Tina <b>250g spenat</b> och blanda med <b>3 dl matlagningsyoghurt</b>, <b>150g smulad fetaost</b> och <b>2 pressade vitlöksklyftor</b>.",
+      "Varva tomatsås, lasagneplattor och vit sås i en form.",
+      "Grädda mitt i ugnen i <b>20 minuter</b>."
+    ],
+    "tips": "Lasagne är perfekt att anpassa efter vad man har hemma. Satsa på en god vit sås och en smakrik tomatsås!"
+  },
+  {
+    "id": "falafelbollar",
+    "title": "Små söta falafelbollar",
+    "category": "Vegetariskt",
+    "effort": 3,
+    "oven": {
+      "temp": "190",
+      "time": "45"
+    },
+    "portions": 4,
+    "time": "60 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "400 g kikärtor",
+          "1 msk potatismjöl",
+          "1 gul lök",
+          "4 vitlöksklyftor",
+          "4 msk persilja",
+          "4 tsk malen koriander",
+          "2 tsk spiskummin",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>190 grader</b>.",
+      "Blanda <b>1 msk potatismjöl</b> med lite vatten för att lösa upp.",
+      "Grovhacka <b>1 gul lök</b> och <b>4 vitlöksklyftor</b>.",
+      "Mixa alla ingredienser grovt i en matberedare, låt kikärtorna ha lite struktur kvar.",
+      "Rulla små bollar av smeten och lägg på en plåt med bakplåtspapper.",
+      "Grädda mitt i ugnen i <b>25 minuter</b>, ta ut och vänd bollarna och baka i <b>20 minuter till</b> (totalt 45 min)."
+    ]
+  },
+  {
+    "id": "bontacos",
+    "title": "Böntacos",
+    "subtitle": "Black Bean Chili",
+    "category": "Vegetariskt",
+    "effort": 2,
+    "portions": 4,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "2 paket (eller 3 dl) svarta bönor",
+          "½ msk olivolja",
+          "1 gul lök",
+          "2 vitlöksklyftor",
+          "2 tsk spiskummin",
+          "2 msk paprikapulver",
+          "1 buljongtärning",
+          "ca 1 dl vatten",
+          "2 tsk äppelcidervinäger",
+          "1 ½ msk tamari (eller japansk soja)",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Hacka <b>1 gul lök</b>.",
+      "Stek löken i <b>½ msk olivolja</b> i några minuter. Pressa i <b>2 vitlöksklyftor</b>, <b>2 tsk spiskummin</b> och <b>2 msk paprikapulver</b>. Fräs i 2 min.",
+      "Häll i <b>2 paket svarta bönor</b>, <b>1 dl vatten</b> och <b>1 buljongtärning</b>. Låt sjuda i 5 minuter.",
+      "Tillsätt <b>2 tsk äppelcidervinäger</b> och <b>1 ½ msk tamari</b>.",
+      "Låt vätskan koka bort lite och mosa ihop bönröran till önskad konsistens. Smaka av med salt och peppar."
+    ],
+    "tips": "Denna bönröra passar perfekt i tacos, quesadillas och burrito bowls."
+  },
+  {
+    "id": "tomatsoppa",
+    "title": "Hearty Hafling Tomatsoppa",
+    "category": "Vegetariskt",
+    "effort": 2,
+    "portions": 8,
+    "time": "60 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "30 g smör",
+          "1 gul lök",
+          "1 lagerblad",
+          "1 msk brunt socker",
+          "1 msk tomatpuré",
+          "1 liter vatten",
+          "2 tärningar kycklingbuljong (eller grönsaksbuljong)",
+          "2 msk långkornigt ris",
+          "2 paket krossade eller passerade tomater",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Smält <b>30 g smör</b> i en stor gryta. Fräs <b>1 finhackad gul lök</b> med <b>1 lagerblad</b> och <b>½ tsk salt</b> i ca 5 min.",
+      "Ha i <b>1 msk brunt socker</b> och <b>1 msk tomatpuré</b> och fräs i 1 minut.",
+      "Tillsätt <b>1 liter vatten</b>, <b>2 buljongtärningar</b>, <b>2 msk ris</b> och <b>2 paket krossade tomater</b>. Låt koka upp.",
+      "Sjud under lock i <b>20 minuter</b> tills riset är mjukt.",
+      "Lyft ut lagerbladet och mixa soppan slät med en stavmixer. Smaka av med salt och peppar."
+    ]
+  },
+  {
+    "id": "tofu-sotpotatis-gryta",
+    "title": "Tofu, sötpotatis & kikärtsgryta",
+    "category": "Vegetariskt",
+    "effort": 4,
+    "oven": {
+      "temp": "200",
+      "time": "35"
+    },
+    "portions": 8,
+    "time": "60 minuter",
+    "ingredients": [
+      {
+        "group": "Marinad & Tofu:",
+        "items": [
+          "580 g tofu (300g till marinering, 280g till mixning)",
+          "1 msk olivolja",
+          "1 ½ tsk curry",
+          "1/2 tsk vitlökspulver",
+          "1 msk citronjuice"
+        ]
+      },
+      {
+        "group": "Rostas i ugn:",
+        "items": [
+          "1/2 - 1 blomkålshuvud",
+          "2-3 sötpotatisar",
+          "1/2 butternut squash",
+          "Kryddor: spiskummin, koriander, gurkmeja, paprikapulver, kanel"
+        ]
+      },
+      {
+        "group": "Grytbas & Mixat:",
+        "items": [
+          "1 rödlök",
+          "3 vitlöksklyftor & 4 cm ingefära",
+          "1/2 röd chili",
+          "1/2 msk garam masala",
+          "30g cashewnötter (blötlagda i hett vatten)",
+          "120g passerade tomater",
+          "240g kikärtor",
+          "1 ½ liter grönsaksbuljong"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>200 grader</b>. Marinera <b>300g brutien tofu</b> med olja, curry, vitlökspulver och citronjuice.",
+      "Dela och krydda <b>blomkål</b> och <b>sötpotatis</b>. Rosta på plåt i ugnen i <b>30-35 minuter</b> tillsammans med halverad <b>butternut squash</b>.",
+      "Fräs <b>1 hackad rödlök</b>, <b>vitlök</b>, <b>ingefära</b>, <b>chili</b> och indiska kryddor i olja. Tillsätt <b>120g passerade tomater</b>, <b>240g kikärtor</b> och <b>1,5 liter buljong</b>. Låt sjuda 15 min.",
+      "Kör den marinerade tofun i ugnen de sista 10 minuterna.",
+      "Gröp ut den rostade pumpan och mixa slät med <b>30g blötlagda cashews</b>, <b>280g naturell tofu</b>, citronjuice och vatten.",
+      "Häll den släta såsen och alla rostade grönsaker i grytan."
+    ]
+  },
+  {
+    "id": "girlkibble",
+    "title": "Girlkibble Meal Prep",
+    "category": "Vegetariskt",
+    "effort": 2,
+    "portions": 6,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "400g matvete (okokt)",
+          "150g svarta bönor (torkade/kokta)",
+          "150g vita bönor",
+          "150g kikärtor",
+          "5 st morötter",
+          "¼–⅛ huvud röd- eller vitkål"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>400g matvete</b> enligt anvisningarna på förpackningen.",
+      "Tillaga eller skölj <b>bönorna och kikärtorna</b> (totalt 450g).",
+      "Skala och riv eller slanta <b>5 morötter</b>. Strimla <b>kålen</b> tunt.",
+      "Blanda ihop matvete, bönor och grönsaker i en stor mealprep-skål."
+    ],
+    "tips": "En fantastisk fiber- och volymrik bas att ha i kylen under veckan."
+  },
+  {
+    "id": "boykibble",
+    "title": "Boykibble Pasta Prep",
+    "category": "Vegetariskt",
+    "effort": 1,
+    "portions": 4,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "500g pasta",
+          "6 st ägg",
+          "1 burk pesto",
+          "2 tetra valfria bönor",
+          "250g keso"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>500g pasta</b> och koka <b>6 ägg</b> till önskad konsistens.",
+      "Skölj <b>2 burkar bönor</b>.",
+      "Blanda den varma pastan med <b>1 burk pesto</b>, <b>250g keso</b> och bönorna.",
+      "Toppa med de skalade och halverade äggen."
+    ]
+  },
+  {
+    "id": "frasch-bonsallad",
+    "title": "Fräsch bönsallad",
+    "category": "Tillbehör",
+    "effort": 1,
+    "portions": 6,
+    "time": "10 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "200 g vita bönor (okokta)",
+          "200 g kidney bönor (okokta)",
+          "200 g kikärtor (okokta)",
+          "1 st rödlök",
+          "60 g citronsaft",
+          "15 g olivolja",
+          "1 dl färsk persilja (hackad)",
+          "Salt & svartpeppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Finhacka <b>1 rödlök</b> och <b>1 dl persilja</b>.",
+      "Vispa ihop <b>60g citronsaft</b>, <b>15g olivolja</b>, salt och peppar i en stor skål.",
+      "Vänd ner bönorna och löken i dressingen."
+    ],
+    "tips": "Koka bönor i tryckkokare: vita (20 min + 15min), kidney och kikärtor (25min +15min). Fyll vatten ca 5 cm över de torra bönorna"
+  },
+  {
+    "id": "ugnsrostade-saker",
+    "title": "Ugnsrostade saker på en plåt",
+    "category": "Tillbehör",
+    "effort": 1,
+    "oven": {
+      "temp": "225",
+      "time": "40"
+    },
+    "portions": 4,
+    "time": "40 minuter",
+    "ingredients": [
+      {
+        "group": "Grönsaker (Välj fritt):",
+        "items": [
+          "Broccoli",
+          "Sötpotatis",
+          "Morötter",
+          "Potatis / Sparris"
+        ]
+      },
+      {
+        "group": "Kryddning:",
+        "items": [
+          "Olivolja",
+          "Salt & peppar",
+          "Valfria örter",
+          "Lyxigt: Pecorino & panko ströbröd"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>225 grader</b>.",
+      "Hacka alla grönsaker i lagom stora bitar.",
+      "Slunga i <b>olja, salt, peppar</b> och valfria kryddor.",
+      "<i>För extra lyx:</i> Slunga i riven pecorino och panko ströbröd.",
+      "Rosta i ugnen. Tänk på tillagningstiden: Broccoli (15-20 min), Sparris (20 min), Rotfrukter/Potatis (ca 40 min)."
+    ]
+  },
+  {
+    "id": "rostade-rotsaker-prep",
+    "title": "Rostade rotsaker",
+    "category": "Tillbehör",
+    "effort": 2,
+    "oven": {
+      "temp": "200",
+      "time": "30"
+    },
+    "portions": 6,
+    "time": "35 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "1–1,5 kg blandat (potatis, palsternacka, sötpotatis)",
+          "3 st rödlökar",
+          "2 msk olivolja",
+          "1 msk torkad timjan",
+          "Flingsalt & svartpeppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>200 grader</b>.",
+      "Tärna <b>rotfrukterna</b> i jämstora bitar. Skala och klyfta <b>3 rödlökar</b>.",
+      "Blanda allt på en plåt med bakplåtspapper, ringla över <b>2 msk olivolja</b> och krydda med <b>timjan, flingsalt och peppar</b>.",
+      "Rosta i ugnen i <b>25-30 minuter</b> tills de är mjuka och fått fin färg. Rör om halvvägs."
+    ]
+  },
+  {
+    "id": "koka-ris-olov",
+    "title": "Bästa sättet att koka ris",
+    "subtitle": "enligt Olov",
+    "category": "Tillbehör",
+    "effort": 1,
+    "portions": 1,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "Per portion:",
+        "items": [
+          "1 dl ris",
+          "1,5 dl vatten",
+          "Salt (ev. 1 buljongtärning)"
+        ]
+      }
+    ],
+    "instructions": [
+      "Mät upp riset i en kastrull. Skölj riset med vatten och häll ut 2-3 gånger.",
+      "Häll i rätt mängd vatten (1.5x rismängden) och salta.",
+      "Sätt kastrullen på högsta värmen och låt koka upp utan lock.",
+      "När det stormkokar, sätt på ett lock och sänk till lägsta värme.",
+      "Låt koka i <b>15 minuter</b>. Ta av från plattan och låt vila under lock i <b>minst 5 minuter</b>."
+    ],
+    "tips": "Släng ned en buljongtärning i koket för att sätta extra smak på riset!"
+  },
+  {
+    "id": "jordnotssas",
+    "title": "Krämig Jordnötssås",
+    "category": "Tillbehör",
+    "effort": 2,
+    "portions": 4,
+    "time": "10 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "1 dl osötat crunchy jordnötssmör",
+          "200 g kokosmjölk",
+          "1 st lök",
+          "1 st vitlöksklyfta",
+          "1 tsk finhackad ingefära",
+          "1 st röd chili",
+          "1 tsk röd curry eller sambal oelek",
+          "2 msk ljust råsocker eller honung",
+          "1 msk soja & salt"
+        ]
+      }
+    ],
+    "instructions": [
+      "Finhacka <b>lök</b>, <b>vitlök</b>, <b>ingefära</b> och <b>chili</b>. Stek i olja på medelvärme.",
+      "Tillsätt <b>1 tsk röd curry/sambal</b> och fräs några sekunder.",
+      "Sänk värmen, vänd i <b>1 dl jordnötssmör</b> och mixa samman allt.",
+      "Häll i <b>200g kokosmjölk</b>, <b>2 msk socker</b>, <b>1 msk soja</b> och salt.",
+      "Koka upp och låt puttra i <b>3-5 minuter</b> under omrörning."
+    ],
+    "tips": "Passar fantastiskt bra till kyckling och ris. Kan serveras både varm och kall!"
+  },
+  {
+    "id": "pokebowl-sas",
+    "title": "Srirachasås",
+    "category": "Tillbehör",
+    "effort": 1,
+    "portions": 8,
+    "time": "5 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "120g lättmajonnäs",
+          "120g kvarg (naturell/lätt)",
+          "Sriracha efter smak"
+        ]
+      }
+    ],
+    "instructions": [
+      "Blanda <b>120g lättmajonnäs</b> och <b>120g kvarg</b> i en skål.",
+      "Tillsätt <b>sriracha</b> lite i taget och smaka av tills du får önskad hetta.",
+      "Förvara i kylskåp (gärna i en klämflaska)."
+    ]
+  },
+  {
+    "id": "pokebowl-tamagoyaki",
+    "title": "Tamagoyaki",
+    "subtitle": "Pokebowl Ugnshack",
+    "category": "Tillbehör",
+    "effort": 1,
+    "oven": {
+      "temp": "175",
+      "time": "18"
+    },
+    "portions": 8,
+    "time": "25 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "16 st ägg",
+          "2-3 msk japansk soja",
+          "1 msk sirap",
+          "Lite salt",
+          "En skvätt vatten"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>175 grader</b>.",
+      "Vispa ihop <b>alla 16 ägg</b> med soja, sirap, salt och en skvätt vatten.",
+      "Häll smeten i en bakplåtspappersklädd ugnsform.",
+      "Grädda i ugnen i <b>15–20 minuter</b> tills äggstanningen har stannat helt.",
+      "Låt svalna helt och skär sedan i små kuber."
+    ],
+    "tips": "Att ugnsbaka äggstanningen sparar massor av tid jämfört med att rulla den i panna!"
+  },
+  {
+    "id": "pokebowl-tonfisk",
+    "title": "Tonfiskröra",
+    "subtitle": "Pokebowl",
+    "category": "Tillbehör",
+    "effort": 1,
+    "portions": 8,
+    "time": "5 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "4 burkar tonfisk i vatten (480g avrunnen)",
+          "2-3 msk Srirachasås (se separat recept)",
+          "Salt & peppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Häll av vattnet från <b>4 burkar tonfisk</b> noga.",
+      "Mosa tonfisken med en gaffel i en skål.",
+      "Blanda ner lite <b>Srirachasås</b> tills röran blir krämig.",
+      "Smaka av med salt och peppar."
+    ]
+  },
+  {
+    "id": "sushi-ris",
+    "title": "Sushiris",
+    "category": "Tillbehör",
+    "effort": 1,
+    "portions": 8,
+    "time": "40 + 20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "480g ris (okokt, kokas)",
+          "9 dl vatten",
+          "0,75 dl vitvinsvinäger",
+          "0,50 dl socker",
+          "1 tsk salt"
+        ]
+      }
+    ],
+    "instructions": [
+      "Skölj och blötlägg <b>480g ris</b> i 40 minuter.",
+      "Häll av riset och tillsätt <b>9 dl</b> vatten.",
+      "Koka upp och låt sjuda i <b>20-30 min på 1an</b>.",
+      "Rör ihop <b>0,75 dl vitvinsvinäger</b>, <b>0,50 dl socker</b> och <b>1 tsk salt</b> i kastrull eller värm i micro tills sockret löst sig.",
+      "Blanda <b>vinägern</b> med riset.",
+      "Häll över och låt svalna på en plan yta."
+    ]
+  },
+  {
+    "id": "pokebowl-montering",
+    "title": "Pokebowl Mealprep",
+    "category": "Lättlagat",
+    "effort": 2,
+    "portions": 8,
+    "time": "15 minuter",
+    "ingredients": [
+      {
+        "group": "Bas & Grönt:",
+        "items": [
+          "Sushiris (se recept)",
+          "800g finstrimlad kål & spenat/mache",
+          "120g inlagd ingefära"
+        ]
+      },
+      {
+        "group": "Proteiner & Fett:",
+        "items": [
+          "Tonfiskröra (se recept)",
+          "Tamagoyaki (se recept)",
+          "100g crabsticks",
+          "170g kräftsjärtar (1 burk)",
+          "400g edamamebönor (skalade)"
+        ]
+      },
+      {
+        "group": "Topping:",
+        "items": [
+          "Srirachasås (se recept)"
+        ]
+      }
+    ],
+    "instructions": [
+      "Blanda ihop riset och proteinet.",
+      "Toppa med skivad <b>kål</b>, <b>sallad</b> och <b>inlagd ingefära</b>.",
+      "Ringla över <b>Srirachasås</b> och <b>soya</b> vid servering."
+    ],
+    "tips": "Genomsnitt per 100g blandad låda: ~161 kcal, 10g Protein, 14g Kolhydrater, 7g Fett."
+  },
+  {
+    "id": "medelhavsbakad-lax",
+    "title": "Bakad Laxsida",
+    "category": "Lättlagat",
+    "effort": 1,
+    "oven": {
+      "temp": "175",
+      "time": "22"
+    },
+    "portions": 6,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "1,2 kg laxsida (med skinn)",
+          "1 msk olivolja",
+          "1 st citron (halva riven, hela skivad)",
+          "1 tsk paprikapulver",
+          "1 msk torkad timjan eller dill",
+          "1,5 tsk salt",
+          "1 tsk grovmalen svartpeppar"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>175 grader</b>.",
+      "Lägg <b>1,2 kg laxsida</b> med skinnet nedåt på en plåt med bakplåtspapper. Gnid in <b>1 msk olivolja</b>.",
+      "Strö över <b>salt, peppar, paprikapulver, timjan/dill</b> och <b>rivet citronskal</b>.",
+      "Skär resten av citronen i tunna skivor och lägg ovanpå laxen.",
+      "Baka i mitten av ugnen i <b>20-25 minuter</b> (innertemperatur 52-55°C). Låt svalna."
+    ],
+    "tips": "Skär i portionsbitar när laxen svalnat. Lyfthjälp med stekspade gör att skinnet stannar på plåten!"
+  },
+  {
+    "id": "mustikkapiirakka",
+    "title": "Mustikkapiirakka",
+    "subtitle": "Finsk blåbärspaj",
+    "category": "Efterrätt",
+    "effort": 3,
+    "oven": {
+      "temp": "200",
+      "time": "30"
+    },
+    "portions": 8,
+    "time": "50 minuter",
+    "ingredients": [
+      {
+        "group": "Botten:",
+        "items": [
+          "100 g rumsvarmt smör",
+          "1 dl socker",
+          "1 st ägg",
+          "2 dl vetemjöl",
+          "2 tsk bakpulver",
+          "2 tsk vaniljsocker"
+        ]
+      },
+      {
+        "group": "Fyllning:",
+        "items": [
+          "3 dl kvarg (eller creme fraiche/gräddfil)",
+          "2 st ägg",
+          "0,5 dl socker",
+          "2 tsk vaniljsocker",
+          "300 g blåbär (blanda med 1,5 msk potatismjöl om frysta)"
+        ]
+      }
+    ],
+    "instructions": [
+      "Värm ugnen till <b>200 grader</b>.",
+      "Vispa <b>100g smör</b> och <b>1 dl socker</b> fluffigt. Tillsätt <b>1 ägg</b> och mixa snabbt. Rör ner <b>vetemjöl, bakpulver och vaniljsocker</b> till en lös deg. Tryck ut i en pajform (32 cm).",
+      "Rör ihop <b>3 dl kvarg</b>, <b>2 ägg</b>, <b>0,5 dl socker</b> och <b>2 tsk vaniljsocker</b>.",
+      "Sprid ut <b>300g blåbär</b> över pajdegen och häll kvargsmeten över.",
+      "Grädda mitt i ugnen i ca <b>30 minuter</b>. Låt svalna."
+    ],
+    "tips": "Använd vaniljkvarg och skippa socker i smeten för en lite nyttigare variant!"
+  },
+  {
+    "id": "tiramisu",
+    "title": "Tirra",
+    "subtitle": "Tiramisu",
+    "category": "Efterrätt",
+    "effort": 3,
+    "portions": 8,
+    "time": "20 min + 4h kyl",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "250 g mascarpone (rumstempererad)",
+          "3 st ägg",
+          "35 g socker",
+          "1 paket savoiardikex",
+          "240 g starkt bryggt kaffe (eller espresso)",
+          "Kakaopulver"
+        ]
+      }
+    ],
+    "instructions": [
+      "Separera <b>3 äggvitor</b> från gulorna. Vispa <b>35g socker</b> och äggulorna fluffigt.",
+      "Vänd ner <b>250g mascarpone</b> i äggulsvispet.",
+      "Vispa äggvitorna hårt i en separat skål till ett vitt skum. Vänd försiktigt ner i mascarponesmeten.",
+      "Doppa <b>savoiardikexen</b> snabbt i kaffet och täck botten på en form.",
+      "Bred över hälften av smeten, lägg ett lager kex till och avsluta med resten av smeten.",
+      "Låt vila i kyl i <b>minst 4 timmar</b> (helst över natten). Pudra över kakao innan servering."
+    ],
+    "tips": "Doppa kexet snabbt på långsidan (1 sek per sida) så blir konsistensen perfekt utan att bli blaskig."
+  },
+  {
+    "id": "limepaj",
+    "title": "Limepaj",
+    "category": "Efterrätt",
+    "effort": 3,
+    "oven": {
+      "temp": "175",
+      "time": "35"
+    },
+    "portions": 8,
+    "time": "45 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "50 g smält smör",
+          "10 st digestivekex (150 g)",
+          "4 msk limejuice",
+          "4 st äggulor",
+          "1 burk kondenserad mjölk"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>175 grader</b>. Klä och smörj en springform.",
+      "Mixa <b>10 digestivekex</b> och blanda med <b>50g smält smör</b>. Tryck ut i formen och grädda i <b>10 minuter</b>.",
+      "Vispa <b>4 äggulor</b> lätt med elvisp. Vispa i <b>1 burk kondenserad mjölk</b> och <b>4 msk limejuice</b>.",
+      "Sänk ugnen till <b>140 grader</b>.",
+      "Häll smeten i formen och grädda i ugnen i ca <b>25 minuter</b>. Låt svalna helt."
+    ],
+    "tips": "Droppa några droppar karamellfärg på smeten och dra med en tandpetare för snygga mönster innan gräddning!"
+  },
+  {
+    "id": "chokladefterratt",
+    "title": "Chokladefterrätt",
+    "category": "Efterrätt",
+    "effort": 2,
+    "oven": {
+      "temp": "255",
+      "time": "7"
+    },
+    "portions": 8,
+    "time": "20 minuter",
+    "ingredients": [
+      {
+        "group": "",
+        "items": [
+          "150 g smör",
+          "100 g mörk choklad (70%)",
+          "100 g mörk choklad (86%)",
+          "4 st äggulor",
+          "135 g socker"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>255 grader</b>.",
+      "Smält <b>150g smör</b> och <b>200g mörk choklad</b> försiktigt i mikron.",
+      "Vispa <b>4 äggulor</b> och <b>135g socker</b> fluffigt med elvisp.",
+      "Blanda ner chokladsmöret i äggvispet.",
+      "Fördela i ca 8 små ugnssäkra formar och grädda i <b>6-7 minuter</b>."
+    ],
+    "tips": "Kan förvaras i frysen eller kylen och värmas snabbt i mikro. Lika god kall som varm!"
+  },
+  {
+    "id": "chiapudding",
+    "title": "Chiapudding med smaksättningar",
+    "category": "Nyttigare",
+    "effort": 1,
+    "portions": 4,
+    "time": "5 min + 2h kyl",
+    "ingredients": [
+      {
+        "group": "Bas:",
+        "items": [
+          "5 dl mjölk",
+          "1 dl chiafrön"
+        ]
+      },
+      {
+        "group": "Smaksättning Enkel:",
+        "items": [
+          "½ tsk vaniljpulver",
+          "3 msk lönnsirap & 1 nypa salt"
+        ]
+      },
+      {
+        "group": "Smaksättning Tiramisu:",
+        "items": [
+          "Chokladdel: 5 msk kakao, 2 msk kaffe, 3 msk lönnsirap",
+          "Mascarponedel: ½ tsk vaniljpulver, 2 msk sirap, 5 msk grädde"
+        ]
+      }
+    ],
+    "instructions": [
+      "Häll <b>5 dl mjölk</b>, <b>1 dl chiafrön</b> och valfri smaksättning i en burk.",
+      "Sätt på locket och skaka ordentligt.",
+      "Ställ in i kylen i <b>minst 2 timmar</b> så att den sätter sig."
+    ],
+    "tips": "Använd mer frön för fastare konsistens och mer mjölk för lösare. Perfekt frukost eller mellis!"
+  },
+  {
+    "id": "creami-brownie",
+    "title": "Creami-Brownie",
+    "subtitle": "Ninja Creami Mix-in",
+    "category": "Nyttigare",
+    "effort": 2,
+    "oven": {
+      "temp": "185",
+      "time": "28"
+    },
+    "portions": 8,
+    "time": "40 minuter",
+    "ingredients": [
+      {
+        "group": "Smeten:",
+        "items": [
+          "2,4 dl (240 g) lätt yoghurt/kvarg",
+          "1,5 dl (60 g) proteinpulver",
+          "0,4 dl (35 g) sötströ/socker",
+          "1,1 dl (45 g) mörk kakao",
+          "2 st ägg",
+          "1 tsk (5 g) vaniljsocker",
+          "Skvätt mjölk/vatten (vid behov)"
+        ]
+      },
+      {
+        "group": "Frosting (Valfritt):",
+        "items": [
+          "1,2 dl (120 g) lätt yoghurt/kvarg",
+          "1,5 msk (20 g) sötströ/socker",
+          "0,5 dl (20 g) mörk kakao",
+          "0,4 dl (15 g) proteinpulver"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>185 grader</b>. Klä en brödform med bakplåtspapper.",
+      "Blanda de torra ingredienserna, tillsätt <b>2,4 dl (240 g) lätt yoghurt/kvarg</b> och <b>2 ägg</b>. Rör till en jämn, tjock smet.",
+      "Grädda i ugnen i <b>25-30 minuter</b> tills den är genomgräddad och fast.",
+      "Låt svalna helt, skär i 1x1 cm kuber och frys bitarna i <b>45-60 minuter</b>.",
+      "Gör ett hål i din färdigspinnade Creami-glass, häll i de kalla browniebitarna och kör programmet <b>Mix-in</b>."
+    ],
+    "tips": "Låt svalna helt, skär i 1x1 cm kuber och frys bitarna i minst <b>45 minuter</b>. Gör ett hål i din färdigspinnade Creami, häll i de kalla browniebitarna som <b>Mix-in</b>. OBS! Hårda så kanske tina lite innan."
+  },
+  {
+    "id": "proteinbrownie",
+    "title": "Proteinbrownie",
+    "category": "Nyttigare",
+    "effort": 2,
+    "oven": {
+      "temp": "185",
+      "time": "25-30"
+    },
+    "portions": 8,
+    "time": "35 minuter",
+    "ingredients": [
+      {
+        "group": "Brownie:",
+        "items": [
+          "1,2 dl (120 g) pumpapuré eller kokt sötpotatis",
+          "1,2 dl (120 g) lätt yoghurt/kvarg",
+          "1 st ägg",
+          "0,4 dl (35 g) sötströ/socker",
+          "1 tsk vaniljsocker",
+          "1,2 dl (45 g) kakaopulver",
+          "2 skopor (60 g) proteinpulver"
+        ]
+      },
+      {
+        "group": "Frosting:",
+        "items": [
+          "0,6 dl (60 g) pumpapuré eller kokt sötpotatis",
+          "0,6 dl (60 g) lätt yoghurt/kvarg",
+          "3 msk (40 g) sötströ/socker",
+          "0,6 dl (25 g) kakaopulver",
+          "1/2 skopa (15 g) proteinpulver"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>185 grader</b>.",
+      "Blanda alla ingredienser till brownien.",
+      "Häll smeten i en brödform och grädda i <b>25–30 minuter</b> eller tills den precis har stelnat.",
+      "Blanda ihop ingredienserna till frostingen och bred över dina brownies."
+    ],
+    "tips": "Överbaka inte! Receptet betonar att de inte får stå inne för länge, annars försvinner den kladdiga 'fudgy' konsistensen. Matpuré (t.ex. osötat äppelmos) fungerar utmärkt för att ge saftighet."
+  },
+  {
+    "id": "macro-citronkaka",
+    "title": "Citronkaka",
+    "category": "Nyttigare",
+    "effort": 3,
+    "oven": {
+      "temp": "175",
+      "time": "42"
+    },
+    "portions": 12,
+    "time": "60 minuter",
+    "ingredients": [
+      {
+        "group": "Kakan:",
+        "items": [
+          "1 dl (100 g) smör (rumstempererat)",
+          "1 dl (100 g) lätt yoghurt/kvarg",
+          "3 dl (250 g) sötströ/socker",
+          "4 st ägg",
+          "4 dl (240 g) vetemjöl",
+          "2 ½ tsk bakpulver",
+          "1 st citron (skal + ½ dl juice)"
+        ]
+      },
+      {
+        "group": "Sockerlag & Frosting:",
+        "items": [
+          "Sockerlag: Saft från 1 citron + 0,75 dl (65 g) sötströ/socker",
+          "Frosting: 2 dl (200 g) lätt yoghurt/kvarg, 1 dl (100 g) lätt färskost, 2-3 msk (25 g) sötströ/socker, 1 tsk vaniljpulver, citronskal"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>175 grader</b>. Vispa <b>1 dl (100 g) smör</b>, <b>1 dl (100 g) lätt yoghurt/kvarg</b> och <b>3 dl (250 g) sötströ/socker</b> fluffigt. Tillsätt <b>4 ägg</b> ett i taget.",
+      "Sikta i <b>4 dl (240 g) vetemjöl</b> och <b>bakpulver</b>. Vänd ner citronskal och ½ dl citronjuice.",
+      "Grädda i nedre delen av ugnen i <b>40–45 minuter</b>.",
+      "Koka ihop citronjuice och sötströ/socker till sockerlagen. Stoppa hål i den varma kakan och skeda över lagen.",
+      "Vispa ihop ingredienserna till frostingen och bred över den helt kalla kakan."
+    ],
+    "tips": "Landar på endast ~165 kcal per bit och ger nästan 7g protein!"
+  }
+]
