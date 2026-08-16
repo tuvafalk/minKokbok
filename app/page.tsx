@@ -26,12 +26,12 @@ const HeroSection = () => (
 
 const CaseStudiesAction = () => (
   <section id="cases" className="bg-[#F4EDE3] py-32 flex flex-col items-center justify-center">
-    <h2 className="font-serif text-[10vw] md:text-8xl font-black uppercase tracking-tight mb-12">
+    <h2 className="font-serif text-[#1A2B3C] text-[10vw] mb:text-8xl font-bold uppercase tracking-tight mb-12">
       Pathways
     </h2>
     
     <Link 
-      href="/#cases"
+      href="/cases"
       className="bg-[#9EAEA2] text-[#1A2B3C] px-10 py-5 rounded-full font-bold uppercase tracking-widest hover:bg-[#1A2B3C] hover:text-[#F4EDE3] transition-all duration-300 shadow-sm hover:shadow-xl transform hover:-translate-y-1"
     >
       Explore Cases

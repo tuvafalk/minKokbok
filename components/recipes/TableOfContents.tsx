@@ -2,11 +2,12 @@
 import React from 'react';
 import { Recipe } from './types';
 
-const categoryColors: Record<string, string> = {
+export const categoryColors: Record<string, string> = {
   'Lättlagat': '#7b8eb8',
   'Vegetariskt': '#9eab88',
   'Tillbehör': '#b87b64',
-  'Efterrätt': '#f2d194'
+  'Efterrätt': '#f2d194',
+  'Nyttigare': '#ab9ec7ff'
 };
 
 export default function TableOfContents() {
@@ -23,8 +24,8 @@ export default function TableOfContents() {
         <div className="flex items-center gap-2 mb-12 text-base font-serif italic text-zinc-600">
           Tid och kraft för att laga receptet 
           <span className="flex gap-1 ml-2">
-            <span className="w-4 h-4 rounded-full border-2 border-zinc-700 bg-zinc-700"></span>
-            <span className="w-4 h-4 rounded-full border-2 border-zinc-700 bg-zinc-700"></span>
+            <span className="w-4 h-4 rounded-full border-2 border-[#9886b3] bg-[#9886b3]"></span>
+            <span className="w-4 h-4 rounded-full border-2 border-[#9886b3] bg-[#9886b3]"></span>
             <span className="w-4 h-4 rounded-full border-2 border-zinc-300 bg-zinc-300"></span>
             <span className="w-4 h-4 rounded-full border-2 border-zinc-300 bg-zinc-300"></span>
           </span>

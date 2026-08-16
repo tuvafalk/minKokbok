@@ -299,6 +299,59 @@
     "tips": "Slår de färdiga påsarna med hästlängder! Ger ca 120 kcal, 10g protein per 100g färdig mix."
   },
   {
+    "id": "pad-thai",
+    "title": "Pad Thai",
+    "category": "Lättlagat",
+    "effort": 3,
+    "portions": 4,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "Bas & Grönsaker:",
+        "items": [
+          "250-300 g platta risnudlar",
+          "500 g kyckling (små bitar/strimlor)",
+          "1 st lök",
+          "Vitkål, morot & groddar (efter smak)",
+          "2-4 st ägg (lätt uppvispade)",
+          "Olja (att fräsa i)"
+        ]
+      },
+      {
+        "group": "Sås:",
+        "items": [
+          "1 msk fisksås",
+          "1,5 msk ostronsås",
+          "0,5 msk kinesisk soja",
+          "3 msk vatten",
+          "3 st vitlöksklyftor",
+          "Saften av 1 lime",
+          "2 st chilifrukter",
+          "1 tsk socker"
+        ]
+      },
+      {
+        "group": "Garnering:",
+        "items": [
+          "Hackade jordnötter / cashewnötter",
+          "Hackad koriander",
+          "Chiliflakes",
+          "Lime i klyftor"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka <b>250-300 g platta risnudlar</b>. Häll av och skölj direkt i <b>kallt vatten</b> så de inte klibbar ihop.",
+      "Blanda ihop fisksås, ostronsås, soja, vatten, pressad vitlök, limesaft, hackad chili och socker till <b>såsen</b>.",
+      "Fräs <b>500 g kyckling</b> och <b>hackad lök</b> i en wok eller stor stekpanna med olja.",
+      "Blanda ner <b>groddar, vitkål och morot</b>. Tillsätt mer olja vid behov och låt fräsa en stund.",
+      "Rör ner nudlarna och <b>såsen</b> i pannan och blanda väl.",
+      "Gör lite plats i pannan, häll i de <b>2-4 uppvispade äggen</b> och rör runt tills de stannar. Blanda sedan ihop allt.",
+      "Klart! Servera och toppa med <b>jordnötter, koriander, chiliflakes och lime</b>."
+    ],
+    "tips": "Eftersom rätten går väldigt snabbt att steka ihop är det smidigast att hacka alla grönsaker och blanda såsen i en liten skål innan du sätter igång plattan."
+  },
+  {
     "id": "beluga-b",
     "title": "Beluga B",
     "category": "Vegetariskt",
@@ -1237,5 +1290,32 @@
       "Vispa ihop ingredienserna till frostingen och bred över den helt kalla kakan."
     ],
     "tips": "Landar på endast ~165 kcal per bit och ger nästan 7g protein!"
-  }
+  },
+  {
+  "id": "neapolitansk-pizzadeg",
+  "title": "Neapolitansk Pizzadeg",
+  "description": "En fantastisk 24-timmarsdeg med hög vätskehalt. Receptet ger 3 stora eller 4 normala pizzor.",
+  "category": "Tillbehör",
+  "effort": 3,
+  "time": "24 timmar",
+  "ingredients": [
+    {
+      "items": [
+        "500 g Tipo 00-mjöl",
+        "340 g Vatten, rumstempererat ca 20°C",
+        "13 g Fint havssalt",
+        "1,2 g Färskjäst"
+      ]
+    }
+  ],
+ "instructions": [
+    "Väckningen: Väg upp <b>340 g rumstempererat vatten</b> i en bunke. Smula ner <b>1,2 g jäst</b> och vispa med fingrarna tills jästen löst sig.",
+    "Autolys: Häll ner <b>500 g mjöl</b> i vattnet. Blanda grovt tills inga torra mjölklumpar finns kvar (det kommer se ut som en rufsig klump). Låt vila under en handduk i <b>15 minuter</b>.",
+    "Knådningen: Strö över <b>13 g salt</b>. Tippa ut degen på bänken och knåda (tryck, vik, vrid) i <b>5–7 minuter</b>. Fortsätt tills degen går från klibbig till att bli en helt slät och spänstig boll. Tillsätt inget extra mjöl!",
+    "Tändningen: Forma degen till en boll, lägg tillbaka den i bunken och sätt på ett tätt lock. Låt den stå framme på köksbänken i <b>exakt 60 minuter</b> för att jästen ska hinna vakna.",
+    "Bollningen: Tippa ut degen och dela upp den (<b>3 bitar á ca 284 g</b> eller <b>4 bitar á ca 213 g</b>). Rulla dem till väldigt strama bollar för att bygga upp en stark ytspänning.",
+    "Kalljäsning: Lägg bollarna i lätt oljade glaslådor, tryck på locken ordentligt och ställ in i kylen. Ta fram degen <b>3–4 timmar</b> innan det är dags att baka ut och grädda!"
+  ],
+  "tips": "Toppa pizzan med tomatsås (passerade tomater blandat med salt), mozzarella, nduja och ringla över lite sirap."
+}
 ]
