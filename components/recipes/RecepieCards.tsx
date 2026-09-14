@@ -121,7 +121,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
           </div>
 
           {recipe.tips && tipsPosition === 'left' && (
-            <div className="bg-[#f6e6cd] py-5 px-7 mt-10 -rotate-1 relative shadow-sm break-inside-avoid before:content-[''] before:absolute before:-top-2.5 before:left-1/2 before:-translate-x-1/2 before:w-20 before:h-5 before:bg-[#b87b64]/40">
+            <div className="bg-[#f6e6cd] py-5 px-7 -rotate-1 relative shadow-sm break-inside-avoid before:content-[''] before:absolute before:-top-2.5 before:left-1/2 before:-translate-x-1/2 before:w-20 before:h-5 before:bg-[#b87b64]/40">
               <h4 className="font-serif text-[22px] italic m-0 mb-2 font-normal">Tips</h4>
               <p className="italic m-0 text-[15px] leading-[1.6]">
                 {formatText(recipe.tips)}
@@ -131,7 +131,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
         </div>
 
         <div className="flex flex-col">
-          <h3 className="font-serif text-xl tracking-[2px] uppercase mb-5 font-normal text-center">🌿 GÖR SÅ HÄR 🌿</h3>
+          <h3 className="font-serif text-xl tracking-[2px] uppercase mb-5 font-normal text-center">GÖR SÅ HÄR</h3>
           
           <ol className="pl-5 text-[16px] leading-[1.8] list-decimal">
            {recipe.instructions.map((instructionStep, stepIndex) => (

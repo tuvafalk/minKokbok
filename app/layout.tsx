@@ -6,6 +6,11 @@ import Header from '../components/header/Header'
 export const metadata: Metadata = {
   title: 'Tuva | Portfolio',
   description: 'AI Ethics & Frontend Development',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

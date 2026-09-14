@@ -43,7 +43,7 @@
       {
         "group": "",
         "items": [
-          "500g (1 paket) pasta",
+          "500 g (1 paket) pasta",
           "1 paket halloumi",
           "1 paket kikärtor",
           "1 buljongtärning (valfri typ)",
@@ -167,11 +167,11 @@
       {
         "group": "",
         "items": [
-          "500g pasta",
+          "500 g pasta",
           "1 paket bacon",
           "2 vitlöksklyftor finhackade",
           "4 ägg",
-          "85g pecorino",
+          "85 g pecorino",
           "Olivolja",
           "Salt & peppar"
         ]
@@ -199,7 +199,7 @@
       {
         "group": "",
         "items": [
-          "600g färdig kycklingkebab",
+          "600 g färdig kycklingkebab",
           "1 gul lök, finhackad",
           "1 vitlöksklyfta, finhackad",
           "1 tsk citronpeppar",
@@ -259,13 +259,13 @@
       {
         "group": "Bas & Grönt:",
         "items": [
-          "900g kycklinglårfilé (eller filé)",
-          "300g matvete (okokt)",
-          "1 tetra (230g) svarta bönor eller kikärtor",
-          "1 burk (150g) majs",
-          "350g vitkål (strimlad)",
-          "250g morötter (rivna)",
-          "200g gul lök (skivad)",
+          "900 g kycklinglårfilé (eller filé)",
+          "300 g matvete (okokt)",
+          "1 tetra (230 g) svarta bönor eller kikärtor",
+          "1 burk (150 g) majs",
+          "350 g vitkål (strimlad)",
+          "250 g morötter (rivna)",
+          "200 g gul lök (skivad)",
           "1 tsk sirap"
         ]
       },
@@ -362,7 +362,7 @@
       {
         "group": "",
         "items": [
-          "500g pasta (1 paket)",
+          "500 g pasta (1 paket)",
           "1 st gul lök",
           "2 st vitlöksklyftor",
           "1 msk paprikapulver",
@@ -554,7 +554,7 @@
       {
         "group": "Marinad & Tofu:",
         "items": [
-          "580 g tofu (300g till marinering, 280g till mixning)",
+          "580 g tofu (300 g till marinering, 280 g till mixning)",
           "1 msk olivolja",
           "1 ½ tsk curry",
           "1/2 tsk vitlökspulver",
@@ -577,9 +577,9 @@
           "3 vitlöksklyftor & 4 cm ingefära",
           "1/2 röd chili",
           "1/2 msk garam masala",
-          "30g cashewnötter (blötlagda i hett vatten)",
-          "120g passerade tomater",
-          "240g kikärtor",
+          "30 g cashewnötter (blötlagda i hett vatten)",
+          "120 g passerade tomater",
+          "240 g kikärtor",
           "1 ½ liter grönsaksbuljong"
         ]
       }
@@ -604,10 +604,10 @@
       {
         "group": "",
         "items": [
-          "400g matvete (okokt)",
-          "150g svarta bönor (torkade/kokta)",
-          "150g vita bönor",
-          "150g kikärtor",
+          "400 g matvete (okokt)",
+          "150 g svarta bönor (torkade/kokta)",
+          "150 g vita bönor",
+          "150 g kikärtor",
           "5 st morötter",
           "¼–⅛ huvud röd- eller vitkål"
         ]
@@ -632,11 +632,11 @@
       {
         "group": "",
         "items": [
-          "500g pasta",
+          "500 g pasta",
           "6 st ägg",
           "1 burk pesto",
           "2 tetra valfria bönor",
-          "250g keso"
+          "250 g keso"
         ]
       }
     ],
@@ -716,36 +716,6 @@
     ]
   },
   {
-    "id": "rostade-rotsaker-prep",
-    "title": "Rostade rotsaker",
-    "category": "Tillbehör",
-    "effort": 2,
-    "oven": {
-      "temp": "200",
-      "time": "30"
-    },
-    "portions": 6,
-    "time": "35 minuter",
-    "ingredients": [
-      {
-        "group": "",
-        "items": [
-          "1–1,5 kg blandat (potatis, palsternacka, sötpotatis)",
-          "3 st rödlökar",
-          "2 msk olivolja",
-          "1 msk torkad timjan",
-          "Flingsalt & svartpeppar"
-        ]
-      }
-    ],
-    "instructions": [
-      "Sätt ugnen på <b>200 grader</b>.",
-      "Tärna <b>rotfrukterna</b> i jämstora bitar. Skala och klyfta <b>3 rödlökar</b>.",
-      "Blanda allt på en plåt med bakplåtspapper, ringla över <b>2 msk olivolja</b> och krydda med <b>timjan, flingsalt och peppar</b>.",
-      "Rosta i ugnen i <b>25-30 minuter</b> tills de är mjuka och fått fin färg. Rör om halvvägs."
-    ]
-  },
-  {
     "id": "koka-ris-olov",
     "title": "Bästa sättet att koka ris",
     "subtitle": "enligt Olov",
@@ -815,8 +785,8 @@
       {
         "group": "",
         "items": [
-          "120g lättmajonnäs",
-          "120g kvarg (naturell/lätt)",
+          "120 g lättmajonnäs",
+          "120 g kvarg (naturell/lätt)",
           "Sriracha efter smak"
         ]
       }
@@ -872,7 +842,7 @@
       {
         "group": "",
         "items": [
-          "4 burkar tonfisk i vatten (480g avrunnen)",
+          "4 burkar tonfisk i vatten (480 g avrunnen)",
           "2-3 msk Srirachasås (se separat recept)",
           "Salt & peppar"
         ]
@@ -896,7 +866,7 @@
       {
         "group": "",
         "items": [
-          "480g ris (okokt, kokas)",
+          "480 g ris (okokt, kokas)",
           "9 dl vatten",
           "0,75 dl vitvinsvinäger",
           "0,50 dl socker",
@@ -925,8 +895,8 @@
         "group": "Bas & Grönt:",
         "items": [
           "Sushiris (se recept)",
-          "800g finstrimlad kål & spenat/mache",
-          "120g inlagd ingefära"
+          "800 g finstrimlad kål & spenat/mache",
+          "120 g inlagd ingefära"
         ]
       },
       {
@@ -934,9 +904,9 @@
         "items": [
           "Tonfiskröra (se recept)",
           "Tamagoyaki (se recept)",
-          "100g crabsticks",
-          "170g kräftsjärtar (1 burk)",
-          "400g edamamebönor (skalade)"
+          "100 g crabsticks",
+          "170 g kräftsjärtar (1 burk)",
+          "400 g edamamebönor (skalade)"
         ]
       },
       {
@@ -1179,10 +1149,10 @@
       {
         "group": "Smeten:",
         "items": [
-          "2,4 dl (240 g) lätt yoghurt/kvarg",
-          "1,5 dl (60 g) proteinpulver",
-          "0,4 dl (35 g) sötströ/socker",
-          "1,1 dl (45 g) mörk kakao",
+          "240 g (2,4 dl) lätt yoghurt/kvarg",
+          "60 g (1,5 dl) proteinpulver",
+          "35 g (0,4 dl) sötströ/socker",
+          "45 g (1,1 dl) mörk kakao",
           "2 st ägg",
           "1 tsk (5 g) vaniljsocker",
           "Skvätt mjölk/vatten (vid behov)"
@@ -1191,10 +1161,10 @@
       {
         "group": "Frosting (Valfritt):",
         "items": [
-          "1,2 dl (120 g) lätt yoghurt/kvarg",
+          "120 g (1,2 dl) lätt yoghurt/kvarg",
           "1,5 msk (20 g) sötströ/socker",
-          "0,5 dl (20 g) mörk kakao",
-          "0,4 dl (15 g) proteinpulver"
+          "20 g (0,5 dl) mörk kakao",
+          "15 g (0,4 dl) proteinpulver"
         ]
       }
     ],
@@ -1222,22 +1192,22 @@
       {
         "group": "Brownie:",
         "items": [
-          "1,2 dl (120 g) pumpapuré eller kokt sötpotatis",
-          "1,2 dl (120 g) lätt yoghurt/kvarg",
+          "120 g (1,2 dl) pumpapuré eller kokt sötpotatis",
+          "120 g (1,2 dl) lätt yoghurt/kvarg",
           "1 st ägg",
-          "0,4 dl (35 g) sötströ/socker",
+          "35 g (0,4 dl) sötströ/socker",
           "1 tsk vaniljsocker",
-          "1,2 dl (45 g) kakaopulver",
+          "45 g (1,2 dl) kakaopulver",
           "2 skopor (60 g) proteinpulver"
         ]
       },
       {
         "group": "Frosting:",
         "items": [
-          "0,6 dl (60 g) pumpapuré eller kokt sötpotatis",
-          "0,6 dl (60 g) lätt yoghurt/kvarg",
+          "60 g (0,6 dl) pumpapuré eller kokt sötpotatis",
+          "60 g (0,6 dl) lätt yoghurt/kvarg",
           "3 msk (40 g) sötströ/socker",
-          "0,6 dl (25 g) kakaopulver",
+          "25 g (0,6 dl) kakaopulver",
           "1/2 skopa (15 g) proteinpulver"
         ]
       }
@@ -1265,11 +1235,11 @@
       {
         "group": "Kakan:",
         "items": [
-          "1 dl (100 g) smör (rumstempererat)",
-          "1 dl (100 g) lätt yoghurt/kvarg",
-          "3 dl (250 g) sötströ/socker",
+          "100 g (1 dl) smör (rumstempererat)",
+          "100 g (1 dl) lätt yoghurt/kvarg",
+          "250 g (3 dl) sötströ/socker",
           "4 st ägg",
-          "4 dl (240 g) vetemjöl",
+          "240 g (4 dl) vetemjöl",
           "2 ½ tsk bakpulver",
           "1 st citron (skal + ½ dl juice)"
         ]
@@ -1277,8 +1247,8 @@
       {
         "group": "Sockerlag & Frosting:",
         "items": [
-          "Sockerlag: Saft från 1 citron + 0,75 dl (65 g) sötströ/socker",
-          "Frosting: 2 dl (200 g) lätt yoghurt/kvarg, 1 dl (100 g) lätt färskost, 2-3 msk (25 g) sötströ/socker, 1 tsk vaniljpulver, citronskal"
+          "Sockerlag: Saft från 1 citron + 65 g (0,75 dl) sötströ/socker",
+          "Frosting: 200 g (2 dl) lätt yoghurt/kvarg, 100 g (1 dl) lätt färskost, 2-3 msk (25 g) sötströ/socker, 1 tsk vaniljpulver, citronskal"
         ]
       }
     ],
@@ -1292,30 +1262,141 @@
     "tips": "Landar på endast ~165 kcal per bit och ger nästan 7g protein!"
   },
   {
-  "id": "neapolitansk-pizzadeg",
-  "title": "Neapolitansk Pizzadeg",
-  "description": "En fantastisk 24-timmarsdeg med hög vätskehalt. Receptet ger 3 stora eller 4 normala pizzor.",
+    "id": "neapolitansk-pizzadeg",
+    "title": "Neapolitansk Pizzadeg",
+    "description": "En fantastisk 24-timmarsdeg med hög vätskehalt. Receptet ger 3 stora eller 4 normala pizzor.",
+    "category": "Tillbehör",
+    "effort": 3,
+    "time": "24 timmar",
+    "ingredients": [
+      {
+        "items": [
+          "500 g Tipo 00-mjöl",
+          "340 g Vatten, rumstempererat ca 20°C",
+          "13 g Fint havssalt",
+          "1,2 g Färskjäst"
+        ]
+      }
+    ],
+    "instructions": [
+      "Väckningen: Väg upp <b>340 g rumstempererat vatten</b> i en bunke. Smula ner <b>1,2 g jäst</b> och vispa med fingrarna tills jästen löst sig.",
+      "Autolys: Häll ner <b>500 g mjöl</b> i vattnet. Blanda grovt tills inga torra mjölklumpar finns kvar (det kommer se ut som en rufsig klump). Låt vila under en handduk i <b>15 minuter</b>.",
+      "Knådningen: Strö över <b>13 g salt</b>. Tippa ut degen på bänken och knåda (tryck, vik, vrid) i <b>5–7 minuter</b>. Fortsätt tills degen går från klibbig till att bli en helt slät och spänstig boll. Tillsätt inget extra mjöl!",
+      "Tändningen: Forma degen till en boll, lägg tillbaka den i bunken och sätt på ett tätt lock. Låt den stå framme på köksbänken i <b>exakt 60 minuter</b> för att jästen ska hinna vakna.",
+      "Bollningen: Tippa ut degen och dela upp den (<b>3 bitar á ca 284 g</b> eller <b>4 bitar á ca 213 g</b>). Rulla dem till väldigt strama bollar för att bygga upp en stark ytspänning.",
+      "Kalljäsning: Lägg bollarna i lätt oljade glaslådor, tryck på locken ordentligt och ställ in i kylen. Ta fram degen <b>3–4 timmar</b> innan det är dags att baka ut och grädda!"
+    ],
+    "tips": "Toppa pizzan med tomatsås (passerade tomater blandat med salt), mozzarella, nduja och ringla över lite sirap."
+  },
+  {
+    "id": "macro-scones-efterratt",
+    "title": "Scones (Efterrätt)",
+    "category": "Efterrätt",
+    "effort": 2,
+    "oven": {
+      "temp": "200",
+      "time": "18-22"
+    },
+    "portions": 8,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "Smet:",
+        "items": [
+          "250 g (4 dl) vetemjöl",
+          "1/2 dl socker (45 g)",
+          "1 tsk bakpulver",
+          "1 tsk vaniljsocker",
+          "1/2 tsk salt",
+          "85 g kallt smör i kuber",
+          "1 dl grädde",
+          "1 ägg"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>200 grader</b>.",
+      "I en stor bunke blanda <b>250g vetemjöl</b>, <b>45g socker</b>, <b>1tsk bakpulver</b>, <b>1 tsk vaniljsocker</b> och <b>½ tsk salt</b>.",
+      "Ha i <b>85g smörkuber</b> och skär så att det blir en grynig deg med lite smörklumpar.",
+      "I en annan bunke vispa ihop <b>1 ägg</b> och <b>1 dl grädde</b>.",
+      "Häll i ägg- och gräddblandningen i de torra ingredienserna och blanda tills det precis kombinerats (man vill inte blanda för mycket).",
+      "Häll ut degen på en mjölad bänkyta och knåda försiktigt. Forma till en cirkel och skär i 8 tårtbitar.",
+      "Lägg trianglarna på en plåt med bakplåtspapper, grädda i <b>18-22 minuter</b>."
+    ],
+    "tips": "Serveras med fördel varma."
+  },
+  {
+    "id": "scones-klassisk",
+    "title": "Scones",
+    "category": "Efterrätt",
+    "effort": 1,
+    "oven": {
+      "temp": "250",
+      "time": "10-12"
+    },
+    "portions": 8,
+    "time": "30 minuter",
+    "ingredients": [
+      {
+        "group": "Smet:",
+        "items": [
+          "4 dl vetemjöl",
+          "2 tsk bakpulver",
+          "2 krm salt",
+          "50 g smör eller margarin (gärna rumstempererat)",
+          "2 dl mjölk"
+        ]
+      }
+    ],
+    "instructions": [
+      "Sätt ugnen på <b>250 grader</b>.",
+      "Blanda <b>4 dl vetemjöl</b>, <b>2 tsk bakpulver</b> och <b>2 krm salt</b> i en bunke.",
+      "Finfördela <b>50g smör eller margarin</b> i mjölblandningen.",
+      "Tillsätt <b>2 dl mjölk</b> och rör snabbt ihop till en kladdig deg.",
+      "Klicka ut 2 kakor (med blöta händer eller med hjälp av två skedar) eller 8 bullar på en plåt med bakplåtspapper.",
+      "Grädda mitt i ugnen ca <b>10-12 minuter</b>."
+    ],
+    "tips": "Till servering: Servera sconsen nygräddade med ost, färskost eller marmelad."
+  },
+  {
+  "id": "fjall-grotfrallor",
+  "title": "Fjällstationens frallor",
   "category": "Tillbehör",
-  "effort": 3,
-  "time": "24 timmar",
+  "effort": 4,
+  "oven": {
+    "temp": "250",
+    "time": "15-20"
+  },
+  "portions": 20,
+  "time": "12 timmar (kalljäsning)",
   "ingredients": [
     {
+      "group": "Gröt (ger 300 g):",
       "items": [
-        "500 g Tipo 00-mjöl",
-        "340 g Vatten, rumstempererat ca 20°C",
-        "13 g Fint havssalt",
-        "1,2 g Färskjäst"
+        "60 g havregryn (ca 1,5 dl)",
+        "275 g vatten (2,75 dl)"
+      ]
+    },
+    {
+      "group": "Degen:",
+      "items": [
+        "10 g färsk jäst (blå)",
+        "375 g kallt vatten eller öl",
+        "525 g vetemjöl special",
+        "150 g rågmjöl",
+        "14 g salt",
+        "100 g russin (blötlagda och avrunna)"
       ]
     }
   ],
- "instructions": [
-    "Väckningen: Väg upp <b>340 g rumstempererat vatten</b> i en bunke. Smula ner <b>1,2 g jäst</b> och vispa med fingrarna tills jästen löst sig.",
-    "Autolys: Häll ner <b>500 g mjöl</b> i vattnet. Blanda grovt tills inga torra mjölklumpar finns kvar (det kommer se ut som en rufsig klump). Låt vila under en handduk i <b>15 minuter</b>.",
-    "Knådningen: Strö över <b>13 g salt</b>. Tippa ut degen på bänken och knåda (tryck, vik, vrid) i <b>5–7 minuter</b>. Fortsätt tills degen går från klibbig till att bli en helt slät och spänstig boll. Tillsätt inget extra mjöl!",
-    "Tändningen: Forma degen till en boll, lägg tillbaka den i bunken och sätt på ett tätt lock. Låt den stå framme på köksbänken i <b>exakt 60 minuter</b> för att jästen ska hinna vakna.",
-    "Bollningen: Tippa ut degen och dela upp den (<b>3 bitar á ca 284 g</b> eller <b>4 bitar á ca 213 g</b>). Rulla dem till väldigt strama bollar för att bygga upp en stark ytspänning.",
-    "Kalljäsning: Lägg bollarna i lätt oljade glaslådor, tryck på locken ordentligt och ställ in i kylen. Ta fram degen <b>3–4 timmar</b> innan det är dags att baka ut och grädda!"
+  "instructions": [
+    "Koka gröt på <b>60 g havregryn</b> och <b>275 g vatten</b>. Bred ut gröten på en tallrik och ställ i kylen tills den är helt avsvalnad.",
+    "Lös upp <b>10 g färsk jäst</b> i <b>375 g kallt vatten/öl</b>. Rör ner den kalla gröten, <b>525 g vetemjöl special</b> och <b>150 g rågmjöl</b>. Låt vila (fermentolys) under handduk i <b>30 minuter</b>.",
+    "Strö <b>14 g salt</b> över degen. Stjälp ut på bänken och knåda med 'slap and fold' i 5–10 minuter tills degen blir spänstig.",
+    "Platta ut degen något och vik försiktigt in <b>100 g blötlagda russin</b>. Lägg tillbaka i bunken och låt jäsa i rumstemperatur i <b>45–60 minuter</b>.",
+    "Stjälp upp degen på mjölat bakbord. Hugg snabbt upp den i bitar med en degskrapa och lägg på två plåtar. Plasta in tätt och ställ i kylen över natten.",
+    "Sätt ugnen på <b>250 grader</b>. Sätt in en plåt direkt från kylen, sänk värmen till <b>230 grader</b> och släng in lite vatten i botten för ånga. Grädda i <b>15–20 minuter</b>."
   ],
-  "tips": "Toppa pizzan med tomatsås (passerade tomater blandat med salt), mozzarella, nduja och ringla över lite sirap."
+  "tips": "Har du surdegsdiscard (ca 100g) över kan du blanda ner det i vätskan för extra smak. Minska degvätskan till 325 g och vetemjölet till 475 g."
 }
 ]

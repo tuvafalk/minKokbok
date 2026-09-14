@@ -53,7 +53,7 @@ export default function Header() {
       </nav>
 
       <div className="flex gap-6 font-medium">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[#E36959] transition-colors">Resume</a>
+        <a href="/Tuva CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[#E36959] transition-colors">Resume</a>
         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#E36959] transition-colors">LinkedIn</a>
       </div>
     </header>
