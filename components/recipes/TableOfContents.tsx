@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { Recipe } from './types';
 
 export const categoryColors: Record<string, string> = {
   'Lättlagat': '#7b8eb8',
@@ -14,7 +13,7 @@ export default function TableOfContents() {
   const categories = Object.keys(categoryColors);
 
   return (
-    <div className="w-[794px] max-w-full h-[1123px] bg-white relative overflow-hidden text-zinc-800 font-sans box-border py-[60px] px-[50px] flex flex-col items-center justify-center text-center print:w-full print:h-screen print:p-0 print:m-0">
+    <div className="recipe-print-page w-[794px] max-w-full h-[1123px] bg-white relative overflow-hidden text-zinc-800 font-sans box-border py-[60px] px-[50px] flex flex-col items-center justify-center text-center print:w-full print:h-screen print:p-0 print:m-0">
       <div>
         <h1 className="font-serif text-5xl mb-2">Innehåll</h1>
         <div className="text-4xl font-serif mb-8 space-x-2 text-zinc-400">

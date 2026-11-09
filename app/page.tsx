@@ -11,7 +11,7 @@ const HeroSection = () => (
       }}
     />
 
-    <h1 className="z-10 font-serif text-[12vw] leading-none font-black uppercase tracking-tighter opacity-15 select-none">
+    <h1 className="z-10 font-serif text-[12vw] leading-none font-black text-zinc-300 uppercase tracking-tighter select-none">
       Exploration
     </h1>
 
@@ -41,7 +41,7 @@ const CaseStudiesAction = () => (
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="bg-white">
       <HeroSection />
       <CaseStudiesAction />
     </main>

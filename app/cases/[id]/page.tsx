@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { casesData } from '../../../components/cases/casesData'; 
+import { casesData } from '@/components/cases/casesData';
 
 export default async function CaseDetail({ params }: { params: Promise<{ id: string }> }) {
   
@@ -17,24 +18,29 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
   return (
     <div className="min-h-screen bg-[#F5F1E7] text-zinc-800 pb-20">
       
-      <div className="w-full h-[40vh] min-h-[300px] relative">
-        <img 
-          src={project.imageUrl} 
-          alt={project.title} 
-          className="w-full h-full object-cover grayscale-[30%]"
-        />
+      <div className="w-full h-[40vh] min-h-75 relative">
+        {project.imageUrl ? (
+          <Image
+            src={project.imageUrl}
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover grayscale-30"
+          />
+        ) : (
+          <div
+            aria-hidden="true"
+            className="h-full w-full bg-[#1A2B3C]"
+            style={{
+              backgroundImage:
+                'radial-gradient(circle at center, rgba(158,174,162,0.5) 1px, transparent 1px)',
+              backgroundSize: '32px 32px'
+            }}
+          />
+        )}
         <div className="absolute inset-0 bg-[#1A2B3C]/70 mix-blend-multiply" />
         
         <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-12 pb-12 max-w-4xl mx-auto w-full">
-          {/* Breadcrumb */}
-          <nav className="text-white/70 text-sm font-medium mb-6 flex items-center gap-2">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/cases" className="hover:text-white transition-colors">Cases</Link>
-            <span>/</span>
-            <span className="text-white">{project.title}</span>
-          </nav>
-
           <span className="text-white/80 uppercase tracking-widest text-sm font-bold mb-2 block">
             {project.category}
           </span>
@@ -73,7 +79,7 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
         
         <div className="mt-20 text-center border-t border-zinc-200 pt-16">
           <Link href="/contact" className="inline-block px-8 py-3 bg-[#1A2B3C] text-white font-medium rounded-full hover:bg-zinc-800 transition-colors">
-            Let's Connect
+            Let&apos;s Connect
           </Link>
         </div>
 
