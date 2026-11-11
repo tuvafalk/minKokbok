@@ -1,10 +1,75 @@
-// data/cases.ts
+export type CaseFilterGroup = 'AI Governance' | 'Engineering & UX';
 
-export const casesData = [
+export interface CaseSection {
+  title: string;
+  content: string;
+}
+
+export interface CaseProject {
+  id: string;
+  title: string;
+  category: string;
+  filterGroup: CaseFilterGroup;
+  tags: string[];
+  imageUrl?: string;
+  shortDescription: string;
+  sections: CaseSection[];
+  featuredOrder?: number;
+  visual?: 'framework' | 'risk-matrix';
+}
+
+export const casesData: CaseProject[] = [
+  {
+    id: 'ai-evaluation-framework',
+    title: 'Interdisciplinary AI Evaluation Framework',
+    category: 'AI Governance & UX',
+    filterGroup: 'AI Governance',
+    tags: ['AI Governance', 'UX Research', 'Evaluation Framework', 'Responsible AI'],
+    shortDescription:
+      'An interdisciplinary approach to evaluating AI through governance and user-experience lenses. It connects regulatory considerations with socio-technical inquiry to make complex evaluation criteria more legible.',
+    featuredOrder: 1,
+    visual: 'framework',
+    sections: [
+      {
+        title: 'The Framework',
+        content:
+          'This case introduces an interdisciplinary AI evaluation framework, bringing governance and user-experience concerns into one evaluation approach.'
+      },
+      {
+        title: 'Evaluation Focus',
+        content:
+          'The work considers how regulatory frameworks and socio-technical perspectives can inform the evaluation of AI systems, and how the criteria and boundaries for assessment can be communicated.'
+      }
+    ]
+  },
+  {
+    id: 'public-sector-digital-hr',
+    title: 'Public Sector Digital HR & Risk Analysis',
+    category: 'Feasibility & Ethics',
+    filterGroup: 'AI Governance',
+    tags: ['Public Sector', 'Digital HR', 'Feasibility', 'Ethics'],
+    shortDescription:
+      'An examination of digital HR in a public-sector context through feasibility and ethical-risk analysis. A risk matrix and system-boundary view help structure the assessment.',
+    featuredOrder: 2,
+    visual: 'risk-matrix',
+    sections: [
+      {
+        title: 'The Case',
+        content:
+          'This case examines digital HR in a public-sector context through the lenses of feasibility, ethics, and risk.'
+      },
+      {
+        title: 'Risk Analysis',
+        content:
+          'A risk matrix and system-boundary diagram organize the assessment and help frame the risks and boundaries relevant to implementation.'
+      }
+    ]
+  },
   {
     id: 'darkwell',
     title: 'Darkwell: A Weave Quest',
     category: 'Game Development',
+    filterGroup: 'Engineering & UX',
     tags: ['Unity', 'C#', 'Procedural Generation', '2D Roguelike'],
     imageUrl: '/images/darkwell.png',
     shortDescription: 'A short 2D roguelike adventure game where players embark on a quest to find the source of the mysterious Weve-crystal.',
@@ -27,6 +92,7 @@ export const casesData = [
     id: 'realmwalker',
     title: 'Realm Walker',
     category: 'Web Development',
+    filterGroup: 'Engineering & UX',
     tags: ['React', 'API', 'SQL', 'Database Design'],
     imageUrl: '/images/Databas labb1 - Frame 8(2).png', 
     shortDescription: 'An experiment in API, SQL, Database and creative webdesign leveraging APIs to create a storytelling platform.',
@@ -52,7 +118,8 @@ export const casesData = [
   {
     id: 'tuneblr',
     title: 'Tuneblr',
-    category: 'Full-stack / MVC',
+    category: 'Full-stack Web Application',
+    filterGroup: 'Engineering & UX',
     tags: ['C#', 'MVC', 'SMTP', 'Database'],
     imageUrl: '/images/tuneblr.png',
     shortDescription: 'A nostalgic twist on modern music sharing platforms allowing users to create personalized mixtapes.',
@@ -79,6 +146,7 @@ export const casesData = [
     id: 'epistemic-limits-ai',
     title: 'Epistemic Limits & Formal Logic',
     category: 'Master Thesis',
+    filterGroup: 'AI Governance',
     tags: ['AI Ethics', 'Formal Logics', 'Social Practice Theory', 'TEK'],
     imageUrl: '/images/ringar.png',
     shortDescription: 'Learning About the Richness of Traditional Ecological Knowledge Through Artificial Intelligence.',
