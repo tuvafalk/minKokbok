@@ -16,7 +16,7 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F1E7] text-zinc-800 pb-20">
+    <div className="min-h-screen bg-[#F5F1E7] text-zinc-800 pb-24">
       
       <div className="w-full h-[40vh] min-h-75 relative">
         {project.imageUrl ? (

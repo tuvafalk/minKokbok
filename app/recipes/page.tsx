@@ -55,18 +55,18 @@ export default function RecipePage() {
 
   const processedRecipes = typedRecipesData
     .filter((recipe) => {
-      const matchesSearch = recipe.title.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase());
+      const matchesSearch = recipe.title.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesCategory = selectedCategory === 'Alla' || recipe.category === selectedCategory;
-      return matchesSearch && matchesCategory;
+      return matchesSearch && matchesCategory;  
     })
     .sort((a, b) => categories.indexOf(a.category) - categories.indexOf(b.category));
 
   return (
-    <div className="relative min-h-screen px-4 pb-32 pt-6 sm:px-6 sm:pb-28 print:px-0 print:pb-0 print:pt-0">
+    <div className="relative min-h-screen px-4 pb-24 pt-8 sm:px-8 sm:pb-16 print:px-0 print:pb-0 print:pt-0">
       <main className="mx-auto w-full max-w-350 print:max-w-none">
         <header className="mb-8 px-1 print:hidden">
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.22em] text-[#718278]">
-            Playground / Creative Lab
+            Creative Lab
           </p>
           <h1 className="font-serif text-3xl text-[#1A2B3C] sm:text-4xl">The Recipe Book</h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600 sm:text-base">

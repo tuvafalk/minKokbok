@@ -23,7 +23,7 @@ const liveProjects = [
 
 export default function PlaygroundPage() {
   return (
-    <main className="min-h-screen bg-[#F5F1E7] px-6 pb-24 pt-36 text-[#1A2B3C] md:px-12">
+    <main className="min-h-screen bg-[#F5F1E7] px-6 pb-24 pt-24 text-[#1A2B3C] md:px-12">
       <div className="mx-auto max-w-7xl">
         <header className="mb-8 max-w-4xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#718278]">

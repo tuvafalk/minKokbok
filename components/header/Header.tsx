@@ -74,7 +74,7 @@ export default function Header() {
           Resume
         </a>
         <a
-          href="www.linkedin.com/in/tuvafalk/"
+          href="https://www.linkedin.com/in/tuvafalk/"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-colors hover:text-[#E36959]"
@@ -112,7 +112,7 @@ export default function Header() {
         id="mobile-navigation"
         aria-label="Mobile navigation"
         hidden={!isMenuOpen}
-        className="absolute left-0 right-0 top-full border-t border-[#1A2B3C]/10 bg-[#F5F1E7] px-5 pb-6 pt-3 shadow-lg md:hidden"
+        className="absolute left-0 right-0 top-full border-t border-[#1A2B3C]/10 bg-[#F5F1E7] px-4 pb-8 pt-4 shadow-lg md:hidden"
       >
           <div className="flex flex-col">
             {NAVIGATION_LINKS.map((link) => {
@@ -134,11 +134,11 @@ export default function Header() {
                 </Link>
               );
             })}
-            <div className="flex gap-6 pt-5 text-sm font-medium">
+            <div className="flex gap-8 pt-4 text-sm font-medium">
               <a href="/Tuva CV.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                 Resume
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+              <a href="https://www.linkedin.com/in/tuvafalk/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                 LinkedIn
               </a>
             </div>

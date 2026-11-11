@@ -13,13 +13,9 @@ export default function NotFound() {
       />
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 md:grid-cols-[1fr_0.85fr] md:gap-16">
-        <section>
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#9EAEA2]/60 bg-white/70 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#52645a]">
-            <span className="h-2 w-2 rounded-full bg-[#E36959]" />
-            Error 404
-          </p>
+        <section>          
           <h1 className="max-w-4xl font-serif text-4xl leading-[1.08] md:text-7xl">
-            This page wandered off the page.
+            This page wandered off.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
             The link may be out of date, or this page may have found a different story. Let’s get
