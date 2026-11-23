@@ -79,7 +79,7 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
         
         <div className="mt-20 text-center border-t border-zinc-200 pt-16">
           <Link href="/contact" className="inline-block px-8 py-3 bg-[#1A2B3C] text-white font-medium rounded-full hover:bg-zinc-800 transition-colors">
-            Let&apos;s Connect
+            Let's Connect
           </Link>
         </div>
 
