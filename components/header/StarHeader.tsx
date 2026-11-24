@@ -23,15 +23,15 @@ export default function StarHeader() {
         <Link href="/#how-i-work" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
           How I Work
         </Link>
-        <Link href="/#projects" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
-          Projects &amp; Questions
+        <Link href="/cases" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
+          Cases
         </Link>
-        <Link href="/#lab" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
-          Art &amp; Lab
+        <Link href="/creative" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
+          Creative Lab
         </Link>
         <Link
           href="/#contact"
-          className="border border-[#ECE9E2] bg-[#ECE9E2] px-4 py-2 font-semibold text-[#0C0E0D] transition-colors hover:bg-transparent hover:text-[#ECE9E2]"
+          className="border border-[#ECE9E2] bg-[#ECE9E2] px-4 py-2 font-semibold text-[#0C0E0D] transition-colors hover:bg-[#3B5747] hover:border-[#3B5747] hover:text-[#ECE9E2]"
         >
           Contact
         </Link>

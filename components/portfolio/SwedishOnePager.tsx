@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { casesData } from '@/components/cases/casesData';
 import Image from 'next/image';
-import SwedishHeader from './SwedishHeader';
+import SwedishHeader from '@/components/header/SwedishHeader';
 
 const pillars = [
 	{

@@ -12,7 +12,7 @@ const liveProjects = [
   },
   {
     title: 'Case Study Explorer',
-    category: 'Portfolio experience',
+    category: 'Portfolio',
     description:
       'Explore selected work across AI governance, research, engineering, and creative development.',
     href: '/cases',
@@ -23,10 +23,10 @@ const liveProjects = [
 
 export default function CreativeLab() {
   return (
-    <main className="min-h-screen bg-[#0C0E0D] px-6 pb-24 pt-24 text-[#ECE9E2] md:px-12 border-x border-[#ECE9E2]/20 max-w-[1140px] mx-auto">
+    <main className="min-h-screen bg-[#0C0E0D] px-6 pb-24 pt-24 text-[#ECE9E2] md:px-12 mx-auto">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <header className="mb-16 max-w-4xl border-b border-[#ECE9E2]/20 pb-10">
+        <header className="mb-16 max-w-4xl pb-10">
           <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
             ★ Creative Lab // Playground
           </p>
@@ -41,17 +41,6 @@ export default function CreativeLab() {
 
         {/* Live Projects Section */}
         <section aria-labelledby="live-projects-title">
-          <div className="mb-10 flex flex-wrap items-end justify-between gap-3">
-            <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-[#B8C0BC] block mb-2">
-                // ARCHIVE &amp; PROTOTYPES
-              </span>
-              <h2 id="live-projects-title" className="font-serif text-3xl md:text-4xl text-[#ECE9E2]">
-                Live projects
-              </h2>
-            </div>
-          </div>
-
           <div className="grid gap-6 md:grid-cols-2">
             {liveProjects.map((project) => (
               <article
@@ -62,9 +51,6 @@ export default function CreativeLab() {
                   <div className="flex justify-between items-center mb-6">
                     <span className="font-mono text-xs uppercase tracking-widest text-[#B8C0BC]">
                       ★ {project.category}
-                    </span>
-                    <span className="font-mono text-xs text-[#939E98]">
-                      [{project.number}]
                     </span>
                   </div>
 

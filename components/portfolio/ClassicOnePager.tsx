@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import OnePageHeader from './OnePageHeader';
+import OnePageHeader from '@/components/header/OnePageHeader';
 import { casesData } from '@/components/cases/casesData';
 
 const featuredCases = casesData

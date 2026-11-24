@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import StarHeader from '@/components/portfolio/StarHeader';
+import StarHeader from '@/components/header/StarHeader';
 
 const galleryItems = [
   {
@@ -41,9 +41,6 @@ export default function GalleryPage() {
       <main className="min-h-screen bg-[#0C0E0D] px-6 pb-24 pt-16 text-[#ECE9E2] md:px-12">
         <div className="mx-auto max-w-7xl">
           <header className="mb-12 max-w-3xl border-b border-[#ECE9E2]/20 pb-8">
-            <p className="mb-3 font-mono text-xs uppercase tracking-widest text-[#B8C0BC]">
-              ★ 02 // INK &amp; IMAGE
-            </p>
             <h1 className="mb-4 font-serif text-5xl font-normal md:text-6xl">Art Gallery</h1>
             <p className="max-w-2xl text-sm leading-relaxed text-[#939E98] md:text-base">
               A growing archive of photographs, illustrations, and visual experiments.

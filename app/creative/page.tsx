@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import CreativeLab from '@/components/cases/CreativeLab';
-import StarHeader from '@/components/portfolio/StarHeader';
+import StarHeader from '@/components/header/StarHeader';
 
 const liveProjects = [
   {

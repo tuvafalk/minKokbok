@@ -2,15 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { casesData } from '@/components/cases/casesData';
-import { ACTIVE_CASE_VERSION } from '@/components/cases/casesVersion';
-import StarHeader from '@/components/portfolio/StarHeader';
+import { casesData } from '@/components/cases/casesData'; // Anpassa sökvägen om din data ligger annorlunda
+import StarHeader from '@/components/header/StarHeader';
 
 export default async function CaseDetail({ params }: { params: Promise<{ id: string }> }) {
-  
   const resolvedParams = await params;
   const currentId = resolvedParams.id; 
 
+  // Hitta rätt projekt baserat på URL:ens [id]
   const project = casesData.find((p) => p.id === currentId);
 
   if (!project) {
@@ -18,70 +17,86 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F1E7] pb-24 text-zinc-800">
-      {ACTIVE_CASE_VERSION === 'star' && <StarHeader />}
-      
-      <div className="w-full h-[40vh] min-h-75 relative">
+    <div className="min-h-screen bg-[#0C0E0D] pb-24 text-[#ECE9E2]">
+      <StarHeader />
+
+      <div className="relative h-[42vh] min-h-[320px] border-b border-[#ECE9E2]/15">
         {project.imageUrl ? (
           <Image
             src={project.imageUrl}
             alt=""
             fill
             sizes="100vw"
-            className="object-cover grayscale-30"
+            className="object-cover grayscale-[25%]"
           />
         ) : (
           <div
             aria-hidden="true"
-            className="h-full w-full bg-[#1A2B3C]"
+            className="h-full w-full bg-[#141816]"
             style={{
               backgroundImage:
-                'radial-gradient(circle at center, rgba(158,174,162,0.5) 1px, transparent 1px)',
+                'radial-gradient(circle at center, rgba(184,192,188,0.15) 1px, transparent 1px)',
               backgroundSize: '32px 32px'
             }}
           />
         )}
-        <div className="absolute inset-0 bg-[#1A2B3C]/70 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-[#0C0E0D]/80" />
         
-        <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-12 pb-12 max-w-4xl mx-auto w-full">
-          <span className="text-white/80 uppercase tracking-widest text-sm font-bold mb-2 block">
-            {project.category}
+        <div className="absolute inset-0 mx-auto flex w-full max-w-7xl flex-col justify-end px-6 pb-10 md:px-12">
+          <div className="mb-24">
+            <Link
+              href="/cases"
+              className="font-mono text-xs uppercase tracking-widest text-[#B8C0BC] transition-colors hover:text-[#ECE9E2]"
+            >
+              ← Back to cases
+            </Link>
+          </div>
+
+          <span className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
+            ★ {project.category}
           </span>
-          <h1 className="font-serif text-5xl md:text-6xl text-[#F5F1E7]">
+          <h1 className="max-w-6xl font-serif text-4xl font-normal leading-tight text-[#ECE9E2] md:text-6xl">
             {project.title}
           </h1>
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-6 md:px-12 mt-16">
+      <div className="mx-auto mt-12 max-w-3xl px-6 md:px-12">
         
-        <div className="flex flex-wrap gap-2 mb-16">
+        <div className="mb-12 flex flex-wrap gap-2">
           {project.tags.map((tag, idx) => (
-            <span key={idx} className="px-3 py-1.5 bg-white text-[#1A2B3C] text-sm font-medium rounded-full border border-zinc-200 shadow-sm">
+            <span
+              key={idx}
+              className="border border-[#ECE9E2]/20 bg-[#141816] px-3.5 py-1.5 font-mono text-xs uppercase text-[#ECE9E2]"
+            >
               {tag}
             </span>
           ))}
         </div>
 
-        <div className="relative border-l-2 border-dashed border-[#1A2B3C]/20 ml-4 md:ml-6 space-y-16 pb-12">
-          
+        <div className="relative ml-2 space-y-14 border-l-2 border-[#ECE9E2]/20 pb-6 md:ml-4">
           {project.sections.map((section, index) => (
-            <div key={index} className="relative pl-8 md:pl-12">
-              <div className="absolute -left-[11px] top-1.5 w-5 h-5 bg-[#F5F1E7] border-2 border-[#1A2B3C] rounded-full" />
+            <section key={index} className="relative pl-6 md:pl-10">
+              <span
+                aria-hidden="true"
+                className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-[#ECE9E2] bg-[#0C0E0D]"
+              />
               
-              <h3 className="font-serif text-3xl text-[#1A2B3C] mb-4">
+              <h2 className="mb-4 font-serif text-2xl font-normal leading-tight text-[#ECE9E2] md:text-3xl">
                 {section.title}
-              </h3>
-              <p className="text-lg text-zinc-600 leading-relaxed">
+              </h2>
+              <p className="text-base leading-relaxed text-[#939E98] md:text-lg">
                 {section.content}
               </p>
-            </div>
+            </section>
           ))}
-
         </div>
         
-        <div className="mt-20 text-center border-t border-zinc-200 pt-16">
-          <Link href="/#contact" className="inline-block px-8 py-3 bg-[#1A2B3C] text-white font-medium rounded-full hover:bg-zinc-800 transition-colors">
+        <div className="mt-20 border-t border-[#ECE9E2]/15 pt-12 text-center">
+          <Link
+            href="/#contact"
+            className="font-mono text-xs uppercase tracking-wider inline-block border border-[#ECE9E2] bg-[#ECE9E2] px-8 py-4 font-semibold text-[#0C0E0D] transition-colors hover:bg-transparent hover:text-[#ECE9E2]"
+          >
             Let&apos;s Connect
           </Link>
         </div>
