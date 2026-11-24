@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import CreativeLab from '@/components/cases/CreativeLab';
+import StarHeader from '@/components/portfolio/StarHeader';
 
 const liveProjects = [
   {
@@ -21,7 +23,17 @@ const liveProjects = [
   }
 ];
 
+const version = "star";
+
 export default function PlaygroundPage() {
+  if (version.includes("star")) {
+    return (
+      <>
+        <StarHeader />
+        <CreativeLab />
+      </>
+    );
+  }
   return (
     <main className="min-h-screen bg-[#F5F1E7] px-6 pb-24 pt-24 text-[#1A2B3C] md:px-12">
       <div className="mx-auto max-w-7xl">

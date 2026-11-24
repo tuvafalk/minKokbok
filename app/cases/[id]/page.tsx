@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { casesData } from '@/components/cases/casesData';
+import { ACTIVE_CASE_VERSION } from '@/components/cases/casesVersion';
+import StarHeader from '@/components/portfolio/StarHeader';
 
 export default async function CaseDetail({ params }: { params: Promise<{ id: string }> }) {
   
@@ -16,7 +18,8 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <div className="min-h-screen bg-[#F5F1E7] text-zinc-800 pb-24">
+    <div className="min-h-screen bg-[#F5F1E7] pb-24 text-zinc-800">
+      {ACTIVE_CASE_VERSION === 'star' && <StarHeader />}
       
       <div className="w-full h-[40vh] min-h-75 relative">
         {project.imageUrl ? (
@@ -78,8 +81,8 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
         </div>
         
         <div className="mt-20 text-center border-t border-zinc-200 pt-16">
-          <Link href="/contact" className="inline-block px-8 py-3 bg-[#1A2B3C] text-white font-medium rounded-full hover:bg-zinc-800 transition-colors">
-            Let's Connect
+          <Link href="/#contact" className="inline-block px-8 py-3 bg-[#1A2B3C] text-white font-medium rounded-full hover:bg-zinc-800 transition-colors">
+            Let&apos;s Connect
           </Link>
         </div>
 

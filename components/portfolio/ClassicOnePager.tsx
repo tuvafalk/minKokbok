@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import OnePageHeader from './OnePageHeader';
 import { casesData } from '@/components/cases/casesData';
-import VersionSwitcher from './VersionSwitcher';
 
 const featuredCases = casesData
   .filter((project) => project.featuredOrder !== undefined)
@@ -131,7 +130,6 @@ export default function ClassicOnePager() {
       <footer className="border-t border-[#173F3A]/10 px-4 py-6 text-[#173F3A] md:px-8">
         <div className="mx-auto">
           <p className="text-sm">© {new Date().getFullYear()} Tuva Falk</p>
-          <VersionSwitcher variant="classic" />
         </div>
       </footer>
     </main>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import VersionSwitcher from './VersionSwitcher';
 import { casesData } from '@/components/cases/casesData';
 import Image from 'next/image';
 import SwedishHeader from './SwedishHeader';
@@ -254,9 +253,7 @@ export default function SwedishOnePager() {
 			<footer className="border-t border-[#121417] px-4 py-6 md:px-8">
 				<div className="mx-auto flex max-w-6xl flex-col gap-2 font-mono text-[11px] uppercase text-[#2C3531] md:flex-row md:justify-between">
 					<span>© {new Date().getFullYear()} Tuva Falk</span>
-					<span>Byggd med motstånd // No fluff</span>
 				</div>
-				<VersionSwitcher variant="swedish" />
 			</footer>
 		</main>
 	);
