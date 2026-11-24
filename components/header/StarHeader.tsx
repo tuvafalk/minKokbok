@@ -16,7 +16,9 @@ export default function StarHeader() {
         className="flex items-center gap-2.5 font-display text-lg font-extrabold uppercase tracking-tight text-[#ECE9E2]"
       >
         <StarIcon />
-        Tuva Falk
+        <Link href="/" className="font-mono text-xs font-bold uppercase tracking-[0.18em]">
+          TUVA FALK <span className="text-[#B23A25]">///</span> SE
+        </Link>
       </Link>
 
       <nav className="flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
@@ -24,7 +26,7 @@ export default function StarHeader() {
           How I Work
         </Link>
         <Link href="/cases" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
-          Cases
+          Case
         </Link>
         <Link href="/creative" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
           Creative Lab

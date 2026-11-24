@@ -42,7 +42,7 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
         )}
         <div className="absolute inset-0 bg-[#0C0E0D]/80" />
         
-        <div className="absolute inset-0 mx-auto flex w-full max-w-7xl flex-col justify-end px-6 pb-10 md:px-12">
+        <div className="absolute inset-0 mx-auto flex w-full max-w-7xl flex-col justify-center px-6 pb-10 md:px-12">
           <div className="mb-24">
             <Link
               href="/cases"
@@ -55,13 +55,13 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
           <span className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
             ★ {project.category}
           </span>
-          <h1 className="max-w-6xl font-serif text-4xl font-normal leading-tight text-[#ECE9E2] md:text-6xl">
+          <h1 className="max-w-3xl font-serif text-4xl font-normal leading-tight text-[#ECE9E2] md:text-6xl">
             {project.title}
           </h1>
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-3xl px-6 md:px-12">
+      <div className="mx-auto mt-12 max-w-6xl px-6 md:px-12">
         
         <div className="mb-12 flex flex-wrap gap-2">
           {project.tags.map((tag, idx) => (

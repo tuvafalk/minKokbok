@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { casesData, type CaseFilterGroup, type CaseProject } from '@/components/cases/casesData';
 import StarHeader from '@/components/header/StarHeader';
 
@@ -203,10 +203,23 @@ function EngineeringCaseCard({ project }: { project: CaseProject }) {
   );
 }
 
-export default function CasesPortfolio({ cases }: { cases?: CaseProject[] }) {
+const LANGUAGE_STORAGE_KEY = 'star-portfolio-language';
+
+export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: CaseProject[]; initialLang?: 'en' | 'sv' }) {
+  const [lang, setLang] = useState<'en' | 'sv'>(initialLang);
   const [activeFilter, setActiveFilter] = useState<ActiveFilter>('All');
 
-  // Falls back to casesData directly if cases prop isn't passed from a parent page
+  useEffect(() => {
+    const cookies = document.cookie.split(';');
+    const langCookie = cookies.find((c) => c.trim().startsWith(`${LANGUAGE_STORAGE_KEY}=`));
+    if (langCookie) {
+      const storedLang = langCookie.split('=')[1] as 'en' | 'sv';
+      if (storedLang === 'en' || storedLang === 'sv') {
+        setLang(storedLang);
+      }
+    }
+  }, []);
+
   const projectList = cases ?? casesData;
 
   const showGovernance = activeFilter !== 'Engineering & UX';
@@ -222,90 +235,102 @@ export default function CasesPortfolio({ cases }: { cases?: CaseProject[] }) {
 
   const engineeringCases = projectList.filter((project) => project.filterGroup === 'Engineering & UX');
 
+  const filters: ActiveFilter[] = ['All', 'AI Governance', 'Engineering & UX'];
+
   return (
-    <div className="min-h-screen bg-[#F5F1E7] text-[#0C0E0D]">
+    <>
       <StarHeader />
 
-      <div className="mx-auto max-w-[1140px] px-6 pt-10 md:px-12">
-        <Link
-          href="/"
-          className="font-mono text-xs uppercase tracking-wider text-[#526158] transition-colors hover:text-[#0C0E0D]"
-        >
-          ← Back to overview
-        </Link>
-      </div>
-
-      <div className="mx-auto max-w-[1140px] px-6 py-12 md:px-12">
-        <div className="mb-10">
-          <h1 className="mb-4 font-serif text-4xl text-[#0C0E0D] md:text-5xl">
-            Cases &amp; Research
-          </h1>
-          <p className="text-[#526158]">
-            Archive of audits, systems architecture, and policy work.
-          </p>
-        </div>
-
-        <div role="group" aria-label="Filter case studies" className="mb-10 flex flex-wrap gap-3">
-          {filters.map((filter) => (
-            <button
-              key={filter}
-              type="button"
-              aria-pressed={activeFilter === filter}
-              onClick={() => setActiveFilter(filter)}
-              className={`border px-5 py-3 font-mono text-xs font-semibold uppercase tracking-wider transition-colors ${
-                activeFilter === filter
-                  ? 'border-[#0C0E0D] bg-[#0C0E0D] text-[#F5F1E7]'
-                  : 'border-[#0C0E0D]/25 bg-transparent text-[#526158] hover:border-[#0C0E0D] hover:text-[#0C0E0D]'
-              }`}
-            >
-              {filter}
-            </button>
-          ))}
-        </div>
-
-        {showGovernance && (
-          <section aria-label="AI governance case studies" className="mb-20 space-y-8">
-            {featuredCases.map((project, index) => (
-              <FeaturedCaseCard
-                key={project.id}
-                project={project}
-                reverse={index === 1}
-              />
-            ))}
-            {supportingCases.length > 0 && (
-              <div className="pt-2">
-                <h2 className="mb-5 font-serif text-2xl text-[#0C0E0D]">Related research</h2>
-                <div className="grid gap-5">
-                  {supportingCases.map((project) => (
-                    <SupportingCaseCard key={project.id} project={project} />
-                  ))}
-                </div>
-              </div>
-            )}
-          </section>
-        )}
-
-        {showEngineering && (
-          <section aria-labelledby="engineering-lab-title">
-            <header className="mb-7">
-              <h2
-                id="engineering-lab-title"
-                className="mb-2 font-serif text-3xl text-[#0C0E0D] md:text-4xl"
+      <main className="min-h-screen bg-[#F5F1E7] text-[#0C0E0D] px-6 pb-24 pt-16 md:px-12">
+        <div className="mx-auto max-w-7xl">
+          <header className="mb-16 max-w-3xl pb-10">
+            <div className="mb-6">
+              <Link
+                href="/"
+                className="font-mono text-xs uppercase tracking-wider text-[#526158] transition-colors hover:text-[#0C0E0D]"
               >
-                Engineering &amp; Creative Lab
-              </h2>
-              <p className="max-w-2xl text-[#526158]">
-                Earlier builds, game development, and full-stack experiments.
-              </p>
-            </header>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {engineeringCases.map((project) => (
-                <EngineeringCaseCard key={project.id} project={project} />
-              ))}
+                {lang === 'sv' ? '← Tillbaka till översikten' : '← Back to overview'}
+              </Link>
             </div>
-          </section>
-        )}
-      </div>
-    </div>
+            <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#939E98]">
+              ★ Case studies // Research
+            </p>
+            <h1 className="mb-6 font-serif text-5xl leading-tight md:text-6xl text-[#0C0E0D]">
+              {lang === 'sv' ? 'Cases & Forskning' : 'Cases & Research'}
+            </h1>
+            <p className="max-w-2xl text-sm leading-relaxed text-[#939E98] md:text-base text-base md:text-lg">
+              {lang === 'sv'
+                ? 'Arkivet över granskningar, systemarkitektur och maktkritiskt policyarbete.'
+                : 'An archive of audits, systems architecture, and critical power-analysis policy work.'}
+            </p>
+          </header>
+
+          <div role="group" aria-label="Filter case studies" className="mb-10 flex flex-wrap gap-3">
+            {filters.map((filter) => (
+              <button
+                key={filter}
+                type="button"
+                aria-pressed={activeFilter === filter}
+                onClick={() => setActiveFilter(filter)}
+                className={`border px-5 py-3 font-mono text-xs font-semibold uppercase tracking-wider transition-colors ${
+                  activeFilter === filter
+                    ? 'border-[#0C0E0D] bg-[#0C0E0D] text-[#F5F1E7]'
+                    : 'border-[#0C0E0D]/25 bg-transparent text-[#526158] hover:border-[#0C0E0D] hover:text-[#0C0E0D]'
+                }`}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+
+          {showGovernance && (
+            <section aria-label="AI governance case studies" className="mb-20 space-y-8">
+              {featuredCases.map((project, index) => (
+                <FeaturedCaseCard
+                  key={project.id}
+                  project={project}
+                  reverse={index === 1}
+                />
+              ))}
+              {supportingCases.length > 0 && (
+                <div className="pt-2">
+                  <h2 className="mb-5 font-serif text-2xl text-[#0C0E0D]">
+                    {lang === 'sv' ? 'Relaterad forskning' : 'Related research'}
+                  </h2>
+                  <div className="grid gap-5">
+                    {supportingCases.map((project) => (
+                      <SupportingCaseCard key={project.id} project={project} />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+          )}
+
+          {showEngineering && (
+            <section aria-labelledby="engineering-lab-title">
+              <header className="mb-7">
+                <h2
+                  id="engineering-lab-title"
+                  className="mb-2 font-serif text-3xl text-[#0C0E0D] md:text-4xl"
+                >
+                  Engineering &amp; Creative Lab
+                </h2>
+                <p className="max-w-2xl text-[#526158]">
+                  {lang === 'sv'
+                    ? 'Tidigare byggen, spelprototyper och full-stack-experiment.'
+                    : 'Earlier builds, game prototypes, and full-stack experiments.'}
+                </p>
+              </header>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {engineeringCases.map((project) => (
+                  <EngineeringCaseCard key={project.id} project={project} />
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+      </main>
+    </>
   );
 }

@@ -54,7 +54,6 @@ const StarIcon = ({ className = "w-4 h-4 fill-current" }: { className?: string }
   </svg>
 );
 
-// Edge-to-edge Grommet Divider (Sträcker sig över hela skärmbredden)
 const GrommetDivider = () => (
   <div className="w-full h-8 opacity-25 border-y border-current flex items-center justify-around px-6 my-12 overflow-hidden" aria-hidden="true">
     {[...Array(24)].map((_, i) => (
@@ -69,7 +68,6 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
   const [lang, setLang] = useState(initialLang);
   const [carouselIndex, setCarouselIndex] = useState(0);
 
-  // --- REN PALETT (Blå/grönt borttaget i Light Mode, strikt ull/papper & bläcksvart) ---
   const colors = {
     bg: isDarkMode ? 'bg-[#0C0E0D]' : 'bg-[#F5F1E7]',
     text: isDarkMode ? 'text-[#ECE9E2]' : 'text-[#0C0E0D]',
@@ -86,26 +84,46 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
   const heroSlides = [
     {
       type: 'quote',
-      tag: lang === 'sv' ? 'Kärninsikt // 01' : 'Core Insights // 01',
-      quote: lang === 'sv' 
-        ? 'Varje arkitektur kodar in ett antagande om vem som har agens — och vem som förväntas foga sig.' 
-        : 'Every architecture encodes an assumption about who holds agency—and who is expected to comply.',
-      footer: lang === 'sv' ? 'Kombinerar tekniskt utförande med en nyfikenhet på människor och konsekvens.' : 'Combining technical execution with a relentless curiosity about people and impact.'
+      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      quote: 'The primary barrier in technology isn’t a lack of data, but a lingering power imbalance that renders marginalized perspectives performative rather than substantive.', 
+      footer: 'Falk, 2026. Epistemic Limits and Formal Logic.'
     },
     {
       type: 'image',
-      tag: lang === 'sv' ? 'Zine Plåt // 02 (Personligt)' : 'Zine Plate // 02 (Personal)',
-      src: '/images/tuva-portrait.jpg',
-      caption: lang === 'sv' ? 'Umeå — Utanför skärmen & i koden.' : 'Umeå — Away from the glowing screen.'
+      tag: lang === 'sv' ? 'Porträtt' : 'Portrait',
+      src: '/images/tuva-arctiffrontiers2.JPG',
+      caption: 'Tromsø — Arctic Frontiers.'
     },
     {
       type: 'quote',
-      tag: lang === 'sv' ? 'Kärninsikt // 03' : 'Core Insights // 03',
-      quote: lang === 'sv' 
-        ? 'Teknik utan maktanalys är bara sofistikerad försköning av status quo.' 
-        : 'Technology without power analysis is just sophisticated beautification of the status quo.',
-      footer: lang === 'sv' ? 'Socio-teknisk granskning med knivsegg.' : 'Socio-technical auditing with an edge.'
-    }
+      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      quote: 'Power is not distributed equally in the world, and data power is no exception. Data feminism begins with the premise that standardization is a form of power.',
+      footer: 'Catherine D’Ignazio & Lauren F. Klein. Data Feminism, 2020.'
+    },
+    {
+      type: 'quote',
+      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      quote: 'Data is not raw; it is cooked. It is a product of social, political, and historical contexts.',
+      footer: 'Geoffrey Bowker & Susan Leigh Star. Sorting Things Out: Classification and Its Consequences.'
+    },
+    {
+      type: 'image',
+      tag: lang === 'sv' ? 'Porträtt' : 'Portrait',
+      src: '/images/tuva-portrait.jpg',
+      caption: 'Umeå University - TAIGA.'
+    },
+    {
+      type: 'quote',
+      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      quote: 'Just as digitizing Indigenous perspectives fails on WEIRD models, identifying structural harm using tools trained on the very systems that created it risks missing the erasure of survivor voices.',
+      footer: 'Falk, 2026. Epistemic Limits and Formal Logic.'
+    },
+    {
+      type: 'image',
+      tag: lang === 'sv' ? 'Porträtt' : 'Portrait',
+      src: '/images/tuva-arcticfrontiers.JPG',
+      caption: 'Tromsø — Arctic Frontiers.'
+    },
   ];
 
   const nextSlide = () => setCarouselIndex((prev) => (prev + 1) % heroSlides.length);
@@ -130,7 +148,6 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
       <StarHeader />
 
-      {/* Zine sub-strip (Edge-to-edge) */}
       <div className={`w-full px-6 md:px-12 py-2 border-b text-[11px] font-mono uppercase tracking-widest flex justify-between items-center ${colors.border} ${colors.subBg}`}>
         <span className="opacity-75">
             <span className="w-2.5 h-2.5 rounded-full border border-current bg-transparent inline-block" /> ★ ZINE EDITION v2.6
@@ -145,9 +162,8 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
         </div>
       </div>
 
-      <main className="w-full pb-16">
+      <main className="w-full">
 
-        {/* --- HERO SECTION --- */}
         <section className={`border-b ${colors.border}`}>
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.55fr_1fr]">
             
@@ -156,7 +172,7 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-[4.2rem] font-normal leading-[0.98] tracking-tight mb-6">
                 {lang === "en" ? (
-                  <>I work between people, systems, and the <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>future</em> we’re building.</>
+                  <>Technology is not neutral. <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>It is power.</em></>
                 ) : (
                   <>Teknik är inte neutral. <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>Den är makt.</em></>
                 )}
@@ -165,13 +181,13 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
               <div className="space-y-3 text-base md:text-[1rem] max-w-[64ch] leading-relaxed opacity-85">
                 <p>
                   {lang === "sv"
-                    ? "Jag kom till tekniken genom nyfikenhet, en ihållande frustration över trasiga system och insikten om att teknik aldrig är neutral — den är ett maktutövande."
-                    : "I came to technology through curiosity, a persistent frustration with broken systems, and the realization that technology is never neutral—it is an exercise of power."}
+                    ? "Jag kom till tekniken genom nyfikenhet, en ganska ihållande frustration över trasiga system och insikten om att mjukvara och AI aldrig är neutrala verktyg. Vem som gynnas av en arkitektur och vem som raderas är ingen slump."
+                    : "I came to technology through curiosity, a persistent frustration with broken systems, and the realization that software and AI are never neutral tools. Who benefits from an architecture and who gets erased is no accident."}
                 </p>
                 <p>
                   {lang === "sv"
-                    ? "Jag verkar i utrymmet mellan strategi och utförande: skär genom bruset, granskar strukturerna bakom koden och omvandlar komplexa socio-tekniska realiteter till system där människan faktiskt sitter kvar vid ratten."
-                    : "I operate in the space between strategy and execution: cutting through the noise, auditing the structures behind the code, and translating complex socio-technical realities into systems where humans actually stay at the wheel."}
+                    ? "Jag verkar i skärningspunkten mellan strategi och utförande: jag skär genom bruset, granskar det som tagits för givet och bygger system där människan faktiskt behåller kontrollen."
+                    : "I operate in the space between strategy and execution: cutting through the noise, auditing the power structures behind the code, and expose the structural silences that dominant models miss."}
                 </p>
               </div>
 
@@ -185,41 +201,38 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
               </div>
             </div>
 
-            {/* Zine Karusell */}
-            <aside className={`p-6 sm:p-10 lg:py-14 lg:px-10 flex flex-col justify-between relative min-h-[420px] ${colors.asideBg}`}>
+            <aside className={`p-6 sm:p-10 lg:py-14 lg:px-10 flex flex-col justify-between relative min-h-[500px] ${colors.asideBg}`}>
               <div>
                 <div className="flex justify-between items-center border-b border-current opacity-20 pb-3 mb-6 font-mono text-[11px] uppercase tracking-widest">
                   <span>{currentSlide.tag}</span>
                   <span className="font-bold">[{carouselIndex + 1} / {heroSlides.length}]</span>
                 </div>
 
-                <StarIcon className="w-8 h-8 fill-current -rotate-12 mb-4" />
-
                 {currentSlide.type === 'quote' ? (
-                  <div className="transition-opacity duration-300">
+                  <div className="transition-opacity duration-300 h-[350px] flex flex-col justify-between">
+                    <StarIcon className="w-8 h-8 fill-current -rotate-12 mb-4" />
                     <blockquote className="font-serif text-2xl md:text-[1.8rem] leading-[1.15] mb-4">
                       “{currentSlide.quote}”
                     </blockquote>
+                    <p className="font-mono text-xs opacity-75">{currentSlide.footer || ""}</p>
                   </div>
                 ) : (
-                  <div className="space-y-2 transition-opacity duration-300">
+                  <div className="space-y-2 transition-opacity duration-300 h-[350px] flex flex-col justify-between">
                     <div className="relative aspect-[4/3] w-full overflow-hidden border border-current opacity-90">
                       <Image 
                         src={currentSlide.src || '/images/tuva-portrait.jpg'}
-                        alt="Tuva Falk personal plate"
+                        alt="Tuva Falk portrait"
                         fill
                         className="object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
                       />
                     </div>
-                    <p className="font-mono text-xs opacity-75">{currentSlide.caption || "Umeå"}</p>
+                    <p className="font-mono text-xs opacity-75">{currentSlide.caption || ""}</p>
                   </div>
                 )}
               </div>
 
               <div className="pt-4 border-t border-current opacity-20 flex justify-between items-center mt-4">
-                <p className="font-mono text-xs opacity-75">
-                  {currentSlide.type === 'quote' ? currentSlide.footer : (lang === 'sv' ? 'Zine plåt arkiverad.' : 'Archived zine plate.')}
-                </p>
+                <p className="font-mono text-xs opacity-75">★</p>
                 <div className="flex gap-2 font-mono text-xs font-bold">
                   <button 
                     onClick={prevSlide}
@@ -242,12 +255,11 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
           </div>
         </section>
 
-        {/* --- METHOD / HOW I WORK --- */}
-        <section id="how-i-work" className={`border-b ${colors.border}`}>
+       <section id="how-i-work">
           <div className="max-w-7xl mx-auto px-6 md:px-10 py-10">
             <div className="mb-8">
               <h2 className="font-serif text-3xl md:text-4xl font-normal">
-                {lang === "sv" ? "Hur jag tar an problem" : "How I Approach Things"}
+                {lang === "sv" ? "Hur jag jobbar" : "How I Approach Things"}
               </h2>
             </div>
 
@@ -261,8 +273,8 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                 </h3>
                 <p className="text-sm opacity-75 leading-relaxed">
                   {lang === "sv"
-                    ? "Jag bygger responsiva gränssnitt med ren kod och strukturell avsikt som faktiskt löser verkliga problem."
-                    : "I build responsive, well-crafted interfaces. I care about clean code, good design, and making sure software actually solves real problems."}
+                    ? "Skapar robusta gränssnitt och rena system som faktiskt löser faktiska problem."
+                    : "Building robust interfaces and clean systems designed to solve actual problems."}
                 </p>
               </div>
 
@@ -275,7 +287,7 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                 </h3>
                 <p className="text-sm opacity-75 leading-relaxed">
                   {lang === "sv"
-                    ? "Innan sjösättning granskar jag underliggande risker, antaganden och ramverk för att skydda mänsklig agens."
+                    ? "Analyserar risker, antaganden och ramverk innan implementering för att säkerställa att tekniken håller."
                     : "Before shipping, I like to zoom out. Why are we building this? How will we evaluate if it works? What are the blind spots we aren't seeing yet?"}
                 </p>
               </div>
@@ -285,12 +297,12 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                   [ ★ 03 // CHALLENGE ]
                 </span>
                 <h3 className="font-display text-lg font-bold uppercase tracking-tight mb-2">
-                  {lang === "sv" ? "Makt & kritik" : "Power & Critique"}
+                  {lang === "sv" ? "Utmanar strukture" : "Power & Critique"}
                 </h3>
                 <p className="text-sm opacity-75 leading-relaxed">
                   {lang === "sv"
-                    ? "Ställer de obekväma frågorna om vem som gynnas av en arkitektur, vem som marginaliseras och var de blinda fläckarna finns."
-                    : "Every system distributes power. I ask the uncomfortable questions about who benefits from an architecture, who gets erased, and where the blind spots hide."}
+                    ? "Ställer de nödvändiga frågorna om vem som gynnas, vem som missas och hur koden påverkar."
+                    : "Asking the necessary questions about who benefits, who gets missed, and how the code impacts reality."}
                 </p>
               </div>
             </div>
@@ -299,7 +311,6 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
         <GrommetDivider />
 
-        {/* --- PROJECTS --- */}
         <section id="projects" className="py-6 max-w-7xl mx-auto px-6 md:px-10">
           <div className="mb-8 flex flex-wrap justify-between items-end gap-6">
             <div>
@@ -343,7 +354,7 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                     href={`/cases/${item.id}`}
                     className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider underline decoration-1 underline-offset-4 opacity-90 hover:opacity-100 transition-opacity"
                   >
-                    {lang === "sv" ? "Läs fullständig fallstudie" : "Read full case study"} <span aria-hidden="true">→</span>
+                    {lang === "sv" ? "Läs hela caset →" : "Read full case study →"} <span aria-hidden="true"></span>
                   </Link>
                 </div>
               </article>
@@ -353,8 +364,7 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
         <GrommetDivider />
 
-        {/* --- CREATIVE LAB --- */}
-        <section id="lab" className="py-6 max-w-7xl mx-auto px-6 md:px-10">
+       <section id="lab" className="py-6 max-w-7xl mx-auto px-6 md:px-10">
           <div className="mb-8">
             <h2 className="font-serif text-3xl md:text-4xl font-normal">
               Creative Lab
@@ -371,12 +381,14 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                   {lang === "sv" ? "Sandlåda" : "Sandbox"}
                 </h3>
                 <p className="text-sm opacity-75 leading-relaxed max-w-md">
-                  {lang === "sv" ? "Atmosfäriska spelprototyper (Darkwell, Realm Walker), oberoende byggen och webbexperiment." : "Atmospheric game prototypes (Darkwell, Realm Walker), independent builds, and web experiments."}
+                  {lang === "sv" 
+                    ? "Atmosfäriska spelprototyper (Darkwell, Realm Walker) och egna webbexperiment." 
+                    : "Atmospheric game prototypes (Darkwell, Realm Walker) and independent web experiments."}
                 </p>
               </div>
 
               <span className="mt-6 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider opacity-90 group-hover:translate-x-1 transition-transform">
-                {lang === "sv" ? "Utforska sandlåda" : "Explore playground"} →
+                {lang === "sv" ? "Utforska sandlåda" : "Explore sandbox"} →
               </span>
             </Link>
 
@@ -389,7 +401,9 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                   {lang === "sv" ? "Galleri" : "Gallery"}
                 </h3>
                 <p className="text-sm opacity-75 leading-relaxed max-w-md">
-                  {lang === "sv" ? "Analoga blyertsporträtt, bläckstudier och visuella anteckningar bortom skärmen." : "Analog pencil portraits, ink studies, and visual notes created away from the glowing screen."}
+                  {lang === "sv" 
+                    ? "Analoga blyertsporträtt, bläckstudier och visuella anteckningar." 
+                    : "Analog pencil portraits, ink studies, and visual notes."}
                 </p>
               </div>
 
@@ -400,15 +414,14 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
           </div>
         </section>
 
-        {/* --- CONTACT PANEL (Edge-to-edge utan ruta) --- */}
-        <section id="contact" className={`mt-16 py-12 px-6 md:px-10 max-w-7xl mx-auto border-y ${colors.border}`}>
+        <section id="contact" className={`mt-16 py-12 px-6 md:px-10 max-w-7xl mx-auto ${colors.border}`}>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.8rem] font-normal leading-[1.08] max-w-3xl mb-4">
-            {lang === "sv" ? "Vill du bygga något meningsfullt ihop? Låt oss höras." : "Want to build something meaningful together? Let’s talk."}
+            {lang === "sv" ? "Vill du bygga eller undersöka något ihop? Låt oss höras." : "Want to build or investigate something together? Let’s talk."}
           </h2>
           <p className="opacity-75 max-w-[54ch] text-sm sm:text-base leading-relaxed mb-8">
             {lang === "sv"
-              ? "Alltid öppen för intressanta teknikprojekt, forskningssamarbeten eller samtal om hur vi bygger bättre system."
-              : "Always open to interesting engineering projects, research collaborations, or conversations about how we build better tech."}
+              ? "Alltid öppen för intressanta teknikprojekt, forskningssamarbeten eller skarpa samtal om hur vi ställer de rätta frågorna."
+              : "Always open to interesting engineering projects, research collaborations, or sharp conversations about asking the right questions."}
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -416,7 +429,9 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
               onClick={handleCopyEmail}
               className={`font-mono text-xs uppercase tracking-wider px-5 py-3 border font-semibold transition-colors cursor-pointer ${colors.buttonPrimary}`}
             >
-              {copied ? "Kopierad: falktuva@proton.me ✓" : "Copy Email: falktuva@proton.me"}
+              {copied 
+                ? (lang === "sv" ? "Kopierad: falktuva@proton.me ✓" : "Copied: falktuva@proton.me ✓") 
+                : (lang === "sv" ? "Kopiera Email: falktuva@proton.me" : "Copy Email: falktuva@proton.me") }
             </button>
             <a
               href="https://linkedin.com/in/tuvafalk"

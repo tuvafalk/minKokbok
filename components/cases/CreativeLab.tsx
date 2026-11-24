@@ -25,7 +25,6 @@ export default function CreativeLab() {
   return (
     <main className="min-h-screen bg-[#0C0E0D] px-6 pb-24 pt-24 text-[#ECE9E2] md:px-12 mx-auto">
       <div className="mx-auto max-w-7xl">
-        {/* Header */}
         <header className="mb-16 max-w-4xl pb-10">
           <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
             ★ Creative Lab // Playground
@@ -39,7 +38,6 @@ export default function CreativeLab() {
           </p>
         </header>
 
-        {/* Live Projects Section */}
         <section aria-labelledby="live-projects-title">
           <div className="grid gap-6 md:grid-cols-2">
             {liveProjects.map((project) => (
@@ -66,7 +64,6 @@ export default function CreativeLab() {
                     {project.action} <span aria-hidden="true">→</span>
                   </Link>
                 </div>
-                {/* Underkant i metall/silver-ton inspirerad av öljetterna */}
                 <div
                   aria-hidden="true"
                   className="h-1 bg-[#B8C0BC]/60"
