@@ -6,10 +6,9 @@ import { usePathname } from 'next/navigation';
 
 const NAVIGATION_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Cases', href: '/cases' },
-  { label: 'Story', href: '/story' },
+  { label: 'Case', href: '/cases' },
   { label: 'Creative', href: '/creative' },
-  { label: 'Contact', href: '/contact' }
+  { label: 'Contact', href: '/#kontakt' }
 ];
 
 function isCurrentLink(pathname: string, href: string) {
@@ -45,7 +44,7 @@ export default function Header() {
         TUVA
       </Link>
 
-      <nav aria-label="Main navigation" className="hidden items-center gap-8 font-medium md:flex">
+      <nav aria-label="Huvudnavigation" className="hidden items-center gap-8 font-medium md:flex">
         {NAVIGATION_LINKS.map((link) => {
           const isCurrent = isCurrentLink(pathname, link.href);
 
@@ -71,7 +70,7 @@ export default function Header() {
           rel="noopener noreferrer"
           className="transition-colors hover:text-[#E36959]"
         >
-          Resume
+          Meritförteckning
         </a>
         <a
           href="https://www.linkedin.com/in/tuvafalk/"
@@ -85,7 +84,7 @@ export default function Header() {
 
       <button
         type="button"
-        aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+        aria-label={isMenuOpen ? 'Stäng navigeringsmenyn' : 'Öppna navigeringsmenyn'}
         aria-expanded={isMenuOpen}
         aria-controls="mobile-navigation"
         onClick={() => setIsMenuOpen((open) => !open)}
@@ -110,7 +109,7 @@ export default function Header() {
 
       <nav
         id="mobile-navigation"
-        aria-label="Mobile navigation"
+        aria-label="Navigering"
         hidden={!isMenuOpen}
         className="absolute left-0 right-0 top-full border-t border-[#1A2B3C]/10 bg-[#F5F1E7] px-4 pb-8 pt-4 shadow-lg md:hidden"
       >
@@ -136,7 +135,7 @@ export default function Header() {
             })}
             <div className="flex gap-8 pt-4 text-sm font-medium">
               <a href="/Tuva CV.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-                Resume
+                Meritförteckning
               </a>
               <a href="https://www.linkedin.com/in/tuvafalk/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
                 LinkedIn

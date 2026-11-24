@@ -11,25 +11,25 @@ const filters: ActiveFilter[] = ['All', 'AI Governance', 'Engineering & UX'];
 
 function FrameworkVisual() {
   return (
-    <div className="flex h-full min-h-64 items-center justify-center bg-[#e8ebe4] p-6 md:min-h-[380px]">
+    <div className="flex h-full min-h-64 items-center justify-center bg-[#141816] p-6 md:min-h-[380px]">
       <svg
         viewBox="0 0 560 360"
         role="img"
         aria-label="Diagram connecting governance, evaluation, and user experience"
         className="w-full max-w-125"
       >
-        <path d="M160 112h84m72 0h84M160 248h84m72 0h84M280 144v72" fill="none" stroke="#718278" strokeWidth="3" />
-        <rect x="28" y="72" width="132" height="80" rx="14" fill="#f8f6f0" stroke="#718278" strokeWidth="2" />
-        <rect x="400" y="72" width="132" height="80" rx="14" fill="#f8f6f0" stroke="#718278" strokeWidth="2" />
-        <rect x="28" y="208" width="132" height="80" rx="14" fill="#f8f6f0" stroke="#718278" strokeWidth="2" />
-        <rect x="400" y="208" width="132" height="80" rx="14" fill="#f8f6f0" stroke="#718278" strokeWidth="2" />
-        <rect x="208" y="132" width="144" height="96" rx="18" fill="#1A2B3C" />
-        <text x="94" y="116" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">Governance</text>
-        <text x="466" y="116" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">UX</text>
-        <text x="94" y="252" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">Research</text>
-        <text x="466" y="252" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">Evaluation</text>
-        <text x="280" y="174" textAnchor="middle" fill="#F5F1E7" fontSize="15" fontWeight="600">AI SYSTEM</text>
-        <text x="280" y="198" textAnchor="middle" fill="#cbd3cc" fontSize="12">Shared framework</text>
+        <path d="M160 112h84m72 0h84M160 248h84m72 0h84M280 144v72" fill="none" stroke="#939E98" strokeWidth="3" />
+        <rect x="28" y="72" width="132" height="80" rx="14" fill="#0C0E0D" stroke="#ECE9E2" strokeWidth="2" />
+        <rect x="400" y="72" width="132" height="80" rx="14" fill="#0C0E0D" stroke="#ECE9E2" strokeWidth="2" />
+        <rect x="28" y="208" width="132" height="80" rx="14" fill="#0C0E0D" stroke="#ECE9E2" strokeWidth="2" />
+        <rect x="400" y="208" width="132" height="80" rx="14" fill="#0C0E0D" stroke="#ECE9E2" strokeWidth="2" />
+        <rect x="208" y="132" width="144" height="96" rx="18" fill="#ECE9E2" />
+        <text x="94" y="116" textAnchor="middle" fill="#ECE9E2" fontSize="16" fontWeight="600">Governance</text>
+        <text x="466" y="116" textAnchor="middle" fill="#ECE9E2" fontSize="16" fontWeight="600">UX</text>
+        <text x="94" y="252" textAnchor="middle" fill="#ECE9E2" fontSize="16" fontWeight="600">Research</text>
+        <text x="466" y="252" textAnchor="middle" fill="#ECE9E2" fontSize="16" fontWeight="600">Evaluation</text>
+        <text x="280" y="174" textAnchor="middle" fill="#0C0E0D" fontSize="15" fontWeight="600">AI SYSTEM</text>
+        <text x="280" y="198" textAnchor="middle" fill="#0C0E0D" fontSize="12">Shared framework</text>
       </svg>
     </div>
   );
@@ -37,24 +37,24 @@ function FrameworkVisual() {
 
 function RiskMatrixVisual() {
   return (
-    <div className="flex h-full min-h-64 items-center justify-center bg-[#eee8df] p-6 md:min-h-[380px]">
+    <div className="flex h-full min-h-64 items-center justify-center bg-[#141816] p-6 md:min-h-[380px]">
       <svg
         viewBox="0 0 560 360"
         role="img"
         aria-label="Illustrative risk matrix and system boundary"
         className="w-full max-w-125"
       >
-        <rect x="86" y="40" width="388" height="280" rx="18" fill="#f8f6f0" stroke="#d4c8b7" strokeWidth="2" />
-        <path d="M280 80v200M126 180h308" stroke="#c6b8a5" strokeWidth="2" />
-        <rect x="126" y="80" width="154" height="100" fill="#d9e3d6" />
-        <rect x="280" y="80" width="154" height="100" fill="#e9d8bd" />
-        <rect x="126" y="180" width="154" height="100" fill="#e7e5d7" />
-        <rect x="280" y="180" width="154" height="100" fill="#d9c8bd" />
-        <rect x="86" y="40" width="388" height="280" rx="18" fill="none" stroke="#d4c8b7" strokeWidth="2" />
-        <text x="203" y="132" textAnchor="middle" fill="#40554a" fontSize="15" fontWeight="600">Feasibility</text>
-        <text x="357" y="132" textAnchor="middle" fill="#73583c" fontSize="15" fontWeight="600">Ethics</text>
-        <text x="203" y="232" textAnchor="middle" fill="#5c5b49" fontSize="15" fontWeight="600">Risk</text>
-        <text x="357" y="232" textAnchor="middle" fill="#694d40" fontSize="15" fontWeight="600">Boundary</text>
+        <rect x="86" y="40" width="388" height="280" rx="18" fill="#0C0E0D" stroke="#ECE9E2" strokeWidth="2" />
+        <path d="M280 80v200M126 180h308" stroke="#ECE9E2" strokeWidth="2" strokeOpacity="0.2" />
+        <rect x="126" y="80" width="154" height="100" fill="#141816" />
+        <rect x="280" y="80" width="154" height="100" fill="#1C2420" />
+        <rect x="126" y="180" width="154" height="100" fill="#1C2420" />
+        <rect x="280" y="180" width="154" height="100" fill="#141816" />
+        <rect x="86" y="40" width="388" height="280" rx="18" fill="none" stroke="#ECE9E2" strokeWidth="2" />
+        <text x="203" y="132" textAnchor="middle" fill="#ECE9E2" fontSize="15" fontWeight="600">Feasibility</text>
+        <text x="357" y="132" textAnchor="middle" fill="#B8C0BC" fontSize="15" fontWeight="600">Ethics</text>
+        <text x="203" y="232" textAnchor="middle" fill="#B8C0BC" fontSize="15" fontWeight="600">Risk</text>
+        <text x="357" y="232" textAnchor="middle" fill="#ECE9E2" fontSize="15" fontWeight="600">Boundary</text>
       </svg>
     </div>
   );
@@ -70,7 +70,7 @@ function ProjectVisual({ project }: { project: CaseProject }) {
   }
 
   return (
-    <div className="relative min-h-64 overflow-hidden bg-zinc-100 md:min-h-95">
+    <div className="relative min-h-64 overflow-hidden bg-[#141816] md:min-h-95">
       {project.imageUrl && (
         <Image
           src={project.imageUrl}
@@ -93,13 +93,13 @@ function FeaturedCaseCard({ project, reverse }: { project: CaseProject; reverse?
 
   const details = (
     <div className={`flex flex-col justify-center p-7 md:p-10 ${reverse ? 'md:order-1' : ''}`}>
-      <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-[#718278]">
-        {project.category}
+      <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
+        ★ {project.category}
       </p>
-      <h2 className="mb-5 font-serif text-3xl leading-tight text-[#1A2B3C] md:text-4xl">
+      <h2 className="mb-5 font-serif text-3xl leading-tight text-[#ECE9E2] md:text-4xl">
         {project.title}
       </h2>
-      <p className="mb-8 max-w-xl text-sm leading-7 text-zinc-600 md:text-base">
+      <p className="mb-8 max-w-xl text-sm leading-7 text-[#939E98] md:text-base">
         {project.shortDescription}
       </p>
       <div className="flex flex-wrap items-end justify-between gap-5">
@@ -107,7 +107,7 @@ function FeaturedCaseCard({ project, reverse }: { project: CaseProject; reverse?
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-zinc-200 bg-[#F5F1E7] px-3 py-1.5 text-xs text-zinc-600"
+              className="border border-[#ECE9E2]/20 bg-[#141816] px-3 py-1.5 font-mono text-xs text-[#ECE9E2]"
             >
               {tag}
             </span>
@@ -115,7 +115,7 @@ function FeaturedCaseCard({ project, reverse }: { project: CaseProject; reverse?
         </div>
         <Link
           href={`/cases/${project.id}`}
-          className="shrink-0 font-semibold text-[#1A2B3C] underline decoration-[#9EAEA2] underline-offset-4 transition-colors hover:text-[#718278]"
+          className="shrink-0 font-mono text-xs uppercase tracking-wider text-[#ECE9E2] underline decoration-[#B8C0BC] underline-offset-4 transition-colors hover:text-[#B8C0BC]"
         >
           Read case <span aria-hidden="true">→</span>
         </Link>
@@ -124,7 +124,7 @@ function FeaturedCaseCard({ project, reverse }: { project: CaseProject; reverse?
   );
 
   return (
-    <article className="grid overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm md:grid-cols-2">
+    <article className="grid overflow-hidden border border-[#ECE9E2]/20 bg-[#0C0E0D] transition-all duration-300 hover:border-[#ECE9E2] md:grid-cols-2">
       {reverse ? (
         <>
           {details}
@@ -142,8 +142,8 @@ function FeaturedCaseCard({ project, reverse }: { project: CaseProject; reverse?
 
 function SupportingCaseCard({ project }: { project: CaseProject }) {
   return (
-    <article className="grid overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm sm:grid-cols-[220px_1fr]">
-      <div className="relative min-h-44 bg-zinc-100">
+    <article className="grid overflow-hidden border border-[#ECE9E2]/20 bg-[#0C0E0D] transition-all duration-300 hover:border-[#ECE9E2] sm:grid-cols-[220px_1fr]">
+      <div className="relative min-h-44 bg-[#141816]">
         {project.imageUrl && (
           <Image
             src={project.imageUrl}
@@ -155,14 +155,14 @@ function SupportingCaseCard({ project }: { project: CaseProject }) {
         )}
       </div>
       <div className="flex flex-col justify-center p-6">
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#718278]">
-          {project.category}
+        <p className="mb-2 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
+          ★ {project.category}
         </p>
-        <h3 className="mb-2 font-serif text-2xl text-[#1A2B3C]">{project.title}</h3>
-        <p className="mb-4 text-sm leading-6 text-zinc-600">{project.shortDescription}</p>
+        <h3 className="mb-2 font-serif text-2xl text-[#ECE9E2]">{project.title}</h3>
+        <p className="mb-4 text-sm leading-6 text-[#939E98]">{project.shortDescription}</p>
         <Link
           href={`/cases/${project.id}`}
-          className="w-fit font-semibold text-[#1A2B3C] underline decoration-[#9EAEA2] underline-offset-4 transition-colors hover:text-[#718278]"
+          className="w-fit font-mono text-xs uppercase tracking-wider text-[#ECE9E2] underline decoration-[#B8C0BC] underline-offset-4 transition-colors hover:text-[#B8C0BC]"
         >
           Read case <span aria-hidden="true">→</span>
         </Link>
@@ -175,9 +175,9 @@ function EngineeringCaseCard({ project }: { project: CaseProject }) {
   return (
     <Link
       href={`/cases/${project.id}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className="group flex flex-col overflow-hidden border border-[#ECE9E2]/20 bg-[#0C0E0D] transition-all duration-300 hover:-translate-y-1 hover:border-[#ECE9E2]"
     >
-      <div className="relative h-52 overflow-hidden bg-zinc-100">
+      <div className="relative h-52 overflow-hidden bg-[#141816]">
         {project.imageUrl && (
           <Image
             src={project.imageUrl}
@@ -189,12 +189,12 @@ function EngineeringCaseCard({ project }: { project: CaseProject }) {
         )}
       </div>
       <div className="flex flex-1 flex-col p-6">
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[#718278]">
-          {project.category}
+        <p className="mb-2 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
+          ★ {project.category}
         </p>
-        <h3 className="mb-3 font-serif text-2xl text-[#1A2B3C]">{project.title}</h3>
-        <p className="mb-5 flex-1 text-sm leading-6 text-zinc-600">{project.shortDescription}</p>
-        <span className="font-semibold text-[#1A2B3C]">
+        <h3 className="mb-3 font-serif text-2xl text-[#ECE9E2]">{project.title}</h3>
+        <p className="mb-5 flex-1 text-sm leading-6 text-[#939E98]">{project.shortDescription}</p>
+        <span className="font-mono text-xs uppercase tracking-wider text-[#ECE9E2] underline decoration-[#B8C0BC] underline-offset-4">
           Read case <span aria-hidden="true">→</span>
         </span>
       </div>
@@ -215,7 +215,17 @@ export default function CasesPortfolio({ cases }: { cases: CaseProject[] }) {
   const engineeringCases = cases.filter((project) => project.filterGroup === 'Engineering & UX');
 
   return (
-    <div>
+    <div className="mx-auto max-w-[1140px] px-6 py-12 md:px-12">
+      {/* Back Link to Overview */}
+      <div className="mb-8">
+        <Link
+          href="/"
+          className="font-mono text-xs uppercase tracking-wider text-[#939E98] transition-colors hover:text-[#ECE9E2]"
+        >
+          ← Back to overview
+        </Link>
+      </div>
+
       <div role="group" aria-label="Filter case studies" className="mb-10 flex flex-wrap gap-2">
         {filters.map((filter) => (
           <button
@@ -223,10 +233,10 @@ export default function CasesPortfolio({ cases }: { cases: CaseProject[] }) {
             type="button"
             aria-pressed={activeFilter === filter}
             onClick={() => setActiveFilter(filter)}
-            className={`rounded-full border px-5 py-2.5 text-sm font-medium transition-colors ${
+            className={`font-mono text-xs uppercase tracking-wider border px-5 py-2.5 transition-colors ${
               activeFilter === filter
-                ? 'border-[#1A2B3C] bg-[#1A2B3C] text-white'
-                : 'border-zinc-300 bg-white/70 text-zinc-600 hover:border-[#1A2B3C] hover:text-[#1A2B3C]'
+                ? 'border-[#ECE9E2] bg-[#ECE9E2] text-[#0C0E0D] font-semibold'
+                : 'border-[#ECE9E2]/20 bg-[#0C0E0D] text-[#939E98] hover:border-[#ECE9E2] hover:text-[#ECE9E2]'
             }`}
           >
             {filter}
@@ -245,7 +255,7 @@ export default function CasesPortfolio({ cases }: { cases: CaseProject[] }) {
           ))}
           {supportingCases.length > 0 && (
             <div className="pt-2">
-              <h2 className="mb-5 font-serif text-2xl text-[#1A2B3C]">Related research</h2>
+              <h2 className="mb-5 font-serif text-2xl text-[#ECE9E2]">Related research</h2>
               <div className="grid gap-5">
                 {supportingCases.map((project) => (
                   <SupportingCaseCard key={project.id} project={project} />
@@ -261,11 +271,11 @@ export default function CasesPortfolio({ cases }: { cases: CaseProject[] }) {
           <header className="mb-7">
             <h2
               id="engineering-lab-title"
-              className="mb-2 font-serif text-3xl text-[#1A2B3C] md:text-4xl"
+              className="mb-2 font-serif text-3xl text-[#ECE9E2] md:text-4xl"
             >
               Engineering &amp; Creative Lab
             </h2>
-            <p className="max-w-2xl text-zinc-600">
+            <p className="max-w-2xl text-[#939E98]">
               Earlier builds, game development, and full-stack experiments.
             </p>
           </header>

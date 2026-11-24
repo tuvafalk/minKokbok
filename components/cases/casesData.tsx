@@ -66,6 +66,27 @@ export const casesData: CaseProject[] = [
     ]
   },
   {
+    id: 'bioprocess',
+    title: 'Bioprocess Control & Agent Interfaces',
+    category: 'Frontend & Agent Workflows',
+    filterGroup: 'Engineering & UX',
+    tags: ['React', 'TypeScript', 'Human Agency'],
+    shortDescription:
+      'Building real-time batch tracking interfaces and prototyping MCP-based AI agent workflows for high-stakes laboratory environments at Sartorius.',
+    sections: [
+      {
+        title: 'The Work',
+        content:
+          'Building real-time batch tracking interfaces and prototyping MCP-based AI agent workflows for high-stakes laboratory environments at Sartorius.'
+      },
+      {
+        title: 'Human Oversight',
+        content:
+          'Automation should never strip away human judgment. Supervisory controls are designed so operators always keep the final say.'
+      }
+    ]
+  },
+  {
     id: 'darkwell',
     title: 'Darkwell: A Weave Quest',
     category: 'Game Development',

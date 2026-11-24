@@ -29,7 +29,7 @@ export default function NotFound() {
               Back home
             </Link>
             <Link
-              href="/playground"
+              href="/creative"
               className="inline-flex items-center rounded-full border border-[#1A2B3C]/20 bg-white/70 px-6 py-3 font-semibold text-[#1A2B3C] transition-colors hover:bg-white"
             >
               Visit the Creative Lab
