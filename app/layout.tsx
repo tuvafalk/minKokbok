@@ -4,7 +4,7 @@ import StarHeader from '@/components/header/StarHeader';
 import StarFooterWithNav from '@/components/footer/StarFooter';
 
 export const metadata: Metadata = {
-  title: 'Tuva Falk /// Archive & Portfolio',
+  title: 'Tuva Falk /// Portfolio & Archive',
   description: 'Technical auditing, power dynamics, and systems architecture.',
   icons: {
     icon: '/favicon.svg',

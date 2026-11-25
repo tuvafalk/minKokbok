@@ -1,7 +1,8 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useThemeAndLang, THEME_STORAGE_KEY, LANGUAGE_STORAGE_KEY } from '@/lib/theme';
+import { useThemeAndLang } from '@/lib/theme';
 
 function StarIcon() {
   return (
@@ -13,42 +14,48 @@ function StarIcon() {
 
 export default function StarHeader() {
   const { lang, isDarkMode, colors } = useThemeAndLang();
+  const [domainSuffix, setDomainSuffix] = useState('SE');
+
+  useEffect(() => {
+    const hostname = window.location.hostname;
+    if (hostname.endsWith('.com')) {
+      setDomainSuffix('COM');
+    } else {
+      setDomainSuffix('SE');
+    }
+  }, []);
 
   const toggleLang = () => {
-    const nextLang = lang === 'en' ? 'sv' : 'en';
-    document.cookie = `${LANGUAGE_STORAGE_KEY}=${nextLang}; Path=/; Max-Age=31536000; SameSite=Lax`;
+    const nextLang = lang === 'sv' ? 'en' : 'sv';
+    document.cookie = `star-portfolio-language=${nextLang}; path=/; max-age=31536000`;
     window.dispatchEvent(new Event('themeChanged'));
   };
 
   const toggleTheme = () => {
-    const nextTheme = !isDarkMode;
-    document.cookie = `${THEME_STORAGE_KEY}=${nextTheme ? 'dark' : 'light'}; Path=/; Max-Age=31536000; SameSite=Lax`;
+    const nextTheme = isDarkMode ? 'light' : 'dark';
+    document.cookie = `star-portfolio-theme=${nextTheme}; path=/; max-age=31536000`;
     window.dispatchEvent(new Event('themeChanged'));
   };
 
   return (
     <>
-      <header className="sticky top-0 z-40 flex flex-wrap items-center justify-between gap-4 border-b border-[#ECE9E2]/15 bg-[#0C0E0D]/90 px-6 py-4 text-[#ECE9E2] backdrop-blur-md md:px-9">
-        <div className="flex items-center gap-2.5">
-          <StarIcon />
-          <Link href="/" className="font-mono text-xs font-bold uppercase tracking-[0.18em]">
-            TUVA FALK <span className="text-[#B23A25]">///</span> SE
-          </Link>
-        </div>
-
-        <nav className="flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
-          <Link href="/" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
+      <header className={`w-full px-6 md:px-10 py-4 flex justify-between items-center border-b transition-colors duration-300 ${colors.border} ${colors.bg} ${colors.text}`}>
+        <Link href="/" className="font-mono text-xs font-bold uppercase tracking-[0.18em] flex items-center gap-1.5">
+          TUVA FALK <span className="text-[#B23A25]">///</span> {domainSuffix}
+        </Link>
+        <nav className="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
+          <Link href="/#how-i-work" className="opacity-75 transition-opacity hover:opacity-100">
             {lang === 'sv' ? 'Hur jag arbetar' : 'How I Work'}
           </Link> 
-          <Link href="/cases" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
+          <Link href="/cases" className="opacity-75 transition-opacity hover:opacity-100">
             {lang === 'sv' ? 'Cases' : 'Cases'}
           </Link>
-          <Link href="/creative" className="text-[#939E98] transition-colors hover:text-[#ECE9E2]">
+          <Link href="/creative" className="opacity-75 transition-opacity hover:opacity-100">
             Creative Lab
           </Link>
           <Link
             href="/#contact"
-            className="border border-[#ECE9E2] bg-[#ECE9E2] px-4 py-2 font-semibold text-[#0C0E0D] transition-colors hover:bg-[#3B5747] hover:border-[#3B5747] hover:text-[#ECE9E2]"
+            className={`border px-4 py-2 font-semibold transition-colors ${colors.buttonPrimary}`}
           >
             {lang === 'sv' ? 'Kontakt' : 'Contact'}
           </Link>
