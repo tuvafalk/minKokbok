@@ -1,5 +1,7 @@
+'use client';
+
 import Image from 'next/image';
-import StarHeader from '@/components/header/StarHeader';
+import { useThemeAndLang } from '@/lib/theme';
 
 const galleryItems = [
   {
@@ -35,15 +37,20 @@ const galleryItems = [
 ];
 
 export default function GalleryPage() {
+  const { lang, colors } = useThemeAndLang();
+
   return (
     <>
-      <StarHeader />
-      <main className="min-h-screen bg-[#0C0E0D] px-6 pb-24 pt-16 text-[#ECE9E2] md:px-12">
+      <main className={`min-h-screen px-6 pb-24 pt-16 transition-colors duration-300 md:px-12 ${colors.bg} ${colors.text}`}>
         <div className="mx-auto max-w-7xl">
           <header className="mb-12 max-w-3xl pb-8">
-            <h1 className="mb-4 font-serif text-5xl font-normal md:text-6xl">Art Gallery</h1>
-            <p className="max-w-2xl text-sm leading-relaxed text-[#939E98] md:text-base">
-              A growing archive of photographs, illustrations, and visual experiments.
+            <h1 className="mb-4 font-serif text-5xl font-normal md:text-6xl">
+              {lang === 'sv' ? 'Konstgalleri' : 'Art Gallery'}
+            </h1>
+            <p className={`max-w-2xl text-sm leading-relaxed md:text-base ${colors.accentText}`}>
+              {lang === 'sv' 
+                ? 'Ett växande arkiv med fotografier, illustrationer och visuella experiment.' 
+                : 'A growing archive of photographs, illustrations, and visual experiments.'}
             </p>
           </header>
 
@@ -51,7 +58,7 @@ export default function GalleryPage() {
             {galleryItems.map((item, index) => (
               <figure
                 key={item.src}
-                className="overflow-hidden border border-[#ECE9E2]/20 bg-[#141816]"
+                className={`overflow-hidden border transition-colors duration-300 ${colors.border} ${colors.cardBg}`}
               >
                 <div className="relative aspect-[4/5]">
                   <Image
@@ -62,16 +69,16 @@ export default function GalleryPage() {
                     className="object-contain p-2"
                   />
                 </div>
-                <figcaption className="flex items-center justify-between border-t border-[#ECE9E2]/15 px-4 py-3">
+                <figcaption className={`flex items-center justify-between border-t px-4 py-3 transition-colors duration-300 ${colors.border}`}>
                   <span className="font-serif text-lg">{item.title}</span>
-                  <span className="font-mono text-xs text-[#939E98]">
+                  <span className={`font-mono text-xs ${colors.accentText}`}>
                     [ {String(index + 1).padStart(2, '0')} ]
                   </span>
                 </figcaption>
               </figure>
             ))}
           </section>
-        </div>
+        </div>        
       </main>
     </>
   );

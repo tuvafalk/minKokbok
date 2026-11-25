@@ -4,7 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { casesData, type CaseFilterGroup, type CaseProject } from '@/components/cases/casesData';
-import StarHeader from '@/components/header/StarHeader';
+
+import { useThemeAndLang } from '@/lib/theme';
 
 type ActiveFilter = 'All' | CaseFilterGroup;
 
@@ -206,19 +207,8 @@ function EngineeringCaseCard({ project }: { project: CaseProject }) {
 const LANGUAGE_STORAGE_KEY = 'star-portfolio-language';
 
 export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: CaseProject[]; initialLang?: 'en' | 'sv' }) {
-  const [lang, setLang] = useState<'en' | 'sv'>(initialLang);
   const [activeFilter, setActiveFilter] = useState<ActiveFilter>('All');
-
-  useEffect(() => {
-    const cookies = document.cookie.split(';');
-    const langCookie = cookies.find((c) => c.trim().startsWith(`${LANGUAGE_STORAGE_KEY}=`));
-    if (langCookie) {
-      const storedLang = langCookie.split('=')[1] as 'en' | 'sv';
-      if (storedLang === 'en' || storedLang === 'sv') {
-        setLang(storedLang);
-      }
-    }
-  }, []);
+  const { lang, colors } = useThemeAndLang(initialLang);
 
   const projectList = cases ?? casesData;
 
@@ -239,26 +229,16 @@ export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: 
 
   return (
     <>
-      <StarHeader />
-
-      <main className="min-h-screen bg-[#F5F1E7] text-[#0C0E0D] px-6 pb-24 pt-16 md:px-12">
+      <main className={`min-h-screen ${colors.bg} ${colors.text} px-6 pb-24 pt-16 md:px-12}`}>
         <div className="mx-auto max-w-7xl">
           <header className="mb-16 max-w-3xl pb-10">
-            <div className="mb-6">
-              <Link
-                href="/"
-                className="font-mono text-xs uppercase tracking-wider text-[#526158] transition-colors hover:text-[#0C0E0D]"
-              >
-                {lang === 'sv' ? '← Tillbaka till översikten' : '← Back to overview'}
-              </Link>
-            </div>
-            <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#939E98]">
+            <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] ${colors.text}">
               ★ Case studies // Research
             </p>
-            <h1 className="mb-6 font-serif text-5xl leading-tight md:text-6xl text-[#0C0E0D]">
-              {lang === 'sv' ? 'Cases & Forskning' : 'Cases & Research'}
+            <h1 className={`mb-6 font-serif text-5xl leading-tight md:text-6xl ${colors.text}`}>
+              {lang === 'sv' ? 'Projekt & Forskning' : 'Selected Work & Research'}
             </h1>
-            <p className="max-w-2xl text-sm leading-relaxed text-[#939E98] md:text-base text-base md:text-lg">
+            <p className="max-w-2xl text-sm leading-relaxed ${colors.text} md:text-base text-base md:text-lg">
               {lang === 'sv'
                 ? 'Arkivet över granskningar, systemarkitektur och maktkritiskt policyarbete.'
                 : 'An archive of audits, systems architecture, and critical power-analysis policy work.'}
@@ -274,8 +254,8 @@ export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: 
                 onClick={() => setActiveFilter(filter)}
                 className={`border px-5 py-3 font-mono text-xs font-semibold uppercase tracking-wider transition-colors ${
                   activeFilter === filter
-                    ? 'border-[#0C0E0D] bg-[#0C0E0D] text-[#F5F1E7]'
-                    : 'border-[#0C0E0D]/25 bg-transparent text-[#526158] hover:border-[#0C0E0D] hover:text-[#0C0E0D]'
+                    ? `${colors.border} ${colors.bg} ${colors.text}`
+                    : `${colors.border}/25 ${colors.bg} ${colors.text} hover:${colors.border} hover:${colors.text}`
                 }`}
               >
                 {filter}
@@ -294,7 +274,7 @@ export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: 
               ))}
               {supportingCases.length > 0 && (
                 <div className="pt-2">
-                  <h2 className="mb-5 font-serif text-2xl text-[#0C0E0D]">
+                  <h2 className={`mb-5 font-serif text-2xl ${colors.text}`}>
                     {lang === 'sv' ? 'Relaterad forskning' : 'Related research'}
                   </h2>
                   <div className="grid gap-5">
@@ -312,11 +292,11 @@ export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: 
               <header className="mb-7">
                 <h2
                   id="engineering-lab-title"
-                  className="mb-2 font-serif text-3xl text-[#0C0E0D] md:text-4xl"
+                  className={`mb-2 font-serif text-3xl ${colors.text} md:text-4xl`}
                 >
                   Engineering &amp; Creative Lab
                 </h2>
-                <p className="max-w-2xl text-[#526158]">
+                <p className={`max-w-2xl ${colors.text}`}>
                   {lang === 'sv'
                     ? 'Tidigare byggen, spelprototyper och full-stack-experiment.'
                     : 'Earlier builds, game prototypes, and full-stack experiments.'}
