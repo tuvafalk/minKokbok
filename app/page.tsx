@@ -7,8 +7,8 @@ const VERSIONS = {
   sv: SwedishOnePager,
   classic: ClassicOnePager,
   star: StarIndex,
-}
-const ACTIVE_VERSION: keyof typeof VERSIONS = "star";  
+};
+const ACTIVE_VERSION: keyof typeof VERSIONS = 'star';
 
 export default async function HomePage() {
   if (ACTIVE_VERSION === 'star') {
@@ -17,6 +17,6 @@ export default async function HomePage() {
     return <StarIndex initialLang={savedLang === 'en' ? 'en' : 'sv'} />;
   }
 
-  const SelectedPortfolio = VERSIONS[ACTIVE_VERSION]
+  const SelectedPortfolio = VERSIONS[ACTIVE_VERSION];
   return <SelectedPortfolio />;
 }

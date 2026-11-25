@@ -8,12 +8,12 @@ export default function NotFound() {
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
           backgroundImage: 'radial-gradient(circle at center, #9EAEA2 1px, transparent 1px)',
-          backgroundSize: '36px 36px'
+          backgroundSize: '36px 36px',
         }}
       />
 
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 md:grid-cols-[1fr_0.85fr] md:gap-16">
-        <section>          
+        <section>
           <h1 className="max-w-4xl font-serif text-4xl leading-[1.08] md:text-7xl">
             This page wandered off.
           </h1>

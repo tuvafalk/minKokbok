@@ -39,14 +39,19 @@ export default function StarHeader() {
 
   return (
     <>
-      <header className={`w-full px-6 md:px-10 py-4 flex justify-between items-center border-b transition-colors duration-300 ${colors.border} ${colors.bg} ${colors.text}`}>
-        <Link href="/" className="font-mono text-xs font-bold uppercase tracking-[0.18em] flex items-center gap-1.5">
+      <header
+        className={`w-full px-6 md:px-10 py-4 flex justify-between items-center border-b transition-colors duration-300 ${colors.border} ${colors.bg} ${colors.text}`}
+      >
+        <Link
+          href="/"
+          className="font-mono text-xs font-bold uppercase tracking-[0.18em] flex items-center gap-1.5"
+        >
           TUVA FALK <span className="text-[#B23A25]">///</span> {domainSuffix}
         </Link>
         <nav className="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-wider">
           <Link href="/#how-i-work" className="opacity-75 transition-opacity hover:opacity-100">
             {lang === 'sv' ? 'Hur jag arbetar' : 'How I Work'}
-          </Link> 
+          </Link>
           <Link href="/cases" className="opacity-75 transition-opacity hover:opacity-100">
             {lang === 'sv' ? 'Cases' : 'Cases'}
           </Link>
@@ -62,10 +67,10 @@ export default function StarHeader() {
         </nav>
       </header>
 
-      <div className={`w-full px-6 md:px-12 py-2 border-b text-[11px] font-mono uppercase tracking-widest flex justify-between items-center transition-colors duration-300 ${colors.border} ${colors.subBg} ${colors.text}`}>
-        <span className="opacity-75 flex items-center gap-2">
-          ★ [ EDITION: TF-2026 ]
-        </span>
+      <div
+        className={`w-full px-6 md:px-12 py-2 border-b text-[11px] font-mono uppercase tracking-widest flex justify-between items-center transition-colors duration-300 ${colors.border} ${colors.subBg} ${colors.text}`}
+      >
+        <span className="opacity-75 flex items-center gap-2">★ [ EDITION: TF-2026 ]</span>
         <div className="flex items-center gap-4">
           <button onClick={toggleLang} className="hover:underline font-semibold cursor-pointer">
             [ LANG: {lang.toUpperCase()} ]

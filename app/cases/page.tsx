@@ -20,18 +20,71 @@ function FrameworkVisual() {
         aria-label="Diagram connecting governance, evaluation, and user experience"
         className="w-full max-w-125"
       >
-        <path d="M160 112h84m72 0h84M160 248h84m72 0h84M280 144v72" fill="none" stroke="#526158" strokeWidth="3" />
-        <rect x="28" y="72" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#0C0E0D" strokeWidth="2" />
-        <rect x="400" y="72" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#0C0E0D" strokeWidth="2" />
-        <rect x="28" y="208" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#0C0E0D" strokeWidth="2" />
-        <rect x="400" y="208" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#0C0E0D" strokeWidth="2" />
+        <path
+          d="M160 112h84m72 0h84M160 248h84m72 0h84M280 144v72"
+          fill="none"
+          stroke="#526158"
+          strokeWidth="3"
+        />
+        <rect
+          x="28"
+          y="72"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#0C0E0D"
+          strokeWidth="2"
+        />
+        <rect
+          x="400"
+          y="72"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#0C0E0D"
+          strokeWidth="2"
+        />
+        <rect
+          x="28"
+          y="208"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#0C0E0D"
+          strokeWidth="2"
+        />
+        <rect
+          x="400"
+          y="208"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#0C0E0D"
+          strokeWidth="2"
+        />
         <rect x="208" y="132" width="144" height="96" rx="18" fill="#0C0E0D" />
-        <text x="94" y="116" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">Governance</text>
-        <text x="466" y="116" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">UX</text>
-        <text x="94" y="252" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">Research</text>
-        <text x="466" y="252" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">Evaluation</text>
-        <text x="280" y="174" textAnchor="middle" fill="#ECE9E2" fontSize="15" fontWeight="600">AI SYSTEM</text>
-        <text x="280" y="198" textAnchor="middle" fill="#ECE9E2" fontSize="12">Shared framework</text>
+        <text x="94" y="116" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">
+          Governance
+        </text>
+        <text x="466" y="116" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">
+          UX
+        </text>
+        <text x="94" y="252" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">
+          Research
+        </text>
+        <text x="466" y="252" textAnchor="middle" fill="#0C0E0D" fontSize="16" fontWeight="600">
+          Evaluation
+        </text>
+        <text x="280" y="174" textAnchor="middle" fill="#ECE9E2" fontSize="15" fontWeight="600">
+          AI SYSTEM
+        </text>
+        <text x="280" y="198" textAnchor="middle" fill="#ECE9E2" fontSize="12">
+          Shared framework
+        </text>
       </svg>
     </div>
   );
@@ -46,17 +99,43 @@ function RiskMatrixVisual() {
         aria-label="Illustrative risk matrix and system boundary"
         className="w-full max-w-125"
       >
-        <rect x="86" y="40" width="388" height="280" rx="18" fill="#F5F1E7" stroke="#0C0E0D" strokeWidth="2" />
+        <rect
+          x="86"
+          y="40"
+          width="388"
+          height="280"
+          rx="18"
+          fill="#F5F1E7"
+          stroke="#0C0E0D"
+          strokeWidth="2"
+        />
         <path d="M280 80v200M126 180h308" stroke="#0C0E0D" strokeWidth="2" strokeOpacity="0.15" />
         <rect x="126" y="80" width="154" height="100" fill="#EFECE4" />
         <rect x="280" y="80" width="154" height="100" fill="#E5DFD3" />
         <rect x="126" y="180" width="154" height="100" fill="#E5DFD3" />
         <rect x="280" y="180" width="154" height="100" fill="#EFECE4" />
-        <rect x="86" y="40" width="388" height="280" rx="18" fill="none" stroke="#0C0E0D" strokeWidth="2" />
-        <text x="203" y="132" textAnchor="middle" fill="#0C0E0D" fontSize="15" fontWeight="600">Feasibility</text>
-        <text x="357" y="132" textAnchor="middle" fill="#526158" fontSize="15" fontWeight="600">Ethics</text>
-        <text x="203" y="232" textAnchor="middle" fill="#526158" fontSize="15" fontWeight="600">Risk</text>
-        <text x="357" y="232" textAnchor="middle" fill="#0C0E0D" fontSize="15" fontWeight="600">Boundary</text>
+        <rect
+          x="86"
+          y="40"
+          width="388"
+          height="280"
+          rx="18"
+          fill="none"
+          stroke="#0C0E0D"
+          strokeWidth="2"
+        />
+        <text x="203" y="132" textAnchor="middle" fill="#0C0E0D" fontSize="15" fontWeight="600">
+          Feasibility
+        </text>
+        <text x="357" y="132" textAnchor="middle" fill="#526158" fontSize="15" fontWeight="600">
+          Ethics
+        </text>
+        <text x="203" y="232" textAnchor="middle" fill="#526158" fontSize="15" fontWeight="600">
+          Risk
+        </text>
+        <text x="357" y="232" textAnchor="middle" fill="#0C0E0D" fontSize="15" fontWeight="600">
+          Boundary
+        </text>
       </svg>
     </div>
   );
@@ -195,7 +274,9 @@ function EngineeringCaseCard({ project }: { project: CaseProject }) {
           ★ {project.category}
         </p>
         <h3 className="mb-3 font-serif text-2xl text-[#0C0E0D]">{project.title}</h3>
-        <p className="mb-6 flex-1 text-sm leading-6 text-[#0C0E0D]/80">{project.shortDescription}</p>
+        <p className="mb-6 flex-1 text-sm leading-6 text-[#0C0E0D]/80">
+          {project.shortDescription}
+        </p>
         <span className="inline-flex w-fit items-center gap-2 border border-[#0C0E0D] bg-[#0C0E0D] px-5 py-3 font-mono text-xs font-semibold uppercase tracking-wider text-[#F5F1E7] transition-colors group-hover:bg-transparent group-hover:text-[#0C0E0D]">
           Read case <span aria-hidden="true">→</span>
         </span>
@@ -206,7 +287,13 @@ function EngineeringCaseCard({ project }: { project: CaseProject }) {
 
 const LANGUAGE_STORAGE_KEY = 'star-portfolio-language';
 
-export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: CaseProject[]; initialLang?: 'en' | 'sv' }) {
+export default function CasesPortfolio({
+  cases,
+  initialLang = 'sv',
+}: {
+  cases?: CaseProject[];
+  initialLang?: 'en' | 'sv';
+}) {
   const [activeFilter, setActiveFilter] = useState<ActiveFilter>('All');
   const { lang, colors } = useThemeAndLang(initialLang);
 
@@ -223,7 +310,9 @@ export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: 
     (project) => project.filterGroup === 'AI Governance' && project.featuredOrder === undefined
   );
 
-  const engineeringCases = projectList.filter((project) => project.filterGroup === 'Engineering & UX');
+  const engineeringCases = projectList.filter(
+    (project) => project.filterGroup === 'Engineering & UX'
+  );
 
   const filters: ActiveFilter[] = ['All', 'AI Governance', 'Engineering & UX'];
 
@@ -266,11 +355,7 @@ export default function CasesPortfolio({ cases, initialLang = 'sv' }: { cases?: 
           {showGovernance && (
             <section aria-label="AI governance case studies" className="mb-20 space-y-8">
               {featuredCases.map((project, index) => (
-                <FeaturedCaseCard
-                  key={project.id}
-                  project={project}
-                  reverse={index === 1}
-                />
+                <FeaturedCaseCard key={project.id} project={project} reverse={index === 1} />
               ))}
               {supportingCases.length > 0 && (
                 <div className="pt-2">

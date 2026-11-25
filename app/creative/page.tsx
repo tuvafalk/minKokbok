@@ -9,7 +9,7 @@ const liveProjects = [
       'Browse recipes by category, search the collection, flip through the cookbook, or print it as a PDF.',
     href: '/recipes',
     action: 'Open the recipe book',
-    number: '01'
+    number: '01',
   },
   {
     title: 'Case Study Explorer',
@@ -18,14 +18,14 @@ const liveProjects = [
       'Explore selected work across AI governance, research, engineering, and creative development.',
     href: '/cases',
     action: 'Explore the cases',
-    number: '02'
-  }
+    number: '02',
+  },
 ];
 
-const version = "star";
+const version = 'star';
 
 export default function PlaygroundPage() {
-  if (version.includes("star")) {
+  if (version.includes('star')) {
     return (
       <>
         <CreativeLab />
@@ -73,10 +73,7 @@ export default function PlaygroundPage() {
                     {project.action} <span aria-hidden="true">→</span>
                   </Link>
                 </div>
-                <div
-                  aria-hidden="true"
-                  className="h-2 bg-[#9EAEA2]"
-                />
+                <div aria-hidden="true" className="h-2 bg-[#9EAEA2]" />
               </article>
             ))}
           </div>
