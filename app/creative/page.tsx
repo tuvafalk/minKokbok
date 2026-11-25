@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import CreativeLab from '@/components/cases/CreativeLab';
-import StarHeader from '@/components/header/StarHeader';
 
 const liveProjects = [
   {
@@ -29,7 +28,6 @@ export default function PlaygroundPage() {
   if (version.includes("star")) {
     return (
       <>
-        <StarHeader />
         <CreativeLab />
       </>
     );

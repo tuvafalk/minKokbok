@@ -3,9 +3,7 @@
 import React, { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import StarHeader from '@/components/header/StarHeader';
-
-const LANGUAGE_STORAGE_KEY = 'star-portfolio-language';
+import { useThemeAndLang } from "@/lib/theme";
 
 interface ProjectItem {
   id: string;
@@ -62,65 +60,59 @@ const GrommetDivider = () => (
   </div>
 );
 
-export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en' | 'sv' }) {
+export default function StarIndex({ initialLang = 'sv' }: { initialLang?: 'en' | 'sv' }) {
   const [copied, setCopied] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  const [lang, setLang] = useState(initialLang);
   const [carouselIndex, setCarouselIndex] = useState(0);
 
-  const colors = {
-    bg: isDarkMode ? 'bg-[#0C0E0D]' : 'bg-[#F5F1E7]',
-    text: isDarkMode ? 'text-[#ECE9E2]' : 'text-[#0C0E0D]',
-    subBg: isDarkMode ? 'bg-[#141816]' : 'bg-[#EFECE4]',
-    border: isDarkMode ? 'border-[#ECE9E2]/15' : 'border-[#0C0E0D]/15',
-    accentText: isDarkMode ? 'text-[#B8C0BC]' : 'text-[#526158]',
-    cardBg: isDarkMode ? 'bg-[#0C0E0D]' : 'bg-[#ECE9E2]',
-    asideBg: isDarkMode ? 'bg-[#ECE9E2] text-[#0C0E0D]' : 'bg-[#0C0E0D] text-[#ECE9E2]',
-    buttonPrimary: isDarkMode 
-      ? 'bg-[#ECE9E2] text-[#0C0E0D] border-[#ECE9E2] hover:bg-transparent hover:text-[#ECE9E2]' 
-      : 'bg-[#0C0E0D] text-[#ECE9E2] border-[#0C0E0D] hover:bg-transparent hover:text-[#0C0E0D]',
-  };
-
-  const heroSlides = [
+  const { lang, colors } = useThemeAndLang(initialLang);
+  
+const heroSlides = [
     {
       type: 'quote',
-      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      tag: lang === 'sv' ? 'ARKIV // KÄRNTES' : 'ARCHIVE // CORE THESIS',
+      quote: lang === 'sv' ? 'Teknik är inte neutral. Den är makt.' : 'Technology is not neutral. It is power.',
+      footer: 'Tuva Falk, 2026.',
+      isHeroQuote: true
+    },
+    {
+      type: 'quote',
+      tag: lang === 'sv' ? 'ARKIV // INSIKT 01' : 'ARCHIVE // INSIGHT 01',
       quote: 'The primary barrier in technology isn’t a lack of data, but a lingering power imbalance that renders marginalized perspectives performative rather than substantive.', 
       footer: 'Falk, 2026. Epistemic Limits and Formal Logic.'
     },
     {
       type: 'image',
-      tag: lang === 'sv' ? 'Porträtt' : 'Portrait',
+      tag: lang === 'sv' ? 'PLÅT // ARKIV' : 'PLATE // ARCHIVE',
       src: '/images/tuva-arctiffrontiers2.JPG',
       caption: 'Tromsø — Arctic Frontiers.'
     },
     {
       type: 'quote',
-      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      tag: lang === 'sv' ? 'ARKIV // INSIKT 02' : 'ARCHIVE // INSIGHT 02',
       quote: 'Power is not distributed equally in the world, and data power is no exception. Data feminism begins with the premise that standardization is a form of power.',
       footer: 'Catherine D’Ignazio & Lauren F. Klein. Data Feminism, 2020.'
     },
     {
       type: 'quote',
-      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      tag: lang === 'sv' ? 'ARKIV // INSIKT 03' : 'ARCHIVE // INSIGHT 03',
       quote: 'Data is not raw; it is cooked. It is a product of social, political, and historical contexts.',
       footer: 'Geoffrey Bowker & Susan Leigh Star. Sorting Things Out: Classification and Its Consequences.'
     },
     {
       type: 'image',
-      tag: lang === 'sv' ? 'Porträtt' : 'Portrait',
+      tag: lang === 'sv' ? 'PLÅT // ARKIV' : 'PLATE // ARCHIVE',
       src: '/images/tuva-portrait.jpg',
       caption: 'Umeå University - TAIGA.'
     },
     {
       type: 'quote',
-      tag: lang === 'sv' ? 'Insikt' : 'Core Insights',
+      tag: lang === 'sv' ? 'ARKIV // INSIKT 04' : 'ARCHIVE // INSIGHT 04',
       quote: 'Just as digitizing Indigenous perspectives fails on WEIRD models, identifying structural harm using tools trained on the very systems that created it risks missing the erasure of survivor voices.',
       footer: 'Falk, 2026. Epistemic Limits and Formal Logic.'
     },
     {
       type: 'image',
-      tag: lang === 'sv' ? 'Porträtt' : 'Portrait',
+      tag: lang === 'sv' ? 'PLÅT // ARKIV' : 'PLATE // ARCHIVE',
       src: '/images/tuva-arcticfrontiers.JPG',
       caption: 'Tromsø — Arctic Frontiers.'
     },
@@ -128,12 +120,6 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
   const nextSlide = () => setCarouselIndex((prev) => (prev + 1) % heroSlides.length);
   const prevSlide = () => setCarouselIndex((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
-
-  const toggleLang = () => {
-    const nextLang = lang === 'en' ? 'sv' : 'en';
-    document.cookie = `${LANGUAGE_STORAGE_KEY}=${nextLang}; Path=/; Max-Age=31536000; SameSite=Lax`;
-    setLang(nextLang);
-  };
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("falktuva@proton.me");
@@ -145,25 +131,7 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${colors.bg} ${colors.text}`}>
-
-      <StarHeader />
-
-      <div className={`w-full px-6 md:px-12 py-2 border-b text-[11px] font-mono uppercase tracking-widest flex justify-between items-center ${colors.border} ${colors.subBg}`}>
-        <span className="opacity-75">
-            <span className="w-2.5 h-2.5 rounded-full border border-current bg-transparent inline-block" /> ★ ZINE EDITION v2.6
-        </span>
-        <div className="flex items-center gap-4">
-          <button onClick={toggleLang} className="hover:underline font-semibold">
-            [ LANG: {lang.toUpperCase()} ]
-          </button>
-          <button onClick={() => setIsDarkMode(!isDarkMode)} className="hover:underline font-semibold">
-            [ THEME: {isDarkMode ? 'LIGHT' : 'DARK'} ]
-          </button>
-        </div>
-      </div>
-
       <main className="w-full">
-
         <section className={`border-b ${colors.border}`}>
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.55fr_1fr]">
             
@@ -172,9 +140,9 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-[4.2rem] font-normal leading-[0.98] tracking-tight mb-6">
                 {lang === "en" ? (
-                  <>Technology is not neutral. <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>It is power.</em></>
+                  <>Hi I'm <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>Tuva Falk.</em></>
                 ) : (
-                  <>Teknik är inte neutral. <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>Den är makt.</em></>
+                  <>Hej /// <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>Tuva Falk.</em></>
                 )}
               </h1>
 
@@ -183,12 +151,13 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                   {lang === "sv"
                     ? "Jag kom till tekniken genom nyfikenhet, en ganska ihållande frustration över trasiga system och insikten om att mjukvara och AI aldrig är neutrala verktyg. Vem som gynnas av en arkitektur och vem som raderas är ingen slump."
                     : "I came to technology through curiosity, a persistent frustration with broken systems, and the realization that software and AI are never neutral tools. Who benefits from an architecture and who gets erased is no accident."}
-                </p>
+                </p>  
                 <p>
                   {lang === "sv"
-                    ? "Jag verkar i skärningspunkten mellan strategi och utförande: jag skär genom bruset, granskar det som tagits för givet och bygger system där människan faktiskt behåller kontrollen."
-                    : "I operate in the space between strategy and execution: cutting through the noise, auditing the power structures behind the code, and expose the structural silences that dominant models miss."}
+                    ? "Jag granskar det som tagits för givet, skär genom bruset och bygger system där människan faktiskt behåller kontrollen."
+                    : "I audit the taken-for-granted, cut through the noise, and build systems where humans actually retain control."}
                 </p>
+               
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -201,19 +170,30 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
               </div>
             </div>
 
-            <aside className={`p-6 sm:p-10 lg:py-14 lg:px-10 flex flex-col justify-between relative min-h-[500px] ${colors.asideBg}`}>
+            <aside className={`p-6 sm:p-8 lg:py-12 lg:px-10 flex flex-col justify-between relative min-h-[500px] ${colors.asideBg}`}>
               <div>
                 <div className="flex justify-between items-center border-b border-current opacity-20 pb-3 mb-6 font-mono text-[11px] uppercase tracking-widest">
                   <span>{currentSlide.tag}</span>
                   <span className="font-bold">[{carouselIndex + 1} / {heroSlides.length}]</span>
                 </div>
-
                 {currentSlide.type === 'quote' ? (
                   <div className="transition-opacity duration-300 h-[350px] flex flex-col justify-between">
-                    <StarIcon className="w-8 h-8 fill-current -rotate-12 mb-4" />
-                    <blockquote className="font-serif text-2xl md:text-[1.8rem] leading-[1.15] mb-4">
-                      “{currentSlide.quote}”
-                    </blockquote>
+                    <StarIcon className="w-9 h-8 fill-current -rotate-12 mb-4" />
+                    
+                    {currentSlide.isHeroQuote ? (
+                      <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal leading-[0.98] tracking-tight mb-4">
+                        {lang === "en" ? (
+                          <>Technology is not neutral. <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>It is power.</em></>
+                        ) : (
+                          <>Teknik är inte neutral. <em className={`italic ${colors.accentText} underline decoration-1 underline-offset-8`}>Den är makt.</em></>
+                        )}
+                      </h1>
+                    ) : (
+                      <blockquote className="font-serif text-2xl md:text-[1.8rem] leading-[1.15] mb-4">
+                        “{currentSlide.quote}”
+                      </blockquote>
+                    )}
+
                     <p className="font-mono text-xs opacity-75">{currentSlide.footer || ""}</p>
                   </div>
                 ) : (
@@ -232,25 +212,24 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
               </div>
 
               <div className="pt-4 border-t border-current opacity-20 flex justify-between items-center mt-4">
-                <p className="font-mono text-xs opacity-75">★</p>
+                <p className="font-mono text-xs opacity-75">★ // LOGG</p>
                 <div className="flex gap-2 font-mono text-xs font-bold">
                   <button 
                     onClick={prevSlide}
-                    className="px-2.5 py-1 border border-current hover:bg-current hover:text-inherit transition-colors"
+                    className="px-2.5 py-1 border border-current hover:bg-current hover:text-inherit transition-colors cursor-pointer"
                     aria-label="Previous slide"
                   >
                     ←
                   </button>
                   <button 
                     onClick={nextSlide}
-                    className="px-2.5 py-1 border border-current hover:bg-current hover:text-inherit transition-colors"
+                    className="px-2.5 py-1 border border-current hover:bg-current hover:text-inherit transition-colors cursor-pointer"
                     aria-label="Next slide"
                   >
                     →
                   </button>
                 </div>
               </div>
-
             </aside>
           </div>
         </section>
@@ -297,7 +276,7 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
                   [ ★ 03 // CHALLENGE ]
                 </span>
                 <h3 className="font-display text-lg font-bold uppercase tracking-tight mb-2">
-                  {lang === "sv" ? "Utmanar strukture" : "Power & Critique"}
+                  {lang === "sv" ? "Utmanar strukturer" : "Power & Critique"}
                 </h3>
                 <p className="text-sm opacity-75 leading-relaxed">
                   {lang === "sv"
@@ -443,12 +422,6 @@ export default function HomePostPunk({ initialLang = 'sv' }: { initialLang?: 'en
             </a>
           </div>
         </section>
-
-        <footer className={`mt-12 py-6 px-6 md:px-10 font-mono text-xs uppercase tracking-wider opacity-60 flex flex-wrap justify-between items-center gap-3 mx-auto ${colors.border}`}>
-          <span>© 2026 Tuva Falk</span>
-          <span>★ BUILD // AUDIT // CHALLENGE</span>
-        </footer>
-
       </main>
     </div>
   );

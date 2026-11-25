@@ -1,15 +1,17 @@
-import React from 'react';
+'use client';
+
+import React, { use } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { casesData } from '@/components/cases/casesData'; // Anpassa sökvägen om din data ligger annorlunda
-import StarHeader from '@/components/header/StarHeader';
+import { casesData } from '@/components/cases/casesData';
+import { useThemeAndLang } from '@/lib/theme';
 
-export default async function CaseDetail({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = await params;
+export default function CaseDetail({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = use(params);
   const currentId = resolvedParams.id; 
-
-  // Hitta rätt projekt baserat på URL:ens [id]
+  
+  const { lang, colors } = useThemeAndLang();
   const project = casesData.find((p) => p.id === currentId);
 
   if (!project) {
@@ -17,10 +19,8 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
   }
 
   return (
-    <div className="min-h-screen bg-[#0C0E0D] pb-24 text-[#ECE9E2]">
-      <StarHeader />
-
-      <div className="relative h-[42vh] min-h-[320px] border-b border-[#ECE9E2]/15">
+    <div className={`min-h-screen transition-colors duration-300 ${colors.bg} ${colors.text}`}>
+      <div className={`relative h-[42vh] min-h-[320px] border-b ${colors.border}`}>
         {project.imageUrl ? (
           <Image
             src={project.imageUrl}
@@ -32,7 +32,7 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
         ) : (
           <div
             aria-hidden="true"
-            className="h-full w-full bg-[#141816]"
+            className={`h-full w-full ${colors.subBg}`}
             style={{
               backgroundImage:
                 'radial-gradient(circle at center, rgba(184,192,188,0.15) 1px, transparent 1px)',
@@ -40,22 +40,22 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
             }}
           />
         )}
-        <div className="absolute inset-0 bg-[#0C0E0D]/80" />
+        <div className={`absolute inset-0 ${isDarkBg(colors.bg) ? 'bg-[#0C0E0D]/80' : 'bg-[#F5F1E7]/80'}`} />
         
         <div className="absolute inset-0 mx-auto flex w-full max-w-7xl flex-col justify-center px-6 pb-10 md:px-12">
           <div className="mb-24">
             <Link
               href="/cases"
-              className="font-mono text-xs uppercase tracking-widest text-[#B8C0BC] transition-colors hover:text-[#ECE9E2]"
+              className={`font-mono text-xs uppercase tracking-widest ${colors.accentText} transition-colors hover:opacity-150`}
             >
-              ← Back to cases
+              {lang === 'sv' ? '← Tillbaka till cases' : '← Back to cases'}
             </Link>
           </div>
 
-          <span className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.24em] text-[#B8C0BC]">
+          <span className={`mb-3 font-mono text-xs font-bold uppercase tracking-[0.24em] ${colors.accentText}`}>
             ★ {project.category}
           </span>
-          <h1 className="max-w-3xl font-serif text-4xl font-normal leading-tight text-[#ECE9E2] md:text-6xl">
+          <h1 className="max-w-3xl font-serif text-4xl font-normal leading-tight md:text-6xl">
             {project.title}
           </h1>
         </div>
@@ -67,41 +67,45 @@ export default async function CaseDetail({ params }: { params: Promise<{ id: str
           {project.tags.map((tag, idx) => (
             <span
               key={idx}
-              className="border border-[#ECE9E2]/20 bg-[#141816] px-3.5 py-1.5 font-mono text-xs uppercase text-[#ECE9E2]"
+              className={`border px-3.5 py-1.5 font-mono text-xs uppercase ${colors.border} ${colors.subBg}`}
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <div className="relative ml-2 space-y-14 border-l-2 border-[#ECE9E2]/20 pb-6 md:ml-4">
+        <div className={`relative ml-2 space-y-14 border-l-2 pb-6 md:ml-4 ${colors.border}`}>
           {project.sections.map((section, index) => (
             <section key={index} className="relative pl-6 md:pl-10">
               <span
                 aria-hidden="true"
-                className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-[#ECE9E2] bg-[#0C0E0D]"
+                className={`absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 ${colors.border.split(' ')[0]} ${colors.cardBg}`}
               />
               
-              <h2 className="mb-4 font-serif text-2xl font-normal leading-tight text-[#ECE9E2] md:text-3xl">
+              <h2 className="mb-4 font-serif text-2xl font-normal leading-tight md:text-3xl">
                 {section.title}
               </h2>
-              <p className="text-base leading-relaxed text-[#939E98] md:text-lg">
+              <p className={`text-base leading-relaxed md:text-lg ${colors.accentText}`}>
                 {section.content}
               </p>
             </section>
           ))}
         </div>
         
-        <div className="mt-20 border-t border-[#ECE9E2]/15 pt-12 text-center">
+        <div className={`mt-20 border-t pt-12 text-center ${colors.border}`}>
           <Link
             href="/#contact"
-            className="font-mono text-xs uppercase tracking-wider inline-block border border-[#ECE9E2] bg-[#ECE9E2] px-8 py-4 font-semibold text-[#0C0E0D] transition-colors hover:bg-transparent hover:text-[#ECE9E2]"
+            className={`font-mono text-xs uppercase tracking-wider inline-block border px-8 py-4 font-semibold transition-colors ${colors.buttonPrimary}`}
           >
-            Let&apos;s Connect
+            {lang === 'sv' ? 'Låt oss höras' : "Let's Connect"}
           </Link>
         </div>
 
       </div>
     </div>
   );
+}
+
+function isDarkBg(bgClass: string) {
+  return bgClass.includes('0C0E0D');
 }
