@@ -18,9 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="sv" className="scroll-smooth">
       <body className="font-sans antialiased flex flex-col min-h-screen selection:bg-[#3B5747] selection:text-[#ECE9E2]">
         <StarHeader />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <StarFooterWithNav />
       </body>
     </html>

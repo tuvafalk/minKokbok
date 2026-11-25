@@ -26,17 +26,29 @@ export default function SwedishHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#121417] bg-[#EAE7E2]/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-8">
-        <Link href="#top" onClick={() => setOpen(false)} className="font-mono text-xs font-bold uppercase tracking-[0.18em]">
+        <Link
+          href="#top"
+          onClick={() => setOpen(false)}
+          className="font-mono text-xs font-bold uppercase tracking-[0.18em]"
+        >
           TUVA FALK <span className="text-[#B23A25]">///</span> SE
         </Link>
 
-        <nav aria-label="Huvudnavigation" className="hidden items-center gap-6 font-mono text-[11px] uppercase tracking-wider md:flex">
+        <nav
+          aria-label="Huvudnavigation"
+          className="hidden items-center gap-6 font-mono text-[11px] uppercase tracking-wider md:flex"
+        >
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="transition-colors hover:text-[#B23A25]">{link.label}</a>
+            <a key={link.href} href={link.href} className="transition-colors hover:text-[#B23A25]">
+              {link.label}
+            </a>
           ))}
         </nav>
 
-        <a href="#kontakt" className="hidden border border-[#121417] bg-[#121417] px-4 py-2 font-mono text-[11px] uppercase tracking-wider text-[#EAE7E2] md:block">
+        <a
+          href="#kontakt"
+          className="hidden border border-[#121417] bg-[#121417] px-4 py-2 font-mono text-[11px] uppercase tracking-wider text-[#EAE7E2] md:block"
+        >
           Kontakt
         </a>
 
@@ -52,9 +64,17 @@ export default function SwedishHeader() {
       </div>
 
       {open && (
-        <nav aria-label="Mobilnavigation" className="border-t border-[#121417] bg-[#EAE7E2] px-4 py-3 md:hidden">
+        <nav
+          aria-label="Mobilnavigation"
+          className="border-t border-[#121417] bg-[#EAE7E2] px-4 py-3 md:hidden"
+        >
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)} className="block border-b border-[#121417]/15 py-3 font-mono text-xs uppercase tracking-wider">
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="block border-b border-[#121417]/15 py-3 font-mono text-xs uppercase tracking-wider"
+            >
               {link.label}
             </a>
           ))}

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const NAVIGATION_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'Case', href: '/cases' },
   { label: 'Creative', href: '/creative' },
-  { label: 'Contact', href: '/#kontakt' }
+  { label: 'Contact', href: '/#kontakt' },
 ];
 
 function isCurrentLink(pathname: string, href: string) {
@@ -33,9 +33,7 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header
-      className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-[#F5F1E7] px-5 py-4 text-[#1A2B3C] shadow-sm md:px-8 md:py-5 print:hidden"
-    >
+    <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-[#F5F1E7] px-5 py-4 text-[#1A2B3C] shadow-sm md:px-8 md:py-5 print:hidden">
       <Link
         href="/"
         onClick={closeMenu}
@@ -54,7 +52,9 @@ export default function Header() {
               href={link.href}
               aria-current={isCurrent ? 'page' : undefined}
               className={`transition-colors hover:text-[#718278] ${
-                isCurrent ? 'font-semibold text-[#718278] underline decoration-[#9EAEA2] underline-offset-8' : ''
+                isCurrent
+                  ? 'font-semibold text-[#718278] underline decoration-[#9EAEA2] underline-offset-8'
+                  : ''
               }`}
             >
               {link.label}
@@ -99,11 +99,7 @@ export default function Header() {
           strokeLinecap="round"
           className="h-5 w-5"
         >
-          {isMenuOpen ? (
-            <path d="m6 6 12 12M18 6 6 18" />
-          ) : (
-            <path d="M4 7h16M4 12h16M4 17h16" />
-          )}
+          {isMenuOpen ? <path d="m6 6 12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
         </svg>
       </button>
 
@@ -113,35 +109,40 @@ export default function Header() {
         hidden={!isMenuOpen}
         className="absolute left-0 right-0 top-full border-t border-[#1A2B3C]/10 bg-[#F5F1E7] px-4 pb-8 pt-4 shadow-lg md:hidden"
       >
-          <div className="flex flex-col">
-            {NAVIGATION_LINKS.map((link) => {
-              const isCurrent = isCurrentLink(pathname, link.href);
+        <div className="flex flex-col">
+          {NAVIGATION_LINKS.map((link) => {
+            const isCurrent = isCurrentLink(pathname, link.href);
 
-              return (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={closeMenu}
-                  aria-current={isCurrent ? 'page' : undefined}
-                  className={`border-b border-[#1A2B3C]/10 py-3.5 pl-3 font-medium transition-colors hover:text-[#718278] ${
-                    isCurrent
-                      ? 'border-l-2 border-l-[#9EAEA2] bg-[#9EAEA2]/10 text-[#52645a]'
-                      : 'text-[#1A2B3C]'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-            <div className="flex gap-8 pt-4 text-sm font-medium">
-              <a href="/Tuva CV.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-                Meritförteckning
-              </a>
-              <a href="https://www.linkedin.com/in/tuvafalk/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
-                LinkedIn
-              </a>
-            </div>
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={closeMenu}
+                aria-current={isCurrent ? 'page' : undefined}
+                className={`border-b border-[#1A2B3C]/10 py-3.5 pl-3 font-medium transition-colors hover:text-[#718278] ${
+                  isCurrent
+                    ? 'border-l-2 border-l-[#9EAEA2] bg-[#9EAEA2]/10 text-[#52645a]'
+                    : 'text-[#1A2B3C]'
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+          <div className="flex gap-8 pt-4 text-sm font-medium">
+            <a href="/Tuva CV.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+              Meritförteckning
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tuvafalk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              LinkedIn
+            </a>
           </div>
+        </div>
       </nav>
     </header>
   );

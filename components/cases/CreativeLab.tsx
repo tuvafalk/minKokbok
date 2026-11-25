@@ -10,23 +10,23 @@ const liveProjects = [
     category: { sv: 'Interaktiv kokbok', en: 'Interactive cookbook' },
     description: {
       sv: 'Bläddra bland recept efter kategori, sök i samlingen, bläddra igenom kokboken eller skriv ut den som en PDF.',
-      en: 'Browse recipes by category, search the collection, flip through the cookbook, or print it as a PDF.'
+      en: 'Browse recipes by category, search the collection, flip through the cookbook, or print it as a PDF.',
     },
     href: '/recipes',
     action: { sv: 'Öppna receptboken', en: 'Open the recipe book' },
-    number: '01'
+    number: '01',
   },
   {
     title: { sv: 'Fallstudieutforskaren', en: 'Case Study Explorer' },
     category: { sv: 'Portfölj', en: 'Portfolio' },
     description: {
       sv: 'Utforska utvalda arbeten inom AI-styrning, forskning, teknik och kreativ utveckling.',
-      en: 'Explore selected work across AI governance, research, engineering, and creative development.'
+      en: 'Explore selected work across AI governance, research, engineering, and creative development.',
     },
     href: '/cases',
     action: { sv: 'Utforska casen', en: 'Explore the cases' },
-    number: '02'
-  }
+    number: '02',
+  },
 ];
 
 export default function CreativeLab() {
@@ -34,11 +34,14 @@ export default function CreativeLab() {
 
   return (
     <>
-      <main className={`min-h-screen px-6 pb-24 pt-16 md:px-12 mx-auto transition-colors duration-300 ${colors.bg} ${colors.text}`}>
+      <main
+        className={`min-h-screen px-6 pb-24 pt-16 md:px-12 mx-auto transition-colors duration-300 ${colors.bg} ${colors.text}`}
+      >
         <div className="mx-auto max-w-7xl">
-
           <header className="mb-16 max-w-4xl pb-10">
-            <p className={`mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] ${colors.accentText}`}>
+            <p
+              className={`mb-4 font-mono text-xs font-bold uppercase tracking-[0.24em] ${colors.accentText}`}
+            >
               ★ Creative Lab // Playground
             </p>
             <h1 className="mb-6 font-serif text-5xl leading-tight md:text-6xl">
@@ -60,13 +63,17 @@ export default function CreativeLab() {
                 >
                   <div className="flex flex-1 flex-col p-8 md:p-10">
                     <div className="flex justify-between items-center mb-6">
-                      <span className={`font-mono text-xs uppercase tracking-widest ${colors.accentText}`}>
+                      <span
+                        className={`font-mono text-xs uppercase tracking-widest ${colors.accentText}`}
+                      >
                         ★ {project.category[lang]}
                       </span>
                     </div>
 
                     <h3 className="mb-4 font-serif text-3xl">{project.title[lang]}</h3>
-                    <p className={`max-w-lg leading-relaxed text-sm md:text-base mb-8 ${colors.accentText}`}>
+                    <p
+                      className={`max-w-lg leading-relaxed text-sm md:text-base mb-8 ${colors.accentText}`}
+                    >
                       {project.description[lang]}
                     </p>
 
@@ -77,10 +84,7 @@ export default function CreativeLab() {
                       {project.action[lang]} <span aria-hidden="true">→</span>
                     </Link>
                   </div>
-                  <div
-                    aria-hidden="true"
-                    className={`h-1 ${colors.subBg}`}
-                  />
+                  <div aria-hidden="true" className={`h-1 ${colors.subBg}`} />
                 </article>
               ))}
             </div>

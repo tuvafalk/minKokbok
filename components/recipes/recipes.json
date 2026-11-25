@@ -9,9 +9,7 @@
     "ingredients": [
       {
         "group": "",
-        "items": [
-          "2 block nudlar"
-        ]
+        "items": ["2 block nudlar"]
       },
       {
         "group": "Sås:",
@@ -82,10 +80,7 @@
     "ingredients": [
       {
         "group": "Stek:",
-        "items": [
-          "500 g kyckling",
-          "1 st grönsak (ex. broccoli, paprika)"
-        ]
+        "items": ["500 g kyckling", "1 st grönsak (ex. broccoli, paprika)"]
       },
       {
         "group": "Sås:",
@@ -101,11 +96,7 @@
       },
       {
         "group": "Rulle:",
-        "items": [
-          "6-8 tortillabröd",
-          "Salsa",
-          "Riven ost"
-        ]
+        "items": ["6-8 tortillabröd", "Salsa", "Riven ost"]
       }
     ],
     "instructions": [
@@ -283,10 +274,7 @@
       },
       {
         "group": "Servering:",
-        "items": [
-          "Chunkey Salsa",
-          "Kvarg (som sås)"
-        ]
+        "items": ["Chunkey Salsa", "Kvarg (som sås)"]
       }
     ],
     "instructions": [
@@ -631,13 +619,7 @@
     "ingredients": [
       {
         "group": "",
-        "items": [
-          "500 g pasta",
-          "6 st ägg",
-          "1 burk pesto",
-          "2 tetra valfria bönor",
-          "250 g keso"
-        ]
+        "items": ["500 g pasta", "6 st ägg", "1 burk pesto", "2 tetra valfria bönor", "250 g keso"]
       }
     ],
     "instructions": [
@@ -690,21 +672,11 @@
     "ingredients": [
       {
         "group": "Grönsaker (Välj fritt):",
-        "items": [
-          "Broccoli",
-          "Sötpotatis",
-          "Morötter",
-          "Potatis / Sparris"
-        ]
+        "items": ["Broccoli", "Sötpotatis", "Morötter", "Potatis / Sparris"]
       },
       {
         "group": "Kryddning:",
-        "items": [
-          "Olivolja",
-          "Salt & peppar",
-          "Valfria örter",
-          "Lyxigt: Pecorino & panko ströbröd"
-        ]
+        "items": ["Olivolja", "Salt & peppar", "Valfria örter", "Lyxigt: Pecorino & panko ströbröd"]
       }
     ],
     "instructions": [
@@ -726,11 +698,7 @@
     "ingredients": [
       {
         "group": "Per portion:",
-        "items": [
-          "1 dl ris",
-          "1,5 dl vatten",
-          "Salt (ev. 1 buljongtärning)"
-        ]
+        "items": ["1 dl ris", "1,5 dl vatten", "Salt (ev. 1 buljongtärning)"]
       }
     ],
     "instructions": [
@@ -784,11 +752,7 @@
     "ingredients": [
       {
         "group": "",
-        "items": [
-          "120 g lättmajonnäs",
-          "120 g kvarg (naturell/lätt)",
-          "Sriracha efter smak"
-        ]
+        "items": ["120 g lättmajonnäs", "120 g kvarg (naturell/lätt)", "Sriracha efter smak"]
       }
     ],
     "instructions": [
@@ -911,9 +875,7 @@
       },
       {
         "group": "Topping:",
-        "items": [
-          "Srirachasås (se recept)"
-        ]
+        "items": ["Srirachasås (se recept)"]
       }
     ],
     "instructions": [
@@ -1106,17 +1068,11 @@
     "ingredients": [
       {
         "group": "Bas:",
-        "items": [
-          "5 dl mjölk",
-          "1 dl chiafrön"
-        ]
+        "items": ["5 dl mjölk", "1 dl chiafrön"]
       },
       {
         "group": "Smaksättning Enkel:",
-        "items": [
-          "½ tsk vaniljpulver",
-          "3 msk lönnsirap & 1 nypa salt"
-        ]
+        "items": ["½ tsk vaniljpulver", "3 msk lönnsirap & 1 nypa salt"]
       },
       {
         "group": "Smaksättning Tiramisu:",
@@ -1359,44 +1315,41 @@
     "tips": "Till servering: Servera sconsen nygräddade med ost, färskost eller marmelad."
   },
   {
-  "id": "fjall-grotfrallor",
-  "title": "Fjällstationens frallor",
-  "category": "Tillbehör",
-  "effort": 4,
-  "oven": {
-    "temp": "250",
-    "time": "15-20"
-  },
-  "portions": 20,
-  "time": "12 timmar (kalljäsning)",
-  "ingredients": [
-    {
-      "group": "Gröt (ger 300 g):",
-      "items": [
-        "60 g havregryn (ca 1,5 dl)",
-        "275 g vatten (2,75 dl)"
-      ]
+    "id": "fjall-grotfrallor",
+    "title": "Fjällstationens frallor",
+    "category": "Tillbehör",
+    "effort": 4,
+    "oven": {
+      "temp": "250",
+      "time": "15-20"
     },
-    {
-      "group": "Degen:",
-      "items": [
-        "10 g färsk jäst (blå)",
-        "375 g kallt vatten eller öl",
-        "525 g vetemjöl special",
-        "150 g rågmjöl",
-        "14 g salt",
-        "100 g russin (blötlagda och avrunna)"
-      ]
-    }
-  ],
-  "instructions": [
-    "Koka gröt på <b>60 g havregryn</b> och <b>275 g vatten</b>. Bred ut gröten på en tallrik och ställ i kylen tills den är helt avsvalnad.",
-    "Lös upp <b>10 g färsk jäst</b> i <b>375 g kallt vatten/öl</b>. Rör ner den kalla gröten, <b>525 g vetemjöl special</b> och <b>150 g rågmjöl</b>. Låt vila (fermentolys) under handduk i <b>30 minuter</b>.",
-    "Strö <b>14 g salt</b> över degen. Stjälp ut på bänken och knåda med 'slap and fold' i 5–10 minuter tills degen blir spänstig.",
-    "Platta ut degen något och vik försiktigt in <b>100 g blötlagda russin</b>. Lägg tillbaka i bunken och låt jäsa i rumstemperatur i <b>45–60 minuter</b>.",
-    "Stjälp upp degen på mjölat bakbord. Hugg snabbt upp den i bitar med en degskrapa och lägg på två plåtar. Plasta in tätt och ställ i kylen över natten.",
-    "Sätt ugnen på <b>250 grader</b>. Sätt in en plåt direkt från kylen, sänk värmen till <b>230 grader</b> och släng in lite vatten i botten för ånga. Grädda i <b>15–20 minuter</b>."
-  ],
-  "tips": "Har du surdegsdiscard (ca 100g) över kan du blanda ner det i vätskan för extra smak. Minska degvätskan till 325 g och vetemjölet till 475 g."
-}
+    "portions": 20,
+    "time": "12 timmar (kalljäsning)",
+    "ingredients": [
+      {
+        "group": "Gröt (ger 300 g):",
+        "items": ["60 g havregryn (ca 1,5 dl)", "275 g vatten (2,75 dl)"]
+      },
+      {
+        "group": "Degen:",
+        "items": [
+          "10 g färsk jäst (blå)",
+          "375 g kallt vatten eller öl",
+          "525 g vetemjöl special",
+          "150 g rågmjöl",
+          "14 g salt",
+          "100 g russin (blötlagda och avrunna)"
+        ]
+      }
+    ],
+    "instructions": [
+      "Koka gröt på <b>60 g havregryn</b> och <b>275 g vatten</b>. Bred ut gröten på en tallrik och ställ i kylen tills den är helt avsvalnad.",
+      "Lös upp <b>10 g färsk jäst</b> i <b>375 g kallt vatten/öl</b>. Rör ner den kalla gröten, <b>525 g vetemjöl special</b> och <b>150 g rågmjöl</b>. Låt vila (fermentolys) under handduk i <b>30 minuter</b>.",
+      "Strö <b>14 g salt</b> över degen. Stjälp ut på bänken och knåda med 'slap and fold' i 5–10 minuter tills degen blir spänstig.",
+      "Platta ut degen något och vik försiktigt in <b>100 g blötlagda russin</b>. Lägg tillbaka i bunken och låt jäsa i rumstemperatur i <b>45–60 minuter</b>.",
+      "Stjälp upp degen på mjölat bakbord. Hugg snabbt upp den i bitar med en degskrapa och lägg på två plåtar. Plasta in tätt och ställ i kylen över natten.",
+      "Sätt ugnen på <b>250 grader</b>. Sätt in en plåt direkt från kylen, sänk värmen till <b>230 grader</b> och släng in lite vatten i botten för ånga. Grädda i <b>15–20 minuter</b>."
+    ],
+    "tips": "Har du surdegsdiscard (ca 100g) över kan du blanda ner det i vätskan för extra smak. Minska degvätskan till 325 g och vetemjölet till 475 g."
+  }
 ]

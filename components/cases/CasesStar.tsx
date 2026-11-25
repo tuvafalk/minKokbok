@@ -18,18 +18,71 @@ function FrameworkVisual() {
         aria-label="Diagram connecting governance, evaluation, and user experience"
         className="w-full max-w-125"
       >
-        <path d="M160 112h84m72 0h84M160 248h84m72 0h84M280 144v72" fill="none" stroke="#526158" strokeWidth="3" />
-        <rect x="28" y="72" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#1A2B3C" strokeWidth="2" />
-        <rect x="400" y="72" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#1A2B3C" strokeWidth="2" />
-        <rect x="28" y="208" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#1A2B3C" strokeWidth="2" />
-        <rect x="400" y="208" width="132" height="80" rx="14" fill="#F5F1E7" stroke="#1A2B3C" strokeWidth="2" />
+        <path
+          d="M160 112h84m72 0h84M160 248h84m72 0h84M280 144v72"
+          fill="none"
+          stroke="#526158"
+          strokeWidth="3"
+        />
+        <rect
+          x="28"
+          y="72"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#1A2B3C"
+          strokeWidth="2"
+        />
+        <rect
+          x="400"
+          y="72"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#1A2B3C"
+          strokeWidth="2"
+        />
+        <rect
+          x="28"
+          y="208"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#1A2B3C"
+          strokeWidth="2"
+        />
+        <rect
+          x="400"
+          y="208"
+          width="132"
+          height="80"
+          rx="14"
+          fill="#F5F1E7"
+          stroke="#1A2B3C"
+          strokeWidth="2"
+        />
         <rect x="208" y="132" width="144" height="96" rx="18" fill="#1A2B3C" />
-        <text x="94" y="116" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">Governance</text>
-        <text x="466" y="116" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">UX</text>
-        <text x="94" y="252" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">Research</text>
-        <text x="466" y="252" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">Evaluation</text>
-        <text x="280" y="174" textAnchor="middle" fill="#F5F1E7" fontSize="15" fontWeight="600">AI SYSTEM</text>
-        <text x="280" y="198" textAnchor="middle" fill="#F5F1E7" fontSize="12">Shared framework</text>
+        <text x="94" y="116" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">
+          Governance
+        </text>
+        <text x="466" y="116" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">
+          UX
+        </text>
+        <text x="94" y="252" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">
+          Research
+        </text>
+        <text x="466" y="252" textAnchor="middle" fill="#1A2B3C" fontSize="16" fontWeight="600">
+          Evaluation
+        </text>
+        <text x="280" y="174" textAnchor="middle" fill="#F5F1E7" fontSize="15" fontWeight="600">
+          AI SYSTEM
+        </text>
+        <text x="280" y="198" textAnchor="middle" fill="#F5F1E7" fontSize="12">
+          Shared framework
+        </text>
       </svg>
     </div>
   );
@@ -44,17 +97,43 @@ function RiskMatrixVisual() {
         aria-label="Illustrative risk matrix and system boundary"
         className="w-full max-w-125"
       >
-        <rect x="86" y="40" width="388" height="280" rx="18" fill="#F5F1E7" stroke="#1A2B3C" strokeWidth="2" />
+        <rect
+          x="86"
+          y="40"
+          width="388"
+          height="280"
+          rx="18"
+          fill="#F5F1E7"
+          stroke="#1A2B3C"
+          strokeWidth="2"
+        />
         <path d="M280 80v200M126 180h308" stroke="#1A2B3C" strokeWidth="2" strokeOpacity="0.15" />
         <rect x="126" y="80" width="154" height="100" fill="#E5DFD3" />
         <rect x="280" y="80" width="154" height="100" fill="#EFE8DC" />
         <rect x="126" y="180" width="154" height="100" fill="#EFE8DC" />
         <rect x="280" y="180" width="154" height="100" fill="#E5DFD3" />
-        <rect x="86" y="40" width="388" height="280" rx="18" fill="none" stroke="#1A2B3C" strokeWidth="2" />
-        <text x="203" y="132" textAnchor="middle" fill="#1A2B3C" fontSize="15" fontWeight="600">Feasibility</text>
-        <text x="357" y="132" textAnchor="middle" fill="#3B5747" fontSize="15" fontWeight="600">Ethics</text>
-        <text x="203" y="232" textAnchor="middle" fill="#3B5747" fontSize="15" fontWeight="600">Risk</text>
-        <text x="357" y="232" textAnchor="middle" fill="#1A2B3C" fontSize="15" fontWeight="600">Boundary</text>
+        <rect
+          x="86"
+          y="40"
+          width="388"
+          height="280"
+          rx="18"
+          fill="none"
+          stroke="#1A2B3C"
+          strokeWidth="2"
+        />
+        <text x="203" y="132" textAnchor="middle" fill="#1A2B3C" fontSize="15" fontWeight="600">
+          Feasibility
+        </text>
+        <text x="357" y="132" textAnchor="middle" fill="#3B5747" fontSize="15" fontWeight="600">
+          Ethics
+        </text>
+        <text x="203" y="232" textAnchor="middle" fill="#3B5747" fontSize="15" fontWeight="600">
+          Risk
+        </text>
+        <text x="357" y="232" textAnchor="middle" fill="#1A2B3C" fontSize="15" fontWeight="600">
+          Boundary
+        </text>
       </svg>
     </div>
   );
@@ -145,13 +224,7 @@ function SupportingCaseCard({ project }: { project: CaseProject }) {
     <article className="grid overflow-hidden border border-[#1A2B3C]/20 bg-[#F5F1E7] transition-colors duration-300 hover:border-[#1A2B3C] sm:grid-cols-[220px_1fr]">
       <div className="relative min-h-44 bg-[#E5DFD3]">
         {project.imageUrl && (
-          <Image
-            src={project.imageUrl}
-            alt=""
-            fill
-            sizes="220px"
-            className="object-cover"
-          />
+          <Image src={project.imageUrl} alt="" fill sizes="220px" className="object-cover" />
         )}
       </div>
       <div className="flex flex-col justify-center p-8">
@@ -237,11 +310,7 @@ export default function CasesPortfolio({ cases }: { cases: CaseProject[] }) {
       {showGovernance && (
         <section aria-label="AI governance case studies" className="mb-20 space-y-8">
           {featuredCases.map((project, index) => (
-            <FeaturedCaseCard
-              key={project.id}
-              project={project}
-              reverse={index === 1}
-            />
+            <FeaturedCaseCard key={project.id} project={project} reverse={index === 1} />
           ))}
           {supportingCases.length > 0 && (
             <div className="pt-2">
